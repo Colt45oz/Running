@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Runner's Knee Recovery Guide</title>
+<link href="https://fonts.googleapis.com/css2?
+family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" 
+rel="stylesheet">
+<style>
+ :root {
+ --bg: #0e0f11;
+ --surface: #161820;
+ --surface2: #1e2028;
+ --accent: #e8ff47;
+ --accent2: #ff6b35;
+ --text: #f0f0f0;
+ --muted: #888;
+ --border: #2a2c38;
+ --red: #ff4757;
+ --green: #2ed573;
+ }
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+ body {
+ background: var(--bg);
+ color: var(--text);
+ font-family: 'DM Sans', sans-serif;
+ font-weight: 300;
+ line-height: 1.6;
+ min-height: 100vh;
+ }
+ /* HERO */
+ .hero {
+ position: relative;
+ padding: 60px 24px 48px;
+ overflow: hidden;
+ border-bottom: 1px solid var(--border);
+ }
+ .hero::before {
+ content: '';
+ position: absolute;
+ top: -80px; left: -80px;
+ width: 400px; height: 400px;
+ background: radial-gradient(circle, rgba(232,255,71,0.08) 0%, transparent 
+70%);
+ pointer-events: none;
+ }
+ .hero::after {
+ content: '';
+ position: absolute;
+ bottom: -60px; right: -40px;
+ width: 300px; height: 300px;
+ background: radial-gradient(circle, rgba(255,107,53,0.07) 0%, transparent 
+70%);
+ pointer-events: none;
+ }
+ .hero-tag {
+ display: inline-block;
+ background: var(--accent);
+ color: #000;
+ font-size: 10px;
+ font-weight: 600;
+ letter-spacing: 2px;
+ text-transform: uppercase;
+ padding: 4px 10px;
+ margin-bottom: 16px;
+ }
+ .hero h1 {
+ font-family: 'Bebas Neue', sans-serif;
+ font-size: clamp(52px, 12vw, 88px);
+ line-height: 0.9;
+ letter-spacing: 1px;
+ margin-bottom: 16px;
+ }
+ .hero h1 span { color: var(--accent2); }
+ .hero p {
+ font-size: 15px;
+ color: var(--muted);
+ max-width: 480px;
+ line-height: 1.7;
+ }
+ .phase-indicator {
+ display: flex;
+ gap: 8px;
+ margin-top: 28px;
+ flex-wrap: wrap;
+ }
+ .phase-chip {
+ padding: 6px 14px;
+ border: 1px solid var(--border);
+ font-size: 11px;
+ letter-spacing: 1px;
+ text-transform: uppercase;
+ color: var(--muted);
+ cursor: pointer;
+ transition: all 0.2s;
+ background: transparent;
+ }
+ .phase-chip.active {
+ border-color: var(--accent);
+ color: var(--accent);
+ background: rgba(232,255,71,0.05);
+ }
+ .phase-chip:hover { border-color: var(--text); color: var(--text); }
+ /* NAV TABS */
+ .tabs {
+ display: flex;
+ border-bottom: 1px solid var(--border);
+ overflow-x: auto;
+ scrollbar-width: none;
+ background: var(--surface);
+ }
+ .tabs::-webkit-scrollbar { display: none; }
+ .tab {
+ padding: 16px 24px;
+ font-size: 12px;
+ letter-spacing: 1.5px;
+ text-transform: uppercase;
+ color: var(--muted);
+ cursor: pointer;
+ white-space: nowrap;
+ border-bottom: 2px solid transparent;
+ transition: all 0.2s;
+ background: none;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ font-family: 'DM Sans', sans-serif;
+ font-weight: 600;
+ }
+ .tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+ .tab:hover:not(.active) { color: var(--text); }
+ /* CONTENT */
+ .content { max-width: 860px; margin: 0 auto; padding: 32px 20px 60px; }
+ .panel { display: none; }
+ .panel.active { display: block; }
+ /* SECTION HEADER */
+ .section-label {
+ font-size: 10px;
+ letter-spacing: 3px;
+ text-transform: uppercase;
+ color: var(--accent);
+ margin-bottom: 8px;
+ font-weight: 600;
+ }
+ .section-title {
+ font-family: 'Bebas Neue', sans-serif;
+ font-size: 38px;
+ line-height: 1;
+ margin-bottom: 10px;
+ letter-spacing: 0.5px;
+ }
+ .section-desc {
+ font-size: 14px;
+ color: var(--muted);
+ margin-bottom: 32px;
+ max-width: 560px;
+ line-height: 1.7;
+ }
+ /* EXERCISE CARDS */
+ .exercise-grid { display: flex; flex-direction: column; gap: 20px; }
+ .exercise-card {
+ background: var(--surface);
+ border: 1px solid var(--border);
+ overflow: hidden;
+ transition: border-color 0.2s;
+ }
+ .exercise-card:hover { border-color: var(--accent); }
+ .card-header {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 20px 24px;
+ cursor: pointer;
+ gap: 16px;
+ }
+ .card-left { display: flex; align-items: center; gap: 16px; }
+ .card-num {
+ font-family: 'Bebas Neue', sans-serif;
+ font-size: 32px;
+ color: var(--border);
+ line-height: 1;
+ min-width: 36px;
+ transition: color 0.2s;
+ }
+ .exercise-card:hover .card-num { color: var(--accent); }
+ .card-info h3 {
+ font-weight: 600;
+ font-size: 16px;
+ margin-bottom: 3px;
+ }
+ .card-meta {
+ display: flex;
+ gap: 12px;
+ flex-wrap: wrap;
+ }
+ .badge {
+ font-size: 10px;
+ letter-spacing: 1px;
+ text-transform: uppercase;
+ padding: 3px 8px;
+ border: 1px solid var(--border);
+ color: var(--muted);
+ }
+ .badge.focus { border-color: var(--accent2); color: var(--accent2); }
+ .badge.sets { border-color: var(--accent); color: var(--accent); }
+ .chevron {
+ font-size: 18px;
+ color: var(--muted);
+ transition: transform 0.3s, color 0.2s;
+ }
+ .exercise-card.open .chevron { transform: rotate(180deg); color: var(--accent); 
+}
+ .card-body {
+ display: none;
+ padding: 0 24px 24px;
+ border-top: 1px solid var(--border);
+ }
+ .exercise-card.open .card-body { display: block; }
+ .card-body-inner {
+ display: grid;
+ grid-template-columns: 1fr;
+ gap: 20px;
+ padding-top: 20px;
+ }
+ .video-wrap {
+ position: relative;
+ width: 100%;
+ padding-bottom: 56.25%;
+ background: #000;
+ overflow: hidden;
+ }
+ .video-wrap iframe {
+ position: absolute;
+ top: 0; left: 0;
+ width: 100%; height: 100%;
+ border: none;
+ }
+ .video-placeholder {
+ position: absolute;
+ top: 0; left: 0;
+ width: 100%; height: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ background: var(--surface2);
+ cursor: pointer;
+ gap: 8px;
+ }
+ .play-btn {
+ width: 52px; height: 52px;
+ border-radius: 50%;
+ background: var(--accent);
+ display: flex; align-items: center; justify-content: center;
+ font-size: 20px;
+ color: #000;
+ transition: transform 0.2s;
+ }
+ .video-placeholder:hover .play-btn { transform: scale(1.1); }
+ .video-placeholder span { font-size: 12px; color: var(--muted); letter-spacing: 
+1px; text-transform: uppercase; }
+ .how-to h4 {
+ font-size: 11px;
+ letter-spacing: 2px;
+ text-transform: uppercase;
+ color: var(--accent);
+ margin-bottom: 12px;
+ font-weight: 600;
+ }
+ .steps-list { list-style: none; display: flex; flex-direction: column; gap: 8px; 
+}
+ .steps-list li {
+ display: flex;
+ gap: 12px;
+ font-size: 13px;
+ line-height: 1.6;
+ color: #ccc;
+ }
+ .step-num {
+ min-width: 22px; height: 22px;
+ background: var(--surface2);
+ border: 1px solid var(--border);
+ display: flex; align-items: center; justify-content: center;
+ font-size: 10px;
+ font-weight: 600;
+ color: var(--accent);
+ margin-top: 2px;
+ }
+ .pro-tip {
+ background: rgba(232,255,71,0.04);
+ border-left: 2px solid var(--accent);
+ padding: 10px 14px;
+ margin-top: 14px;
+ font-size: 12px;
+ color: var(--muted);
+ line-height: 1.6;
+ }
+ .pro-tip strong { color: var(--accent); font-weight: 600; }
+ /* PROGRAM SCHEDULE */
+ .week-grid { display: flex; flex-direction: column; gap: 2px; margin-bottom: 
+32px; }
+ .week-row {
+ display: grid;
+ grid-template-columns: 90px 1fr;
+ gap: 2px;
+ }
+ .day-label {
+ background: var(--surface);
+ padding: 12px 14px;
+ font-size: 11px;
+ letter-spacing: 1.5px;
+ text-transform: uppercase;
+ color: var(--muted);
+ display: flex;
+ align-items: center;
+ font-weight: 600;
+ }
+ .day-content {
+ background: var(--surface);
+ padding: 12px 16px;
+ font-size: 13px;
+ display: flex;
+ align-items: center;
+ gap: 10px;
+ flex-wrap: wrap;
+ }
+ .day-tag {
+ font-size: 10px;
+ letter-spacing: 1px;
+ text-transform: uppercase;
+ padding: 3px 8px;
+ font-weight: 600;
+ }
+ .day-tag.strength { background: rgba(232,255,71,0.1); color: var(--accent); }
+ .day-tag.rest { background: rgba(46,213,115,0.1); color: var(--green); }
+ .day-tag.run { background: rgba(255,107,53,0.1); color: var(--accent2); }
+ .day-tag.active { background: rgba(136,136,136,0.1); color: var(--muted); }
+ /* STRETCH CARDS */
+ .stretch-grid { display: flex; flex-direction: column; gap: 16px; }
+ .stretch-card {
+ background: var(--surface);
+ border: 1px solid var(--border);
+ padding: 20px 22px;
+ display: grid;
+ grid-template-columns: 1fr;
+ gap: 12px;
+ transition: border-color 0.2s;
+ }
+ .stretch-card:hover { border-color: var(--accent2); }
+ .stretch-top { display: flex; align-items: flex-start; justify-content: spacebetween; gap: 12px; }
+ .stretch-name { font-weight: 600; font-size: 16px; margin-bottom: 4px; }
+ .stretch-target { font-size: 12px; color: var(--accent2); letter-spacing: 1px; 
+text-transform: uppercase; }
+ .stretch-duration {
+ font-family: 'Bebas Neue', sans-serif;
+ font-size: 28px;
+ color: var(--accent);
+ line-height: 1;
+ white-space: nowrap;
+ }
+ .stretch-how { font-size: 13px; color: var(--muted); line-height: 1.7; }
+ /* PHASE TIMELINE */
+ .timeline { display: flex; flex-direction: column; gap: 0; margin-bottom: 32px; 
+position: relative; }
+ .timeline::before {
+ content: '';
+ position: absolute;
+ left: 19px;
+ top: 0; bottom: 0;
+ width: 1px;
+ background: var(--border);
+ }
+ .timeline-item { display: flex; gap: 20px; padding: 20px 0; position: relative; 
+}
+ .timeline-dot {
+ width: 38px; height: 38px;
+ min-width: 38px;
+ border: 1px solid var(--border);
+ background: var(--surface);
+ display: flex; align-items: center; justify-content: center;
+ font-family: 'Bebas Neue', sans-serif;
+ font-size: 16px;
+ color: var(--accent);
+ z-index: 1;
+ }
+ .timeline-content { padding-top: 6px; }
+ .timeline-phase {
+ font-size: 10px;
+ letter-spacing: 2px;
+ text-transform: uppercase;
+ color: var(--accent);
+ font-weight: 600;
+ margin-bottom: 4px;
+ }
+ .timeline-title { font-weight: 600; font-size: 16px; margin-bottom: 6px; }
+ .timeline-desc { font-size: 13px; color: var(--muted); line-height: 1.7; }
+ /* PROGRESS TRACKER */
+ .tracker-header {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ margin-bottom: 20px;
+ flex-wrap: wrap;
+ gap: 12px;
+ }
+ .tracker-days { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; 
+}
+ .tracker-day {
+ aspect-ratio: 1;
+ background: var(--surface);
+ border: 1px solid var(--border);
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ cursor: pointer;
+ transition: all 0.2s;
+ gap: 3px;
+ }
+ .tracker-day span:first-child {
+ font-size: 8px;
+ letter-spacing: 1px;
+ text-transform: uppercase;
+ color: var(--muted);
+ }
+ .tracker-day span:last-child {
+ font-family: 'Bebas Neue', sans-serif;
+ font-size: 18px;
+ line-height: 1;
+ }
+ .tracker-day.done { background: rgba(232,255,71,0.08); border-color: var(--
+accent); }
+ .tracker-day.done span:last-child { color: var(--accent); }
+ .tracker-day.rest-day { background: rgba(46,213,115,0.05); border-color: 
+rgba(46,213,115,0.3); }
+ .tracker-day.rest-day span:last-child { color: var(--green); }
+ .tracker-day:hover:not(.done):not(.rest-day) { border-color: var(--muted); }
+ .reset-btn {
+ font-size: 11px;
+ letter-spacing: 1px;
+ text-transform: uppercase;
+ color: var(--muted);
+ background: none;
+ border: 1px solid var(--border);
+ padding: 6px 14px;
+ cursor: pointer;
+ font-family: 'DM Sans', sans-serif;
+ transition: all 0.2s;
+ }
+ .reset-btn:hover { border-color: var(--red); color: var(--red); }
+ .streak-display {
+ background: var(--surface);
+ border: 1px solid var(--border);
+ padding: 16px 20px;
+ display: flex;
+ align-items: center;
+ gap: 16px;
+ margin-top: 16px;
+ }
+ .streak-num {
+ font-family: 'Bebas Neue', sans-serif;
+ font-size: 48px;
+ color: var(--accent);
+ line-height: 1;
+ }
+ .streak-label { font-size: 13px; color: var(--muted); }
+ .streak-label strong { display: block; font-size: 15px; color: var(--text); 
+font-weight: 600; margin-bottom: 2px; }
+ @media (min-width: 640px) {
+ .card-body-inner { grid-template-columns: 1fr 1fr; }
+ .tracker-days { grid-template-columns: repeat(14, 1fr); }
+ }
+</style>
+</head>
+<body>
+<div class="hero">
+ <div class="hero-tag">Recovery Protocol</div>
+ <h1>Runner's<br><span>Knee</span><br>Fix</h1>
+ <p>A structured program to rebuild hip & glute strength, reduce knee pain, and 
+get you back running stronger than before.</p>
+ <div class="phase-indicator">
+ <div class="phase-chip active">Phase 1: Calm</div>
+ <div class="phase-chip">Phase 2: Build</div>
+ <div class="phase-chip">Phase 3: Load</div>
+ </div>
+</div>
+<div class="tabs">
+ <button class="tab active" onclick="switchTab('strengthen')">
+Strengthen</button>
+ <button class="tab" onclick="switchTab('stretches')"> Stretches</button>
+ <button class="tab" onclick="switchTab('program')"> Program</button>
+ <button class="tab" onclick="switchTab('tracker')"> Tracker</button>
+</div>
+<!-- STRENGTHEN -->
+<div id="tab-strengthen" class="panel active content">
+ <div class="section-label">Hip & Glute Protocol</div>
+ <div class="section-title">Strength Exercises</div>
+ <p class="section-desc">These moves target the glutes and hips — the root cause 
+of most runner's knee cases. Weak glutes force your knee to compensate on every 
+stride.</p>
+ <div class="exercise-grid">
+ <div class="exercise-card" onclick="toggleCard(this)">
+ <div class="card-header">
+ <div class="card-left">
+ <div class="card-num">01</div>
+ <div class="card-info">
+ <h3>Clamshells</h3>
+ <div class="card-meta">
+ <span class="badge sets">3 × 15 each side</span>
+ <span class="badge focus">Glute Med</span>
+ </div>
+ </div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="card-body">
+ <div class="card-body-inner">
+ <div class="video-wrap">
+ <iframe src="https://www.youtube.com/embed/SJ8BJ9wt8YQ" 
+allowfullscreen loading="lazy" title="Clamshell exercise"></iframe>
+ </div>
+ <div class="how-to">
+ <h4>How To</h4>
+ <ul class="steps-list">
+ <li><span class="step-num">1</span>Lie on your side, hips stacked, 
+knees bent at 45°</li>
+ <li><span class="step-num">2</span>Keep feet together and rotate top 
+knee upward like a clamshell opening</li>
+ <li><span class="step-num">3</span>Stop at 45° — don't let your hip 
+roll back</li>
+ <li><span class="step-num">4</span>Slowly lower back down with 
+control</li>
+ </ul>
+ <div class="pro-tip"><strong>Pro tip:</strong> Add a resistance band 
+above the knees once bodyweight feels easy. You should feel a burn in the side of 
+your hip.</div>
+ </div>
+ </div>
+ </div>
+ </div>
+ <div class="exercise-card" onclick="toggleCard(this)">
+ <div class="card-header">
+ <div class="card-left">
+ <div class="card-num">02</div>
+ <div class="card-info">
+ <h3>Glute Bridges</h3>
+ <div class="card-meta">
+ <span class="badge sets">3 × 20</span>
+ <span class="badge focus">Glute Max</span>
+ </div>
+ </div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="card-body">
+ <div class="card-body-inner">
+ <div class="video-wrap">
+ <iframe src="https://www.youtube.com/embed/wPM8icPu6H8" 
+allowfullscreen loading="lazy" title="Glute bridge"></iframe>
+ </div>
+ <div class="how-to">
+ <h4>How To</h4>
+ <ul class="steps-list">
+ <li><span class="step-num">1</span>Lie on back, feet flat on floor, 
+knees bent at ~90°</li>
+ <li><span class="step-num">2</span>Drive through heels and squeeze 
+glutes to lift hips</li>
+ <li><span class="step-num">3</span>Hold at top for 2 seconds — body 
+forms a straight line</li>
+ <li><span class="step-num">4</span>Lower slowly, don't let your hips 
+drop quickly</li>
+ </ul>
+ <div class="pro-tip"><strong>Progress:</strong> Move to single-leg 
+glute bridges once comfortable. Place a barbell across your hips for added load.
+</div>
+ </div>
+ </div>
+ </div>
+ </div>
+ <div class="exercise-card" onclick="toggleCard(this)">
+ <div class="card-header">
+ <div class="card-left">
+ <div class="card-num">03</div>
+ <div class="card-info">
+ <h3>Single-Leg Romanian Deadlift</h3>
+ <div class="card-meta">
+ <span class="badge sets">3 × 10 each side</span>
+ <span class="badge focus">Glutes + Hamstrings</span>
+ </div>
+ </div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="card-body">
+ <div class="card-body-inner">
+ <div class="video-wrap">
+ <iframe src="https://www.youtube.com/embed/1J9tC5VRSYY" 
+allowfullscreen loading="lazy" title="Single leg deadlift"></iframe>
+ </div>
+ <div class="how-to">
+ <h4>How To</h4>
+ <ul class="steps-list">
+ <li><span class="step-num">1</span>Stand on one leg, slight bend in 
+the knee</li>
+ <li><span class="step-num">2</span>Hinge at hips, reach hands toward 
+floor as rear leg extends back</li>
+ <li><span class="step-num">3</span>Keep back flat and hips square — 
+don't let hip rotate open</li>
+ <li><span class="step-num">4</span>Squeeze glute to return to 
+standing</li>
+ </ul>
+ <div class="pro-tip"><strong>Key:</strong> Go slow (3 sec down) to 
+maximize glute & hip stability gains. Use a wall for balance if needed early on.
+</div>
+ </div>
+ </div>
+ </div>
+ </div>
+ <div class="exercise-card" onclick="toggleCard(this)">
+ <div class="card-header">
+ <div class="card-left">
+ <div class="card-num">04</div>
+ <div class="card-info">
+ <h3>Side-Lying Hip Abduction</h3>
+ <div class="card-meta">
+ <span class="badge sets">3 × 15 each side</span>
+ <span class="badge focus">Hip Abductors</span>
+ </div>
+ </div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="card-body">
+ <div class="card-body-inner">
+ <div class="video-wrap">
+ <iframe src="https://www.youtube.com/embed/x3gBYzGamaE" 
+allowfullscreen loading="lazy" title="Hip abduction"></iframe>
+ </div>
+ <div class="how-to">
+ <h4>How To</h4>
+ <ul class="steps-list">
+ <li><span class="step-num">1</span>Lie on your side with legs 
+straight and stacked</li>
+ <li><span class="step-num">2</span>Keeping foot flexed, lift top leg 
+12–18 inches</li>
+ <li><span class="step-num">3</span>Don't let the hip roll back — 
+keep it stacked</li>
+ <li><span class="step-num">4</span>Lower with control — no 
+dropping</li>
+ </ul>
+ <div class="pro-tip"><strong>Level up:</strong> Add ankle weights or a 
+resistance band at the ankles for more burn.</div>
+ </div>
+ </div>
+ </div>
+ </div>
+ <div class="exercise-card" onclick="toggleCard(this)">
+ <div class="card-header">
+ <div class="card-left">
+ <div class="card-num">05</div>
+ <div class="card-info">
+ <h3>Step-Ups with Knee Drive</h3>
+ <div class="card-meta">
+ <span class="badge sets">3 × 12 each side</span>
+ <span class="badge focus">Full Chain</span>
+ </div>
+ </div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="card-body">
+ <div class="card-body-inner">
+ <div class="video-wrap">
+ <iframe src="https://www.youtube.com/embed/dQqApCGd5Ss" 
+allowfullscreen loading="lazy" title="Step ups"></iframe>
+ </div>
+ <div class="how-to">
+ <h4>How To</h4>
+ <ul class="steps-list">
+ <li><span class="step-num">1</span>Place one foot on a sturdy box or 
+step (8–12 inches)</li>
+ <li><span class="step-num">2</span>Drive through your heel to step 
+up, driving opposite knee up</li>
+ <li><span class="step-num">3</span>Stand tall at the top, then lower 
+the trailing leg slowly</li>
+ <li><span class="step-num">4</span>Keep knee tracking over second 
+toe — don't cave inward</li>
+ </ul>
+ <div class="pro-tip"><strong>Runner specific:</strong> The knee drive 
+mimics running mechanics — this directly transfers to your stride.</div>
+ </div>
+ </div>
+ </div>
+ </div>
+ <div class="exercise-card" onclick="toggleCard(this)">
+ <div class="card-header">
+ <div class="card-left">
+ <div class="card-num">06</div>
+ <div class="card-info">
+ <h3>Wall Sit with Hip Squeeze</h3>
+ <div class="card-meta">
+ <span class="badge sets">3 × 45 seconds</span>
+ <span class="badge focus">Quads + VMO</span>
+ </div>
+ </div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="card-body">
+ <div class="card-body-inner">
+ <div class="video-wrap">
+ <iframe src="https://www.youtube.com/embed/y-wV4Venusw" 
+allowfullscreen loading="lazy" title="Wall sit"></iframe>
+ </div>
+ <div class="how-to">
+ <h4>How To</h4>
+ <ul class="steps-list">
+ <li><span class="step-num">1</span>Back flat against wall, feet 
+shoulder-width apart</li>
+ <li><span class="step-num">2</span>Slide down to 90° at the 
+knee</li>
+ <li><span class="step-num">3</span>Place a ball or rolled towel 
+between knees and squeeze</li>
+ <li><span class="step-num">4</span>Hold, focusing on the inner quad 
+(VMO) near the kneecap</li>
+ </ul>
+ <div class="pro-tip"><strong>Why it matters:</strong> The VMO 
+(teardrop muscle) stabilizes the kneecap. Strengthening it directly reduces 
+runner's knee pain.</div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+</div>
+<!-- STRETCHES -->
+<div id="tab-stretches" class="panel content">
+ <div class="section-label">Mobility & Recovery</div>
+ <div class="section-title">Stretching Routine</div>
+ <p class="section-desc">Do these after every run and strength session. Hold each 
+for the time shown — no bouncing. Consistency here prevents future flare-ups.</p>
+ <div class="stretch-grid">
+ <div class="stretch-card">
+ <div class="stretch-top">
+ <div>
+ <div class="stretch-name">Standing Quad Stretch</div>
+ <div class="stretch-target">Quadriceps / Kneecap Tension</div>
+ </div>
+ <div class="stretch-duration">30s × 3</div>
+ </div>
+ <div class="stretch-how">Stand tall, pull one foot toward your glute, 
+keeping knees together. Tilt your pelvis slightly forward for a deeper stretch. 
+Use a wall for balance. <strong>Essential</strong> — tight quads are a top cause 
+of patellofemoral pain.</div>
+ </div>
+ <div class="stretch-card">
+ <div class="stretch-top">
+ <div>
+ <div class="stretch-name">Figure-4 Piriformis Stretch</div>
+ <div class="stretch-target">Glutes / Piriformis / IT Band</div>
+ </div>
+ <div class="stretch-duration">45s × 2</div>
+ </div>
+ <div class="stretch-how">Lying on your back, cross one ankle over the 
+opposite knee. Pull the lower leg toward your chest until you feel a deep stretch 
+in the outer glute. Tight piriformis alters hip mechanics and stresses the knee.
+</div>
+ </div>
+ <div class="stretch-card">
+ <div class="stretch-top">
+ <div>
+ <div class="stretch-name">Hip Flexor Lunge Stretch</div>
+ <div class="stretch-target">Hip Flexors / Psoas</div>
+ </div>
+ <div class="stretch-duration">45s × 2 each</div>
+ </div>
+ <div class="stretch-how">In a kneeling lunge, push hips forward until you 
+feel a stretch in the front of the back hip. Keep core braced and torso tall. 
+Tight hip flexors change your stride pattern and overload the knee — especially 
+common in desk workers.</div>
+ </div>
+ <div class="stretch-card">
+ <div class="stretch-top">
+ <div>
+ <div class="stretch-name">IT Band Stretch (Cross-Leg)</div>
+ <div class="stretch-target">IT Band / TFL</div>
+ </div>
+ <div class="stretch-duration">30s × 3 each</div>
+ </div>
+ <div class="stretch-how">Stand and cross one leg behind the other. Lean 
+toward the side of the back leg, pushing your hip out. You'll feel a stretch along 
+the outer thigh and into the knee. A tight IT band pulls the kneecap laterally — 
+major contributor to runner's knee.</div>
+ </div>
+ <div class="stretch-card">
+ <div class="stretch-top">
+ <div>
+ <div class="stretch-name">Downward Dog Calf Stretch</div>
+ <div class="stretch-target">Calves / Achilles</div>
+ </div>
+ <div class="stretch-duration">30s × 2</div>
+ </div>
+ <div class="stretch-how">In downward dog, alternate pressing each heel 
+toward the floor. Tight calves change landing mechanics and increase knee load 
+with every step. Add a foam roll on the calves first for best results.</div>
+ </div>
+ <div class="stretch-card">
+ <div class="stretch-top">
+ <div>
+ <div class="stretch-name">Supine Hamstring Stretch</div>
+ <div class="stretch-target">Hamstrings / Posterior Chain</div>
+ </div>
+ <div class="stretch-duration">45s × 2 each</div>
+ </div>
+ <div class="stretch-how">Lie on your back and lift one leg, holding behind 
+the knee or calf. Keep the opposite leg flat on the floor. Tight hamstrings pull 
+on the pelvis and increase compressive forces at the kneecap. Use a strap if 
+needed.</div>
+ </div>
+ <div class="stretch-card">
+ <div class="stretch-top">
+ <div>
+ <div class="stretch-name">Seated Butterfly Stretch</div>
+ <div class="stretch-target">Hip Adductors / Groin</div>
+ </div>
+ <div class="stretch-duration">60s × 1</div>
+ </div>
+ <div class="stretch-how">Sit with soles of feet together, knees falling out 
+to the sides. Gently press knees toward the floor with your elbows. Tight 
+adductors pull the knee inward (valgus collapse) — a direct cause of kneecap 
+irritation in runners.</div>
+ </div>
+ </div>
+</div>
+<!-- PROGRAM -->
+<div id="tab-program" class="panel content">
+ <div class="section-label">Recovery Timeline</div>
+ <div class="section-title">3-Phase Plan</div>
+ <p class="section-desc">Most runners are back to full training in 4–8 weeks. 
+Move to the next phase only when the current one feels pain-free.</p>
+ <div class="timeline">
+ <div class="timeline-item">
+ <div class="timeline-dot">1</div>
+ <div class="timeline-content">
+ <div class="timeline-phase">Weeks 1–2 · Phase 1</div>
+ <div class="timeline-title">Calm the Inflammation</div>
+ <div class="timeline-desc">Ice 15–20 min after activity. Stop running (or 
+drop to easy walks only). Do the full stretch routine daily. Begin Exercises 01, 
+02, and 04 only — low load, high reps, pain-free range only.</div>
+ </div>
+ </div>
+ <div class="timeline-item">
+ <div class="timeline-dot">2</div>
+ <div class="timeline-content">
+ <div class="timeline-phase">Weeks 3–5 · Phase 2</div>
+ <div class="timeline-title">Build the Foundation</div>
+ <div class="timeline-desc">Add all 6 exercises 3× per week. Reintroduce 
+easy running (30–40% of previous volume, flat surfaces only). No speed work. Focus 
+on cadence — aim for 170–180 spm to reduce knee load.</div>
+ </div>
+ </div>
+ <div class="timeline-item">
+ <div class="timeline-dot">3</div>
+ <div class="timeline-content">
+ <div class="timeline-phase">Weeks 6–8 · Phase 3</div>
+ <div class="timeline-title">Load & Return</div>
+ <div class="timeline-desc">Progress to resistance bands and added weight. 
+Gradually rebuild run volume (+10% per week max). Introduce hills carefully. 
+Maintain strength work 2× per week as maintenance going forward.</div>
+ </div>
+ </div>
+ </div>
+ <div class="section-label" style="margin-top:8px;">Sample Week (Phase 2)</div>
+ <div class="section-title" style="font-size:28px; margin-bottom:20px;">Weekly 
+Structure</div>
+ <div class="week-grid">
+ <div class="week-row">
+ <div class="day-label">Mon</div>
+ <div class="day-content"><span class="day-tag strength">Strength</span> All 
+6 exercises + stretch routine</div>
+ </div>
+ <div class="week-row">
+ <div class="day-label">Tue</div>
+ <div class="day-content"><span class="day-tag run">Easy Run</span> 20–30 
+min, flat terrain, conversational pace</div>
+ </div>
+ <div class="week-row">
+ <div class="day-label">Wed</div>
+ <div class="day-content"><span class="day-tag active">Active Rest</span> 
+Stretches only + foam rolling</div>
+ </div>
+ <div class="week-row">
+ <div class="day-label">Thu</div>
+ <div class="day-content"><span class="day-tag strength">Strength</span> All 
+6 exercises + stretch routine</div>
+ </div>
+ <div class="week-row">
+ <div class="day-label">Fri</div>
+ <div class="day-content"><span class="day-tag run">Easy Run</span> 20–30 min 
+— focus on relaxed form</div>
+ </div>
+ <div class="week-row">
+ <div class="day-label">Sat</div>
+ <div class="day-content"><span class="day-tag strength">Strength</span> 
+Exercises 01–04 (lighter day)</div>
+ </div>
+ <div class="week-row">
+ <div class="day-label">Sun</div>
+ <div class="day-content"><span class="day-tag rest">Full Rest</span> Let it 
+recover. Seriously.</div>
+ </div>
+ </div>
+</div>
+<!-- TRACKER -->
+<div id="tab-tracker" class="panel content">
+ <div class="section-label">Your Progress</div>
+ <div class="section-title">2-Week Tracker</div>
+ <p class="section-desc">Tap a day to mark it complete. Consistency is everything 
+— even partial sessions count.</p>
+ <div class="tracker-header">
+ <div style="font-size:12px; color: var(--muted); letter-spacing:1px; texttransform:uppercase;">Week 1 + Week 2</div>
+ <button class="reset-btn" onclick="resetTracker()">Reset</button>
+ </div>
+ <div class="tracker-days" id="tracker-days"></div>
+ <div class="streak-display">
+ <div class="streak-num" id="streak-count">0</div>
+ <div class="streak-label">
+ <strong id="streak-label">Days Completed</strong>
+ <span id="streak-sub">Keep it going. Consistency heals.</span>
+ </div>
+ </div>
+</div>
+<script>
+ // Tabs
+ function switchTab(name) {
+ document.querySelectorAll('.panel').forEach(p => 
+p.classList.remove('active'));
+ document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+ document.getElementById('tab-' + name).classList.add('active');
+ event.target.classList.add('active');
+ }
+ // Cards
+ function toggleCard(card) {
+ card.classList.toggle('open');
+ }
+ // Phase chips
+ document.querySelectorAll('.phase-chip').forEach(chip => {
+ chip.addEventListener('click', () => {
+ document.querySelectorAll('.phase-chip').forEach(c => 
+c.classList.remove('active'));
+ chip.classList.add('active');
+ });
+ });
+ // Tracker
+ const days = 
+['MON','TUE','WED','THU','FRI','SAT','SUN','MON','TUE','WED','THU','FRI','SAT','SUN'];
+ const restDays = [5, 6, 12, 13]; // Saturday/Sunday both weeks
+ let completed = JSON.parse(localStorage.getItem('rkTracker') || '[]');
+ function renderTracker() {
+ const container = document.getElementById('tracker-days');
+ container.innerHTML = '';
+ days.forEach((day, i) => {
+ const el = document.createElement('div');
+ el.className = 'tracker-day';
+ if (restDays.includes(i)) el.classList.add('rest-day');
+ if (completed.includes(i)) el.classList.add('done');
+ el.innerHTML = `<span>${day}</span><span>${completed.includes(i) ? '✓' : 
+restDays.includes(i) ? '~' : i + 1}</span>`;
+ el.addEventListener('click', () => {
+ if (restDays.includes(i)) return;
+ if (completed.includes(i)) {
+ completed = completed.filter(d => d !== i);
+ } else {
+ completed.push(i);
+ }
+ try { localStorage.setItem('rkTracker', JSON.stringify(completed)); } 
+catch(e) {}
+ renderTracker();
+ });
+ container.appendChild(el);
+ });
+ const count = completed.length;
+ document.getElementById('streak-count').textContent = count;
+ document.getElementById('streak-label').textContent = count === 0 ? 'Days 
+Completed' : count >= 10 ? 'Outstanding!' : count >= 6 ? 'Great Progress!' : 'Days 
+Completed';
+ document.getElementById('streak-sub').textContent = count === 0 ? 'Tap a day 
+to mark it done.' : count >= 12 ? 'You\'re basically healed. Keep it up.' : count 
+>= 6 ? 'You\'re over halfway — momentum is building.' : 'Early days. Show up 
+tomorrow.';
+ }
+ function resetTracker() {
+ if (confirm('Reset all progress?')) {
+ completed = [];
+ try { localStorage.removeItem('rkTracker'); } catch(e) {}
+ renderTracker();
+ }
+ }
+ renderTracker();
+</script>
+</body>
+</html>
