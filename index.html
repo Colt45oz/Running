@@ -486,11 +486,10 @@ get you back running stronger than before.</p>
  </div>
 </div>
 <div class="tabs">
- <button class="tab active" onclick="switchTab('strengthen')">
-Strengthen</button>
- <button class="tab" onclick="switchTab('stretches')"> Stretches</button>
- <button class="tab" onclick="switchTab('program')"> Program</button>
- <button class="tab" onclick="switchTab('tracker')"> Tracker</button>
+ <button class="tab active" data-tab="strengthen"> Strengthen</button>
+ <button class="tab" data-tab="stretches"> Stretches</button>
+ <button class="tab" data-tab="program"> Program</button>
+ <button class="tab" data-tab="tracker"> Tracker</button>
 </div>
 <!-- STRENGTHEN -->
 <div id="tab-strengthen" class="panel active content">
@@ -500,7 +499,7 @@ Strengthen</button>
 of most runner's knee cases. Weak glutes force your knee to compensate on every 
 stride.</p>
  <div class="exercise-grid">
- <div class="exercise-card" onclick="toggleCard(this)">
+ <div class="exercise-card">
  <div class="card-header">
  <div class="card-left">
  <div class="card-num">01</div>
@@ -539,7 +538,7 @@ your hip.</div>
  </div>
  </div>
  </div>
- <div class="exercise-card" onclick="toggleCard(this)">
+ <div class="exercise-card">
  <div class="card-header">
  <div class="card-left">
  <div class="card-num">02</div>
@@ -578,7 +577,7 @@ glute bridges once comfortable. Place a barbell across your hips for added load.
  </div>
  </div>
  </div>
- <div class="exercise-card" onclick="toggleCard(this)">
+ <div class="exercise-card">
  <div class="card-header">
  <div class="card-left">
  <div class="card-num">03</div>
@@ -617,7 +616,7 @@ maximize glute & hip stability gains. Use a wall for balance if needed early on.
  </div>
  </div>
  </div>
- <div class="exercise-card" onclick="toggleCard(this)">
+ <div class="exercise-card">
  <div class="card-header">
  <div class="card-left">
  <div class="card-num">04</div>
@@ -655,7 +654,7 @@ resistance band at the ankles for more burn.</div>
  </div>
  </div>
  </div>
- <div class="exercise-card" onclick="toggleCard(this)">
+ <div class="exercise-card">
  <div class="card-header">
  <div class="card-left">
  <div class="card-num">05</div>
@@ -693,7 +692,7 @@ mimics running mechanics — this directly transfers to your stride.</div>
  </div>
  </div>
  </div>
- <div class="exercise-card" onclick="toggleCard(this)">
+ <div class="exercise-card">
  <div class="card-header">
  <div class="card-left">
  <div class="card-num">06</div>
@@ -932,18 +931,24 @@ recover. Seriously.</div>
  </div>
 </div>
 <script>
- // Tabs
- function switchTab(name) {
+ // Tabs — wired via addEventListener, no global event reliance
+ document.querySelectorAll('.tab').forEach(tab => {
+ tab.addEventListener('click', () => {
+ const name = tab.getAttribute('data-tab');
  document.querySelectorAll('.panel').forEach(p => 
 p.classList.remove('active'));
- document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+ document.querySelectorAll('.tab').forEach(t => 
+t.classList.remove('active'));
  document.getElementById('tab-' + name).classList.add('active');
- event.target.classList.add('active');
- }
+ tab.classList.add('active');
+ });
+ });
  // Cards
- function toggleCard(card) {
+ document.querySelectorAll('.exercise-card').forEach(card => {
+ card.querySelector('.card-header').addEventListener('click', () => {
  card.classList.toggle('open');
- }
+ });
+ });
  // Phase chips
  document.querySelectorAll('.phase-chip').forEach(chip => {
  chip.addEventListener('click', () => {
