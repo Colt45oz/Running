@@ -28,9 +28,7 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
 .hero h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(52px, 12vw, 88px); line-height: 0.9; margin-bottom: 12px; }
 .hero h1 span { color: var(--accent2); }
 .hero p { font-size: 14px; color: var(--muted); max-width: 460px; line-height: 1.7; }
-.phase-row { display: flex; gap: 8px; margin-top: 24px; flex-wrap: wrap; }
-.phase-chip { padding: 6px 14px; border: 1px solid var(--border); font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); cursor: pointer; background: transparent; font-family: 'DM Sans', sans-serif; transition: all 0.2s; }
-.phase-chip.active { border-color: var(--accent); color: var(--accent); background: rgba(232,255,71,0.05); }
+
 
 /* TABS */
 .tabs { display: flex; border-bottom: 1px solid var(--border); overflow-x: auto; scrollbar-width: none; background: var(--surface); }
@@ -79,15 +77,7 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
 .pro-tip { background: rgba(232,255,71,0.04); border-left: 2px solid var(--accent); padding: 10px 14px; margin-top: 14px; font-size: 12px; color: var(--muted); line-height: 1.6; }
 .pro-tip strong { color: var(--accent); font-weight: 600; }
 
-/* STRETCHES */
-.stretch-grid { display: flex; flex-direction: column; gap: 16px; }
-.stretch-card { background: var(--surface); border: 1px solid var(--border); padding: 20px 22px; transition: border-color 0.2s; }
-.stretch-card:hover { border-color: var(--accent2); }
-.stretch-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
-.stretch-name { font-weight: 600; font-size: 16px; margin-bottom: 4px; }
-.stretch-target { font-size: 12px; color: var(--accent2); letter-spacing: 1px; text-transform: uppercase; }
-.stretch-duration { font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--accent); line-height: 1; white-space: nowrap; }
-.stretch-how { font-size: 13px; color: var(--muted); line-height: 1.7; }
+
 
 /* PROGRAM TIMELINE */
 .timeline { display: flex; flex-direction: column; position: relative; margin-bottom: 32px; }
@@ -128,19 +118,24 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
 .streak-label { font-size: 13px; color: var(--muted); }
 .streak-label strong { display: block; font-size: 15px; color: var(--text); font-weight: 600; margin-bottom: 2px; }
 
-/* STRETCH ILLUSTRATIONS */
-.stretch-card { background: var(--surface); border: 1px solid var(--border); padding: 0; transition: border-color 0.2s; overflow: hidden; }
+/* STRETCHES — matches exercise card style */
+.stretch-grid { display: flex; flex-direction: column; gap: 20px; }
+.stretch-card { background: var(--surface); border: 1px solid var(--border); overflow: hidden; transition: border-color 0.2s; }
 .stretch-card:hover { border-color: var(--accent2); }
-.stretch-inner { display: grid; grid-template-columns: 1fr; }
-@media (min-width: 580px) { .stretch-inner { grid-template-columns: 120px 1fr; } }
-.stretch-illus { background: var(--surface2); display: flex; align-items: center; justify-content: center; padding: 20px; min-height: 110px; border-right: 1px solid var(--border); }
-.stretch-illus svg { width: 80px; height: 80px; }
-.stretch-text { padding: 18px 20px; }
-.stretch-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
-.stretch-name { font-weight: 600; font-size: 15px; margin-bottom: 3px; }
-.stretch-target { font-size: 11px; color: var(--accent2); letter-spacing: 1px; text-transform: uppercase; }
-.stretch-duration { font-family: 'Bebas Neue', sans-serif; font-size: 26px; color: var(--accent); line-height: 1; white-space: nowrap; }
-.stretch-how { font-size: 13px; color: var(--muted); line-height: 1.7; }
+.stretch-card-header { display: flex; align-items: center; justify-content: space-between; padding: 20px 24px; cursor: pointer; gap: 16px; user-select: none; }
+.stretch-card-left { display: flex; align-items: center; gap: 16px; }
+.stretch-num { font-family: 'Bebas Neue', sans-serif; font-size: 32px; color: var(--border); line-height: 1; min-width: 36px; transition: color 0.2s; }
+.stretch-card:hover .stretch-num { color: var(--accent2); }
+.stretch-name { font-weight: 600; font-size: 16px; margin-bottom: 4px; }
+.stretch-meta { display: flex; gap: 10px; flex-wrap: wrap; }
+.stretch-target { font-size: 10px; letter-spacing: 1px; text-transform: uppercase; padding: 3px 8px; border: 1px solid var(--accent2); color: var(--accent2); }
+.stretch-duration-badge { font-size: 10px; letter-spacing: 1px; text-transform: uppercase; padding: 3px 8px; border: 1px solid var(--accent); color: var(--accent); }
+.stretch-chevron { font-size: 18px; color: var(--muted); transition: transform 0.3s, color 0.2s; }
+.stretch-card.open .stretch-chevron { transform: rotate(180deg); color: var(--accent2); }
+.stretch-card-body { display: none; padding: 0 24px 24px; border-top: 1px solid var(--border); }
+.stretch-card.open .stretch-card-body { display: block; }
+.stretch-card-inner { display: grid; grid-template-columns: 1fr; gap: 20px; padding-top: 20px; }
+@media (min-width: 600px) { .stretch-card-inner { grid-template-columns: 1fr 1fr; } }
 
 /* RESOURCES — CALCULATORS */
 .resources-grid { display: grid; grid-template-columns: 1fr; gap: 32px; }
@@ -255,19 +250,113 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
 .strava-avatar { width: 44px; height: 44px; border-radius: 50%; border: 2px solid #FC4C02; object-fit: cover; }
 .strava-profile-name { font-weight: 600; font-size: 15px; }
 .strava-profile-sub { font-size: 12px; color: var(--muted); }
+
+/* WEATHER BADGE */
+.wx-badge {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999;
+  font-family: 'DM Sans', sans-serif;
+  user-select: none;
+}
+.wx-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 9px 14px;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+  white-space: nowrap;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+}
+.wx-pill:hover { border-color: var(--accent); }
+.wx-pill.good { border-color: var(--green); }
+.wx-pill.caution { border-color: var(--accent2); }
+.wx-pill.bad { border-color: var(--red); }
+.wx-icon { font-size: 18px; line-height: 1; }
+.wx-temp { font-family: 'Bebas Neue', sans-serif; font-size: 22px; line-height: 1; color: var(--text); }
+.wx-cond { font-size: 11px; color: var(--muted); letter-spacing: 0.5px; }
+.wx-chevron { font-size: 10px; color: var(--muted); margin-left: 2px; transition: transform 0.25s; }
+.wx-badge.open .wx-chevron { transform: rotate(180deg); }
+.wx-pill.loading .wx-temp { color: var(--muted); font-size: 14px; font-family: 'DM Sans', sans-serif; font-weight: 400; }
+
+.wx-panel {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 8px);
+  right: 0;
+  width: 260px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+.wx-badge.open .wx-panel { display: block; }
+.wx-panel-header {
+  padding: 14px 16px 10px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+.wx-city { font-weight: 600; font-size: 13px; }
+.wx-time { font-size: 11px; color: var(--muted); }
+.wx-big-temp { font-family: 'Bebas Neue', sans-serif; font-size: 52px; color: var(--text); line-height: 1; }
+.wx-big-icon { font-size: 36px; line-height: 1; }
+.wx-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); border-top: 1px solid var(--border); }
+.wx-stat { background: var(--surface); padding: 10px 14px; }
+.wx-stat-val { font-family: 'Bebas Neue', sans-serif; font-size: 20px; color: var(--accent); line-height: 1; }
+.wx-stat-label { font-size: 10px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; }
+.wx-run-verdict {
+  padding: 10px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
+.wx-run-verdict.good  { background: rgba(46,213,115,0.08); color: var(--green); }
+.wx-run-verdict.ok    { background: rgba(232,255,71,0.06); color: var(--accent); }
+.wx-run-verdict.bad   { background: rgba(255,71,87,0.08);  color: var(--red); }
+.wx-location-btn {
+  display: block; width: 100%; padding: 12px; background: none; border: none;
+  color: var(--accent); font-family: 'DM Sans', sans-serif; font-size: 12px;
+  font-weight: 600; letter-spacing: 1px; text-transform: uppercase; cursor: pointer;
+  transition: background 0.2s;
+}
+.wx-location-btn:hover { background: rgba(232,255,71,0.06); }
+.wx-error { padding: 16px; font-size: 13px; color: var(--muted); text-align: center; line-height: 1.6; }
 </style>
 </head>
 <body>
+
+<!-- WEATHER BADGE -->
+<div class="wx-badge" id="wx-badge">
+  <div class="wx-panel" id="wx-panel">
+    <div id="wx-panel-inner">
+      <div class="wx-error">
+        <button class="wx-location-btn" id="wx-request-btn">&#9679; Enable Location</button>
+        <div style="color:var(--muted);font-size:12px;padding:0 12px 12px;">Allow location access to see current conditions.</div>
+      </div>
+    </div>
+  </div>
+  <div class="wx-pill loading" id="wx-pill" title="Local weather">
+    <span class="wx-icon">🌡</span>
+    <span class="wx-temp" id="wx-pill-temp">Weather</span>
+    <span class="wx-cond" id="wx-pill-cond"></span>
+    <span class="wx-chevron">&#9650;</span>
+  </div>
+</div>
 
 <div class="hero">
   <div class="hero-tag">Recovery Protocol</div>
   <h1>Runner's<br><span>Knee</span><br>Fix</h1>
   <p>A structured program to rebuild hip and glute strength, reduce knee pain, and get you back running stronger than before.</p>
-  <div class="phase-row">
-    <button class="phase-chip active">Phase 1: Calm</button>
-    <button class="phase-chip">Phase 2: Build</button>
-    <button class="phase-chip">Phase 3: Load</button>
-  </div>
+
 </div>
 
 <div class="tabs">
@@ -595,334 +684,332 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
 
   <div class="stretch-grid">
 
-    <!-- 1. Standing Quad -->
     <div class="stretch-card">
-      <div class="stretch-inner">
-        <div class="stretch-illus">
-          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- head -->
-            <circle cx="40" cy="10" r="7" fill="#e8ff47" opacity="0.9"/>
-            <!-- torso upright -->
-            <line x1="40" y1="17" x2="40" y2="45" stroke="#e8ff47" stroke-width="3" stroke-linecap="round"/>
-            <!-- standing leg -->
-            <line x1="40" y1="45" x2="38" y2="68" stroke="#e8ff47" stroke-width="3" stroke-linecap="round"/>
-            <line x1="38" y1="68" x2="36" y2="75" stroke="#e8ff47" stroke-width="2.5" stroke-linecap="round"/>
-            <!-- bent leg pulled back -->
-            <path d="M40 45 Q52 52 50 62" stroke="#ff6b35" stroke-width="3" stroke-linecap="round" fill="none"/>
-            <!-- arm reaching back to grab foot -->
-            <path d="M40 28 Q55 36 50 62" stroke="#888" stroke-width="2" stroke-linecap="round" fill="none" stroke-dasharray="3 2"/>
-            <!-- foot dot -->
-            <circle cx="50" cy="62" r="3" fill="#ff6b35" opacity="0.8"/>
-            <!-- wall line -->
-            <line x1="20" y1="15" x2="20" y2="75" stroke="#2a2c38" stroke-width="2"/>
-            <!-- arm on wall -->
-            <line x1="40" y1="28" x2="20" y2="30" stroke="#888" stroke-width="2" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <div class="stretch-text">
-          <div class="stretch-top">
-            <div><div class="stretch-name">Standing Quad Stretch</div><div class="stretch-target">Quadriceps / Kneecap Tension</div></div>
-            <div class="stretch-duration">30s x 3</div>
+      <div class="stretch-card-header">
+        <div class="stretch-card-left">
+          <div class="stretch-num">01</div>
+          <div>
+            <div class="stretch-name">Standing Quad Stretch</div>
+            <div class="stretch-meta">
+              <span class="stretch-duration-badge">30s x 3 each</span>
+              <span class="stretch-target">Quads · Kneecap Tension</span>
+            </div>
           </div>
-          <div class="stretch-how">Stand tall, pull one foot toward your glute, keeping knees together. Tilt your pelvis slightly forward for a deeper stretch. Use a wall for balance. Essential — tight quads are a top cause of patellofemoral pain.</div>
+        </div>
+        <div class="stretch-chevron">&#9660;</div>
+      </div>
+      <div class="stretch-card-body">
+        <div class="stretch-card-inner">
+          <div class="video-wrap">
+            <iframe src="https://www.youtube-nocookie.com/embed/fAgNBSYBBXA" allowfullscreen loading="lazy" title="Standing quad stretch"></iframe>
+          </div>
+          <div class="how-to">
+            <h4>How To</h4>
+            <ul class="steps-list">
+              <li><span class="step-num">1</span>Stand tall, use a wall for balance with one hand</li>
+              <li><span class="step-num">2</span>Pull one foot toward your glute, keeping knees together</li>
+              <li><span class="step-num">3</span>Tilt your pelvis slightly forward for a deeper stretch</li>
+              <li><span class="step-num">4</span>Hold and switch sides</li>
+            </ul>
+            <div class="pro-tip"><strong>Why it matters:</strong> Tight quads are a top cause of patellofemoral pain. This is non-negotiable after every run.</div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- 2. Figure-4 -->
     <div class="stretch-card">
-      <div class="stretch-inner">
-        <div class="stretch-illus">
-          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- head -->
-            <circle cx="40" cy="12" r="6" fill="#e8ff47" opacity="0.9"/>
-            <!-- torso slightly raised on elbows -->
-            <line x1="40" y1="18" x2="40" y2="42" stroke="#e8ff47" stroke-width="3" stroke-linecap="round"/>
-            <!-- floor leg bent -->
-            <path d="M40 42 Q30 52 22 50" stroke="#e8ff47" stroke-width="3" stroke-linecap="round" fill="none"/>
-            <path d="M22 50 Q18 60 24 65" stroke="#e8ff47" stroke-width="3" stroke-linecap="round" fill="none"/>
-            <!-- figure-4 crossed leg -->
-            <path d="M40 42 Q50 46 48 55" stroke="#ff6b35" stroke-width="3" stroke-linecap="round" fill="none"/>
-            <path d="M48 55 Q36 58 22 50" stroke="#ff6b35" stroke-width="3" stroke-linecap="round" fill="none"/>
-            <!-- arms -->
-            <line x1="40" y1="28" x2="28" y2="38" stroke="#888" stroke-width="2" stroke-linecap="round"/>
-            <line x1="40" y1="28" x2="52" y2="38" stroke="#888" stroke-width="2" stroke-linecap="round"/>
-            <!-- floor -->
-            <line x1="10" y1="72" x2="70" y2="72" stroke="#2a2c38" stroke-width="1.5"/>
-          </svg>
-        </div>
-        <div class="stretch-text">
-          <div class="stretch-top">
-            <div><div class="stretch-name">Figure-4 Piriformis Stretch</div><div class="stretch-target">Glutes / Piriformis / IT Band</div></div>
-            <div class="stretch-duration">45s x 2</div>
+      <div class="stretch-card-header">
+        <div class="stretch-card-left">
+          <div class="stretch-num">02</div>
+          <div>
+            <div class="stretch-name">Figure-4 Piriformis Stretch</div>
+            <div class="stretch-meta">
+              <span class="stretch-duration-badge">45s x 2 each</span>
+              <span class="stretch-target">Glutes · Piriformis · IT Band</span>
+            </div>
           </div>
-          <div class="stretch-how">Lying on your back, cross one ankle over the opposite knee. Pull the lower leg toward your chest until you feel a deep stretch in the outer glute. Tight piriformis alters hip mechanics and stresses the knee.</div>
+        </div>
+        <div class="stretch-chevron">&#9660;</div>
+      </div>
+      <div class="stretch-card-body">
+        <div class="stretch-card-inner">
+          <div class="video-wrap">
+            <iframe src="https://www.youtube-nocookie.com/embed/dGSaCtNHMSE" allowfullscreen loading="lazy" title="Figure 4 piriformis stretch"></iframe>
+          </div>
+          <div class="how-to">
+            <h4>How To</h4>
+            <ul class="steps-list">
+              <li><span class="step-num">1</span>Lie on your back, cross one ankle over the opposite knee</li>
+              <li><span class="step-num">2</span>Pull the lower leg toward your chest</li>
+              <li><span class="step-num">3</span>Hold until you feel a deep stretch in the outer glute</li>
+              <li><span class="step-num">4</span>Keep your head and shoulders flat on the floor</li>
+            </ul>
+            <div class="pro-tip"><strong>Key:</strong> Tight piriformis alters hip mechanics and directly stresses the knee on every stride.</div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- 3. Hip Flexor Lunge -->
     <div class="stretch-card">
-      <div class="stretch-inner">
-        <div class="stretch-illus">
-          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- head -->
-            <circle cx="42" cy="10" r="6" fill="#e8ff47" opacity="0.9"/>
-            <!-- upright torso -->
-            <line x1="42" y1="16" x2="42" y2="38" stroke="#e8ff47" stroke-width="3" stroke-linecap="round"/>
-            <!-- front leg (knee up, foot flat) -->
-            <path d="M42 38 Q48 42 50 52" stroke="#e8ff47" stroke-width="3" stroke-linecap="round" fill="none"/>
-            <path d="M50 52 Q52 60 52 65" stroke="#e8ff47" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-            <!-- back leg (kneeling) -->
-            <path d="M42 38 Q32 44 28 58" stroke="#ff6b35" stroke-width="3" stroke-linecap="round" fill="none"/>
-            <path d="M28 58 Q30 65 34 67" stroke="#ff6b35" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-            <!-- knee dot on floor -->
-            <circle cx="28" cy="60" r="3" fill="#ff6b35" opacity="0.5"/>
-            <!-- arms up/relaxed -->
-            <line x1="42" y1="25" x2="30" y2="35" stroke="#888" stroke-width="2" stroke-linecap="round"/>
-            <line x1="42" y1="25" x2="54" y2="32" stroke="#888" stroke-width="2" stroke-linecap="round"/>
-            <!-- floor -->
-            <line x1="10" y1="68" x2="70" y2="68" stroke="#2a2c38" stroke-width="1.5"/>
-          </svg>
-        </div>
-        <div class="stretch-text">
-          <div class="stretch-top">
-            <div><div class="stretch-name">Hip Flexor Lunge Stretch</div><div class="stretch-target">Hip Flexors / Psoas</div></div>
-            <div class="stretch-duration">45s x 2 each</div>
+      <div class="stretch-card-header">
+        <div class="stretch-card-left">
+          <div class="stretch-num">03</div>
+          <div>
+            <div class="stretch-name">Hip Flexor Lunge Stretch</div>
+            <div class="stretch-meta">
+              <span class="stretch-duration-badge">45s x 2 each</span>
+              <span class="stretch-target">Hip Flexors · Psoas</span>
+            </div>
           </div>
-          <div class="stretch-how">In a kneeling lunge, push hips forward until you feel a stretch in the front of the back hip. Keep core braced and torso tall. Tight hip flexors change your stride pattern and overload the knee.</div>
+        </div>
+        <div class="stretch-chevron">&#9660;</div>
+      </div>
+      <div class="stretch-card-body">
+        <div class="stretch-card-inner">
+          <div class="video-wrap">
+            <iframe src="https://www.youtube-nocookie.com/embed/YqF8B7rQnjs" allowfullscreen loading="lazy" title="Hip flexor lunge stretch"></iframe>
+          </div>
+          <div class="how-to">
+            <h4>How To</h4>
+            <ul class="steps-list">
+              <li><span class="step-num">1</span>Kneel in a lunge position, back knee on the floor</li>
+              <li><span class="step-num">2</span>Push hips forward until you feel a stretch in the front of the back hip</li>
+              <li><span class="step-num">3</span>Keep core braced and torso tall — do not arch the back</li>
+              <li><span class="step-num">4</span>Hold and switch sides</li>
+            </ul>
+            <div class="pro-tip"><strong>Why it matters:</strong> Tight hip flexors alter your stride and overload the knee. Critical for desk workers.</div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- 4. IT Band -->
     <div class="stretch-card">
-      <div class="stretch-inner">
-        <div class="stretch-illus">
-          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- wall -->
-            <line x1="18" y1="5" x2="18" y2="75" stroke="#2a2c38" stroke-width="2"/>
-            <!-- head -->
-            <circle cx="42" cy="10" r="6" fill="#e8ff47" opacity="0.9"/>
-            <!-- torso leaning sideways -->
-            <path d="M42 16 Q38 28 35 42" stroke="#e8ff47" stroke-width="3" stroke-linecap="round" fill="none"/>
-            <!-- standing leg -->
-            <line x1="35" y1="42" x2="36" y2="68" stroke="#e8ff47" stroke-width="3" stroke-linecap="round"/>
-            <!-- cross leg behind -->
-            <path d="M35 42 Q46 50 48 65" stroke="#ff6b35" stroke-width="3" stroke-linecap="round" fill="none"/>
-            <!-- IT band highlight line -->
-            <path d="M46 42 Q50 55 48 65" stroke="#ff6b35" stroke-width="1.5" stroke-dasharray="3 2" opacity="0.6" fill="none"/>
-            <!-- arm on wall -->
-            <line x1="35" y1="28" x2="18" y2="26" stroke="#888" stroke-width="2" stroke-linecap="round"/>
-            <!-- floor -->
-            <line x1="10" y1="70" x2="70" y2="70" stroke="#2a2c38" stroke-width="1.5"/>
-          </svg>
-        </div>
-        <div class="stretch-text">
-          <div class="stretch-top">
-            <div><div class="stretch-name">IT Band Stretch (Cross-Leg)</div><div class="stretch-target">IT Band / TFL</div></div>
-            <div class="stretch-duration">30s x 3 each</div>
+      <div class="stretch-card-header">
+        <div class="stretch-card-left">
+          <div class="stretch-num">04</div>
+          <div>
+            <div class="stretch-name">IT Band Cross-Leg Stretch</div>
+            <div class="stretch-meta">
+              <span class="stretch-duration-badge">30s x 3 each</span>
+              <span class="stretch-target">IT Band · TFL</span>
+            </div>
           </div>
-          <div class="stretch-how">Stand and cross one leg behind the other. Lean toward the side of the back leg, pushing your hip out. You will feel a stretch along the outer thigh and into the knee. A tight IT band pulls the kneecap laterally.</div>
+        </div>
+        <div class="stretch-chevron">&#9660;</div>
+      </div>
+      <div class="stretch-card-body">
+        <div class="stretch-card-inner">
+          <div class="video-wrap">
+            <iframe src="https://www.youtube-nocookie.com/embed/1QwdXJWBHX8" allowfullscreen loading="lazy" title="IT band stretch"></iframe>
+          </div>
+          <div class="how-to">
+            <h4>How To</h4>
+            <ul class="steps-list">
+              <li><span class="step-num">1</span>Stand and cross one leg behind the other</li>
+              <li><span class="step-num">2</span>Lean toward the side of the back leg, pushing your hip out</li>
+              <li><span class="step-num">3</span>Feel the stretch along the outer thigh down to the knee</li>
+              <li><span class="step-num">4</span>Use a wall for support if needed</li>
+            </ul>
+            <div class="pro-tip"><strong>Key:</strong> A tight IT band pulls the kneecap laterally — one of the most common runner's knee triggers.</div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- 5. Downward Dog -->
     <div class="stretch-card">
-      <div class="stretch-inner">
-        <div class="stretch-illus">
-          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- head down -->
-            <circle cx="16" cy="42" r="5" fill="#e8ff47" opacity="0.9"/>
-            <!-- arms -->
-            <line x1="16" y1="42" x2="26" y2="28" stroke="#e8ff47" stroke-width="3" stroke-linecap="round"/>
-            <!-- torso (hips up = inverted V) -->
-            <line x1="26" y1="28" x2="46" y2="20" stroke="#e8ff47" stroke-width="3" stroke-linecap="round"/>
-            <!-- legs -->
-            <line x1="46" y1="20" x2="56" y2="38" stroke="#e8ff47" stroke-width="3" stroke-linecap="round"/>
-            <line x1="56" y1="38" x2="60" y2="55" stroke="#ff6b35" stroke-width="3" stroke-linecap="round"/>
-            <!-- heel press highlight -->
-            <circle cx="60" cy="57" r="4" fill="#ff6b35" opacity="0.7"/>
-            <!-- hands on floor -->
-            <circle cx="26" cy="30" r="3" fill="#e8ff47" opacity="0.4"/>
-            <!-- floor -->
-            <line x1="10" y1="62" x2="70" y2="62" stroke="#2a2c38" stroke-width="1.5"/>
-            <!-- hip apex dot -->
-            <circle cx="46" cy="20" r="3" fill="#e8ff47" opacity="0.5"/>
-          </svg>
-        </div>
-        <div class="stretch-text">
-          <div class="stretch-top">
-            <div><div class="stretch-name">Downward Dog Calf Stretch</div><div class="stretch-target">Calves / Achilles</div></div>
-            <div class="stretch-duration">30s x 2</div>
+      <div class="stretch-card-header">
+        <div class="stretch-card-left">
+          <div class="stretch-num">05</div>
+          <div>
+            <div class="stretch-name">Downward Dog Calf Stretch</div>
+            <div class="stretch-meta">
+              <span class="stretch-duration-badge">30s x 2 each</span>
+              <span class="stretch-target">Calves · Achilles</span>
+            </div>
           </div>
-          <div class="stretch-how">In downward dog, alternate pressing each heel toward the floor. Tight calves change landing mechanics and increase knee load with every step. Add a foam roll on the calves first for best results.</div>
+        </div>
+        <div class="stretch-chevron">&#9660;</div>
+      </div>
+      <div class="stretch-card-body">
+        <div class="stretch-card-inner">
+          <div class="video-wrap">
+            <iframe src="https://www.youtube-nocookie.com/embed/dCMdnFKisBY" allowfullscreen loading="lazy" title="Downward dog calf stretch"></iframe>
+          </div>
+          <div class="how-to">
+            <h4>How To</h4>
+            <ul class="steps-list">
+              <li><span class="step-num">1</span>Start in downward dog, hips high, hands and feet on floor</li>
+              <li><span class="step-num">2</span>Press one heel toward the floor while keeping the other slightly raised</li>
+              <li><span class="step-num">3</span>Hold, then alternate — feel the stretch up the calf</li>
+              <li><span class="step-num">4</span>Foam roll calves first for best results</li>
+            </ul>
+            <div class="pro-tip"><strong>Why it matters:</strong> Tight calves change your landing mechanics and increase knee load with every footstrike.</div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- 6. Supine Hamstring -->
     <div class="stretch-card">
-      <div class="stretch-inner">
-        <div class="stretch-illus">
-          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- head -->
-            <circle cx="14" cy="38" r="5.5" fill="#e8ff47" opacity="0.9"/>
-            <!-- flat torso -->
-            <line x1="14" y1="43" x2="45" y2="50" stroke="#e8ff47" stroke-width="3" stroke-linecap="round"/>
-            <!-- flat leg on floor -->
-            <line x1="45" y1="50" x2="68" y2="52" stroke="#e8ff47" stroke-width="3" stroke-linecap="round"/>
-            <!-- raised leg vertical -->
-            <path d="M45 50 Q38 35 35 18" stroke="#ff6b35" stroke-width="3" stroke-linecap="round" fill="none"/>
-            <!-- foot at top -->
-            <circle cx="35" cy="16" r="3.5" fill="#ff6b35" opacity="0.8"/>
-            <!-- strap/hands -->
-            <path d="M22 44 Q28 30 35 16" stroke="#888" stroke-width="1.5" stroke-dasharray="3 2" fill="none"/>
-            <!-- floor -->
-            <line x1="8" y1="58" x2="72" y2="58" stroke="#2a2c38" stroke-width="1.5"/>
-          </svg>
-        </div>
-        <div class="stretch-text">
-          <div class="stretch-top">
-            <div><div class="stretch-name">Supine Hamstring Stretch</div><div class="stretch-target">Hamstrings / Posterior Chain</div></div>
-            <div class="stretch-duration">45s x 2 each</div>
+      <div class="stretch-card-header">
+        <div class="stretch-card-left">
+          <div class="stretch-num">06</div>
+          <div>
+            <div class="stretch-name">Supine Hamstring Stretch</div>
+            <div class="stretch-meta">
+              <span class="stretch-duration-badge">45s x 2 each</span>
+              <span class="stretch-target">Hamstrings · Posterior Chain</span>
+            </div>
           </div>
-          <div class="stretch-how">Lie on your back and lift one leg, holding behind the knee or calf. Keep the opposite leg flat on the floor. Tight hamstrings pull on the pelvis and increase compressive forces at the kneecap. Use a strap if needed.</div>
+        </div>
+        <div class="stretch-chevron">&#9660;</div>
+      </div>
+      <div class="stretch-card-body">
+        <div class="stretch-card-inner">
+          <div class="video-wrap">
+            <iframe src="https://www.youtube-nocookie.com/embed/OMB8h-_3kUg" allowfullscreen loading="lazy" title="Supine hamstring stretch"></iframe>
+          </div>
+          <div class="how-to">
+            <h4>How To</h4>
+            <ul class="steps-list">
+              <li><span class="step-num">1</span>Lie on your back and lift one leg, holding behind the knee or calf</li>
+              <li><span class="step-num">2</span>Keep the opposite leg flat on the floor</li>
+              <li><span class="step-num">3</span>Straighten the raised leg as much as comfortable</li>
+              <li><span class="step-num">4</span>Use a strap or towel around the foot if needed</li>
+            </ul>
+            <div class="pro-tip"><strong>Key:</strong> Tight hamstrings pull the pelvis and increase compressive forces at the kneecap.</div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- 7. Seated Butterfly -->
     <div class="stretch-card">
-      <div class="stretch-inner">
-        <div class="stretch-illus">
-          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- head -->
-            <circle cx="40" cy="14" r="6" fill="#e8ff47" opacity="0.9"/>
-            <!-- torso -->
-            <line x1="40" y1="20" x2="40" y2="46" stroke="#e8ff47" stroke-width="3" stroke-linecap="round"/>
-            <!-- left leg butterfly -->
-            <path d="M40 46 Q28 50 20 58" stroke="#ff6b35" stroke-width="3" stroke-linecap="round" fill="none"/>
-            <!-- right leg butterfly -->
-            <path d="M40 46 Q52 50 60 58" stroke="#ff6b35" stroke-width="3" stroke-linecap="round" fill="none"/>
-            <!-- feet meeting -->
-            <circle cx="40" cy="62" r="4" fill="#ff6b35" opacity="0.6"/>
-            <!-- knees pushed down by elbows -->
-            <circle cx="22" cy="57" r="3" fill="#888" opacity="0.5"/>
-            <circle cx="58" cy="57" r="3" fill="#888" opacity="0.5"/>
-            <!-- arms pressing down -->
-            <line x1="40" y1="36" x2="22" y2="52" stroke="#888" stroke-width="2" stroke-linecap="round"/>
-            <line x1="40" y1="36" x2="58" y2="52" stroke="#888" stroke-width="2" stroke-linecap="round"/>
-            <!-- floor -->
-            <line x1="10" y1="68" x2="70" y2="68" stroke="#2a2c38" stroke-width="1.5"/>
-          </svg>
-        </div>
-        <div class="stretch-text">
-          <div class="stretch-top">
-            <div><div class="stretch-name">Seated Butterfly Stretch</div><div class="stretch-target">Hip Adductors / Groin</div></div>
-            <div class="stretch-duration">60s x 1</div>
+      <div class="stretch-card-header">
+        <div class="stretch-card-left">
+          <div class="stretch-num">07</div>
+          <div>
+            <div class="stretch-name">Seated Butterfly Stretch</div>
+            <div class="stretch-meta">
+              <span class="stretch-duration-badge">60s x 1</span>
+              <span class="stretch-target">Hip Adductors · Groin</span>
+            </div>
           </div>
-          <div class="stretch-how">Sit with soles of feet together, knees falling out to the sides. Gently press knees toward the floor with your elbows. Tight adductors pull the knee inward, a direct cause of kneecap irritation in runners.</div>
+        </div>
+        <div class="stretch-chevron">&#9660;</div>
+      </div>
+      <div class="stretch-card-body">
+        <div class="stretch-card-inner">
+          <div class="video-wrap">
+            <iframe src="https://www.youtube-nocookie.com/embed/76-5U9mYFKM" allowfullscreen loading="lazy" title="Seated butterfly stretch"></iframe>
+          </div>
+          <div class="how-to">
+            <h4>How To</h4>
+            <ul class="steps-list">
+              <li><span class="step-num">1</span>Sit with soles of feet together, knees falling out to the sides</li>
+              <li><span class="step-num">2</span>Sit tall — do not round the lower back</li>
+              <li><span class="step-num">3</span>Gently press knees toward the floor with your elbows</li>
+              <li><span class="step-num">4</span>Hold and breathe — let gravity do the work</li>
+            </ul>
+            <div class="pro-tip"><strong>Why it matters:</strong> Tight adductors pull the knee inward — a direct cause of kneecap irritation in runners.</div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- 8. NEW: Seated Calf / Plantar Stretch -->
     <div class="stretch-card">
-      <div class="stretch-inner">
-        <div class="stretch-illus">
-          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- head -->
-            <circle cx="18" cy="22" r="6" fill="#e8ff47" opacity="0.9"/>
-            <!-- torso leaning forward -->
-            <path d="M18 28 Q28 38 42 44" stroke="#e8ff47" stroke-width="3" stroke-linecap="round" fill="none"/>
-            <!-- legs straight out -->
-            <line x1="42" y1="44" x2="68" y2="46" stroke="#e8ff47" stroke-width="3" stroke-linecap="round"/>
-            <!-- foot flexed / strap -->
-            <path d="M68 46 Q70 40 68 38" stroke="#ff6b35" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-            <circle cx="68" cy="37" r="3" fill="#ff6b35" opacity="0.8"/>
-            <!-- strap from hands -->
-            <path d="M28 36 Q50 30 68 37" stroke="#888" stroke-width="1.5" stroke-dasharray="3 2" fill="none"/>
-            <!-- floor -->
-            <line x1="10" y1="55" x2="72" y2="55" stroke="#2a2c38" stroke-width="1.5"/>
-          </svg>
-        </div>
-        <div class="stretch-text">
-          <div class="stretch-top">
-            <div><div class="stretch-name">Seated Towel Calf Stretch</div><div class="stretch-target">Gastrocnemius / Soleus</div></div>
-            <div class="stretch-duration">45s x 2 each</div>
+      <div class="stretch-card-header">
+        <div class="stretch-card-left">
+          <div class="stretch-num">08</div>
+          <div>
+            <div class="stretch-name">Seated Towel Calf Stretch</div>
+            <div class="stretch-meta">
+              <span class="stretch-duration-badge">45s x 2 each</span>
+              <span class="stretch-target">Gastrocnemius · Soleus</span>
+            </div>
           </div>
-          <div class="stretch-how">Sit on the floor, legs straight. Loop a towel or strap around the ball of your foot and gently pull toes toward you. Keep knee straight for the gastroc; slightly bent for the soleus. Directly reduces Achilles load and knee compression.</div>
+        </div>
+        <div class="stretch-chevron">&#9660;</div>
+      </div>
+      <div class="stretch-card-body">
+        <div class="stretch-card-inner">
+          <div class="video-wrap">
+            <iframe src="https://www.youtube-nocookie.com/embed/5ZJBiCNGUAw" allowfullscreen loading="lazy" title="Seated calf stretch with towel"></iframe>
+          </div>
+          <div class="how-to">
+            <h4>How To</h4>
+            <ul class="steps-list">
+              <li><span class="step-num">1</span>Sit on the floor with legs straight out in front</li>
+              <li><span class="step-num">2</span>Loop a towel or strap around the ball of one foot</li>
+              <li><span class="step-num">3</span>Gently pull toes toward you — knee straight for gastroc, slightly bent for soleus</li>
+              <li><span class="step-num">4</span>Hold and switch sides</li>
+            </ul>
+            <div class="pro-tip"><strong>Two stretches in one:</strong> Straight knee = gastrocnemius. Slightly bent knee = soleus. Do both for full calf release.</div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- 9. NEW: Child's Pose with Lat Reach -->
     <div class="stretch-card">
-      <div class="stretch-inner">
-        <div class="stretch-illus">
-          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- head down -->
-            <circle cx="62" cy="38" r="5" fill="#e8ff47" opacity="0.9"/>
-            <!-- torso reaching forward -->
-            <path d="M62 38 Q48 34 32 32" stroke="#e8ff47" stroke-width="3" stroke-linecap="round" fill="none"/>
-            <!-- arms extended -->
-            <line x1="32" y1="32" x2="14" y2="30" stroke="#e8ff47" stroke-width="3" stroke-linecap="round"/>
-            <!-- hips sat back -->
-            <path d="M62 38 Q62 50 60 55" stroke="#e8ff47" stroke-width="3" stroke-linecap="round" fill="none"/>
-            <!-- knees on floor -->
-            <path d="M60 55 Q52 58 46 56" stroke="#888" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-            <!-- glute highlight -->
-            <ellipse cx="61" cy="50" rx="6" ry="4" fill="#ff6b35" opacity="0.15"/>
-            <!-- floor -->
-            <line x1="8" y1="62" x2="72" y2="62" stroke="#2a2c38" stroke-width="1.5"/>
-            <!-- hands on floor -->
-            <circle cx="14" cy="32" r="3" fill="#e8ff47" opacity="0.4"/>
-          </svg>
-        </div>
-        <div class="stretch-text">
-          <div class="stretch-top">
-            <div><div class="stretch-name">Child's Pose with Side Reach</div><div class="stretch-target">Thoracic / Lats / Glutes</div></div>
-            <div class="stretch-duration">45s x 2 each side</div>
+      <div class="stretch-card-header">
+        <div class="stretch-card-left">
+          <div class="stretch-num">09</div>
+          <div>
+            <div class="stretch-name">Child's Pose with Side Reach</div>
+            <div class="stretch-meta">
+              <span class="stretch-duration-badge">45s x 2 each side</span>
+              <span class="stretch-target">Thoracic · Lats · Glutes</span>
+            </div>
           </div>
-          <div class="stretch-how">From child's pose, walk both hands to one side and hold. Creates a lateral stretch through the spine, lats, and outer hip. Thoracic stiffness affects arm swing, which cascades down to altered hip mechanics and knee stress during running.</div>
+        </div>
+        <div class="stretch-chevron">&#9660;</div>
+      </div>
+      <div class="stretch-card-body">
+        <div class="stretch-card-inner">
+          <div class="video-wrap">
+            <iframe src="https://www.youtube-nocookie.com/embed/qPdoGv8RNVY" allowfullscreen loading="lazy" title="Child's pose with side reach"></iframe>
+          </div>
+          <div class="how-to">
+            <h4>How To</h4>
+            <ul class="steps-list">
+              <li><span class="step-num">1</span>Start in child's pose — hips back toward heels, arms forward</li>
+              <li><span class="step-num">2</span>Walk both hands to one side and hold</li>
+              <li><span class="step-num">3</span>Feel the lateral stretch through your ribs and lat</li>
+              <li><span class="step-num">4</span>Return to center and repeat on the other side</li>
+            </ul>
+            <div class="pro-tip"><strong>Why it matters:</strong> Thoracic stiffness affects arm swing, which cascades down to altered hip mechanics and knee stress.</div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- 10. NEW: Ankle Circles & Dorsiflexion -->
     <div class="stretch-card">
-      <div class="stretch-inner">
-        <div class="stretch-illus">
-          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- seated figure, side view -->
-            <circle cx="22" cy="18" r="6" fill="#e8ff47" opacity="0.9"/>
-            <!-- torso -->
-            <line x1="22" y1="24" x2="24" y2="46" stroke="#e8ff47" stroke-width="3" stroke-linecap="round"/>
-            <!-- thigh -->
-            <line x1="24" y1="46" x2="46" y2="48" stroke="#e8ff47" stroke-width="3" stroke-linecap="round"/>
-            <!-- lower leg -->
-            <line x1="46" y1="48" x2="52" y2="65" stroke="#e8ff47" stroke-width="3" stroke-linecap="round"/>
-            <!-- ankle / foot -->
-            <path d="M52 65 Q58 68 62 64" stroke="#ff6b35" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-            <!-- rotation arc arrows -->
-            <path d="M58 58 Q68 55 66 65" stroke="#ff6b35" stroke-width="1.5" stroke-dasharray="2 2" fill="none"/>
-            <path d="M66 65 Q65 72 58 70" stroke="#ff6b35" stroke-width="1.5" stroke-dasharray="2 2" fill="none"/>
-            <!-- arrowhead -->
-            <polygon points="58,69 56,73 62,71" fill="#ff6b35" opacity="0.7"/>
-            <!-- chair/bench -->
-            <rect x="12" y="46" width="36" height="3" fill="#2a2c38" rx="1"/>
-            <!-- floor -->
-            <line x1="8" y1="72" x2="72" y2="72" stroke="#2a2c38" stroke-width="1.5"/>
-          </svg>
-        </div>
-        <div class="stretch-text">
-          <div class="stretch-top">
-            <div><div class="stretch-name">Ankle Circles & Dorsiflexion</div><div class="stretch-target">Ankle Mobility / Knee Alignment</div></div>
-            <div class="stretch-duration">20 circles + 30s hold each</div>
+      <div class="stretch-card-header">
+        <div class="stretch-card-left">
+          <div class="stretch-num">10</div>
+          <div>
+            <div class="stretch-name">Ankle Circles &amp; Dorsiflexion</div>
+            <div class="stretch-meta">
+              <span class="stretch-duration-badge">20 circles + 30s hold</span>
+              <span class="stretch-target">Ankle Mobility · Knee Alignment</span>
+            </div>
           </div>
-          <div class="stretch-how">Seated, lift one foot and make 10 large clockwise circles, then 10 counter-clockwise. Then flex the foot strongly and hold 30 seconds. Poor ankle dorsiflexion is a commonly missed driver of runner's knee — it forces the knee to compensate with every footstrike.</div>
+        </div>
+        <div class="stretch-chevron">&#9660;</div>
+      </div>
+      <div class="stretch-card-body">
+        <div class="stretch-card-inner">
+          <div class="video-wrap">
+            <iframe src="https://www.youtube-nocookie.com/embed/cWUgNMSBBJw" allowfullscreen loading="lazy" title="Ankle circles and dorsiflexion"></iframe>
+          </div>
+          <div class="how-to">
+            <h4>How To</h4>
+            <ul class="steps-list">
+              <li><span class="step-num">1</span>Seated, lift one foot and make 10 large clockwise circles</li>
+              <li><span class="step-num">2</span>Repeat 10 counter-clockwise</li>
+              <li><span class="step-num">3</span>Then flex the foot strongly toward your shin and hold 30 seconds</li>
+              <li><span class="step-num">4</span>Switch sides</li>
+            </ul>
+            <div class="pro-tip"><strong>Often missed:</strong> Poor ankle dorsiflexion is a hidden driver of runner's knee — it forces the knee to compensate with every footstrike.</div>
+          </div>
         </div>
       </div>
     </div>
@@ -1187,13 +1274,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // PHASE CHIPS
-  document.querySelectorAll('.phase-chip').forEach(function(chip) {
-    chip.addEventListener('click', function() {
-      document.querySelectorAll('.phase-chip').forEach(function(c) { c.classList.remove('active'); });
-      chip.classList.add('active');
+  // STRETCH CARDS
+  document.querySelectorAll('.stretch-card-header').forEach(function(header) {
+    header.addEventListener('click', function() {
+      header.closest('.stretch-card').classList.toggle('open');
     });
   });
+
+
 
   // TRACKER
   var days = ['MON','TUE','WED','THU','FRI','SAT','SUN','MON','TUE','WED','THU','FRI','SAT','SUN'];
@@ -1613,6 +1701,187 @@ document.addEventListener('DOMContentLoaded', function() {
       tmInp.addEventListener('input', tmCalc);
       tmCalc();
     }
+  });
+
+})();
+</script>
+
+<!-- WEATHER -->
+<script>
+(function() {
+
+  // Open-Meteo weather codes → label + emoji
+  var WX_CODES = {
+    0:  { label: 'Clear Sky',        icon: '☀️',  score: 10 },
+    1:  { label: 'Mostly Clear',     icon: '🌤',  score: 9  },
+    2:  { label: 'Partly Cloudy',    icon: '⛅',  score: 8  },
+    3:  { label: 'Overcast',         icon: '☁️',  score: 7  },
+    45: { label: 'Foggy',            icon: '🌫',  score: 4  },
+    48: { label: 'Icy Fog',          icon: '🌫',  score: 3  },
+    51: { label: 'Light Drizzle',    icon: '🌦',  score: 5  },
+    53: { label: 'Drizzle',          icon: '🌧',  score: 4  },
+    55: { label: 'Heavy Drizzle',    icon: '🌧',  score: 3  },
+    61: { label: 'Light Rain',       icon: '🌧',  score: 5  },
+    63: { label: 'Rain',             icon: '🌧',  score: 3  },
+    65: { label: 'Heavy Rain',       icon: '🌧',  score: 1  },
+    71: { label: 'Light Snow',       icon: '🌨',  score: 3  },
+    73: { label: 'Snow',             icon: '❄️',  score: 2  },
+    75: { label: 'Heavy Snow',       icon: '❄️',  score: 1  },
+    77: { label: 'Snow Grains',      icon: '❄️',  score: 2  },
+    80: { label: 'Light Showers',    icon: '🌦',  score: 5  },
+    81: { label: 'Showers',          icon: '🌧',  score: 3  },
+    82: { label: 'Heavy Showers',    icon: '⛈',  score: 1  },
+    85: { label: 'Snow Showers',     icon: '🌨',  score: 2  },
+    86: { label: 'Heavy Snow Shwr',  icon: '❄️',  score: 1  },
+    95: { label: 'Thunderstorm',     icon: '⛈',  score: 0  },
+    96: { label: 'Storm + Hail',     icon: '⛈',  score: 0  },
+    99: { label: 'Heavy Storm',      icon: '⛈',  score: 0  },
+  };
+
+  function wxInfo(code) {
+    return WX_CODES[code] || { label: 'Unknown', icon: '🌡', score: 5 };
+  }
+
+  function runVerdict(tempF, windMph, wxScore) {
+    if (wxScore === 0) return { cls: 'bad',  text: '⛈ Not a running day' };
+    if (wxScore <= 2)  return { cls: 'bad',  text: '🌧 Skip the run today' };
+    if (tempF > 95)    return { cls: 'bad',  text: '🥵 Too hot — heat risk' };
+    if (tempF < 15)    return { cls: 'bad',  text: '🥶 Too cold to run safely' };
+    if (windMph > 30)  return { cls: 'bad',  text: '💨 Wind too strong' };
+    if (tempF > 85 || windMph > 20 || wxScore <= 4)
+                       return { cls: 'ok',   text: '⚠️ Run with caution' };
+    if (tempF < 25)    return { cls: 'ok',   text: '🧤 Dress warm — cold out' };
+    return               { cls: 'good', text: '✓ Great day to run' };
+  }
+
+  function cToF(c) { return Math.round(c * 9/5 + 32); }
+  function msToMph(ms) { return Math.round(ms * 2.237); }
+
+  var badge   = document.getElementById('wx-badge');
+  var pill    = document.getElementById('wx-pill');
+  var pillTemp = document.getElementById('wx-pill-temp');
+  var pillCond = document.getElementById('wx-pill-cond');
+  var inner   = document.getElementById('wx-panel-inner');
+  var reqBtn  = document.getElementById('wx-request-btn');
+
+  // toggle open/close
+  pill.addEventListener('click', function(e) {
+    e.stopPropagation();
+    badge.classList.toggle('open');
+  });
+  document.addEventListener('click', function(e) {
+    if (!badge.contains(e.target)) badge.classList.remove('open');
+  });
+
+  reqBtn && reqBtn.addEventListener('click', function() { requestLocation(); });
+
+  function requestLocation() {
+    if (!navigator.geolocation) {
+      showError('Geolocation is not supported by this browser.');
+      return;
+    }
+    pillTemp.textContent = '...';
+    pill.classList.add('loading');
+    navigator.geolocation.getCurrentPosition(onPosition, onGeoError, { timeout: 10000 });
+  }
+
+  function onGeoError(err) {
+    pill.classList.remove('loading');
+    pillTemp.textContent = 'Weather';
+    if (err.code === 1) {
+      showError('Location access denied. Enable it in your browser settings and refresh.');
+    } else {
+      showError('Could not get your location. Try again.');
+    }
+  }
+
+  function onPosition(pos) {
+    var lat = pos.coords.latitude.toFixed(4);
+    var lon = pos.coords.longitude.toFixed(4);
+    fetchWeather(lat, lon);
+    reverseGeocode(lat, lon);
+  }
+
+  var cityName = '';
+  function reverseGeocode(lat, lon) {
+    fetch('https://nominatim.openstreetmap.org/reverse?lat=' + lat + '&lon=' + lon + '&format=json')
+      .then(function(r) { return r.json(); })
+      .then(function(d) {
+        cityName = d.address.city || d.address.town || d.address.village || d.address.county || '';
+        var cityEl = document.getElementById('wx-city');
+        if (cityEl && cityName) cityEl.textContent = cityName;
+      }).catch(function() {});
+  }
+
+  function fetchWeather(lat, lon) {
+    var url = 'https://api.open-meteo.com/v1/forecast'
+      + '?latitude=' + lat
+      + '&longitude=' + lon
+      + '&current=temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,wind_speed_10m'
+      + '&temperature_unit=fahrenheit'
+      + '&wind_speed_unit=mph'
+      + '&timezone=auto';
+
+    fetch(url)
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        var c = data.current;
+        var tempF    = Math.round(c.temperature_2m);
+        var feelsF   = Math.round(c.apparent_temperature);
+        var humidity = Math.round(c.relative_humidity_2m);
+        var windMph  = Math.round(c.wind_speed_10m);
+        var code     = c.weather_code;
+        var wx       = wxInfo(code);
+        var verdict  = runVerdict(tempF, windMph, wx.score);
+
+        // update pill
+        pill.classList.remove('loading');
+        pillTemp.textContent = tempF + '°F';
+        pillCond.textContent = wx.label;
+        pill.className = 'wx-pill ' + verdict.cls;
+
+        // update panel
+        var now = new Date();
+        var timeStr = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+        inner.innerHTML =
+          '<div class="wx-panel-header">' +
+            '<div>' +
+              '<div class="wx-city" id="wx-city">' + (cityName || 'Your Location') + '</div>' +
+              '<div class="wx-time">Updated ' + timeStr + '</div>' +
+            '</div>' +
+            '<div class="wx-big-icon">' + wx.icon + '</div>' +
+          '</div>' +
+          '<div style="padding:12px 16px 8px;display:flex;align-items:flex-end;gap:10px;">' +
+            '<div class="wx-big-temp">' + tempF + '°</div>' +
+            '<div style="padding-bottom:8px;">' +
+              '<div style="font-size:13px;color:var(--text);font-weight:600;">' + wx.label + '</div>' +
+              '<div style="font-size:11px;color:var(--muted);">Feels like ' + feelsF + '°F</div>' +
+            '</div>' +
+          '</div>' +
+          '<div class="wx-stats">' +
+            '<div class="wx-stat"><div class="wx-stat-val">' + windMph + '</div><div class="wx-stat-label">Wind mph</div></div>' +
+            '<div class="wx-stat"><div class="wx-stat-val">' + humidity + '%</div><div class="wx-stat-label">Humidity</div></div>' +
+          '</div>' +
+          '<div class="wx-run-verdict ' + verdict.cls + '">' + verdict.text + '</div>';
+      })
+      .catch(function() {
+        showError('Could not load weather data. Check your connection.');
+        pill.classList.remove('loading');
+        pillTemp.textContent = 'Weather';
+      });
+  }
+
+  function showError(msg) {
+    inner.innerHTML = '<div class="wx-error">' +
+      '<div style="margin-bottom:10px;">' + msg + '</div>' +
+      '<button class="wx-location-btn" onclick="document.getElementById(\'wx-request-btn\') && document.getElementById(\'wx-request-btn\').click()">Try Again</button>' +
+      '</div>';
+  }
+
+  // auto-request on load
+  document.addEventListener('DOMContentLoaded', function() {
+    requestLocation();
   });
 
 })();
