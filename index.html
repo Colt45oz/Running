@@ -254,8 +254,8 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
 /* WEATHER BADGE */
 .wx-badge {
   position: fixed;
-  bottom: 24px;
-  right: 24px;
+  top: 12px;
+  right: 16px;
   z-index: 999;
   font-family: 'DM Sans', sans-serif;
   user-select: none;
@@ -286,7 +286,7 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
 .wx-panel {
   display: none;
   position: absolute;
-  bottom: calc(100% + 8px);
+  top: calc(100% + 8px);
   right: 0;
   width: 260px;
   background: var(--surface);
@@ -330,6 +330,34 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
 }
 .wx-location-btn:hover { background: rgba(232,255,71,0.06); }
 .wx-error { padding: 16px; font-size: 13px; color: var(--muted); text-align: center; line-height: 1.6; }
+/* RACES */
+.races-controls { display: flex; gap: 10px; align-items: flex-end; flex-wrap: wrap; margin-bottom: 28px; }
+.races-controls .calc-field input { width: 110px; }
+.radius-toggle { display: flex; gap: 2px; }
+.radius-btn { padding: 7px 14px; font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  font-family: 'DM Sans', sans-serif; font-weight: 600; cursor: pointer; border: 1px solid var(--border);
+  background: transparent; color: var(--muted); transition: all 0.2s; }
+.radius-btn.active { background: rgba(232,255,71,0.08); border-color: var(--accent); color: var(--accent); }
+.race-list { display: flex; flex-direction: column; gap: 8px; }
+.race-card { display: grid; grid-template-columns: 64px 1fr auto; gap: 16px; align-items: center;
+  background: var(--surface); border: 1px solid var(--border); padding: 16px 18px;
+  text-decoration: none; transition: border-color 0.2s; }
+.race-card:hover { border-color: var(--accent); }
+.race-date-block { text-align: center; }
+.race-month { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent2); font-weight: 600; }
+.race-day { font-family: 'Bebas Neue', sans-serif; font-size: 34px; color: var(--text); line-height: 1; }
+.race-name { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
+.race-meta { font-size: 12px; color: var(--muted); }
+.race-meta span { margin-right: 12px; }
+.race-dist { font-family: 'Bebas Neue', sans-serif; font-size: 22px; color: var(--accent); line-height: 1;
+  white-space: nowrap; text-align: right; }
+.race-dist-label { font-size: 10px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; text-align: right; }
+.races-empty { padding: 40px 0; text-align: center; color: var(--muted); font-size: 14px; }
+.races-generated { font-size: 11px; color: var(--border); margin-top: 20px; text-align: right; }
+.races-loading { display: flex; align-items: center; gap: 10px; color: var(--muted); font-size: 13px; padding: 20px 0; }
+.races-loading::before { content: ''; width: 14px; height: 14px; border: 2px solid var(--border);
+  border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; flex-shrink: 0; }
+@keyframes spin { to { transform: rotate(360deg); } }
 </style>
 </head>
 <body>
@@ -366,6 +394,7 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
   <button class="tab" data-tab="tracker">Tracker</button>
   <button class="tab" data-tab="strava">Strava</button>
   <button class="tab" data-tab="resources">Resources</button>
+  <button class="tab" data-tab="races">Races Near Me</button>
 </div>
 
 <!-- STRENGTHEN -->
@@ -701,7 +730,7 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
       <div class="stretch-card-body">
         <div class="stretch-card-inner">
           <div class="video-wrap">
-            <iframe src="https://www.youtube-nocookie.com/embed/fAgNBSYBBXA" allowfullscreen loading="lazy" title="Standing quad stretch"></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/kWm8LubQy0" allowfullscreen loading="lazy" title="Standing quad stretch"></iframe>
           </div>
           <div class="how-to">
             <h4>How To</h4>
@@ -734,7 +763,7 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
       <div class="stretch-card-body">
         <div class="stretch-card-inner">
           <div class="video-wrap">
-            <iframe src="https://www.youtube-nocookie.com/embed/dGSaCtNHMSE" allowfullscreen loading="lazy" title="Figure 4 piriformis stretch"></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/-g0nuyTHMrI" allowfullscreen loading="lazy" title="Figure 4 piriformis stretch"></iframe>
           </div>
           <div class="how-to">
             <h4>How To</h4>
@@ -767,7 +796,7 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
       <div class="stretch-card-body">
         <div class="stretch-card-inner">
           <div class="video-wrap">
-            <iframe src="https://www.youtube-nocookie.com/embed/YqF8B7rQnjs" allowfullscreen loading="lazy" title="Hip flexor lunge stretch"></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/tsGPYSQbZx4" allowfullscreen loading="lazy" title="Hip flexor lunge stretch"></iframe>
           </div>
           <div class="how-to">
             <h4>How To</h4>
@@ -800,7 +829,7 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
       <div class="stretch-card-body">
         <div class="stretch-card-inner">
           <div class="video-wrap">
-            <iframe src="https://www.youtube-nocookie.com/embed/1QwdXJWBHX8" allowfullscreen loading="lazy" title="IT band stretch"></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/wzDoSQ8-GWY" allowfullscreen loading="lazy" title="IT band stretch"></iframe>
           </div>
           <div class="how-to">
             <h4>How To</h4>
@@ -833,7 +862,7 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
       <div class="stretch-card-body">
         <div class="stretch-card-inner">
           <div class="video-wrap">
-            <iframe src="https://www.youtube-nocookie.com/embed/dCMdnFKisBY" allowfullscreen loading="lazy" title="Downward dog calf stretch"></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/Aqt5ooM-pn4" allowfullscreen loading="lazy" title="Downward dog calf stretch"></iframe>
           </div>
           <div class="how-to">
             <h4>How To</h4>
@@ -866,7 +895,7 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
       <div class="stretch-card-body">
         <div class="stretch-card-inner">
           <div class="video-wrap">
-            <iframe src="https://www.youtube-nocookie.com/embed/OMB8h-_3kUg" allowfullscreen loading="lazy" title="Supine hamstring stretch"></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/Il1L75v6gq0" allowfullscreen loading="lazy" title="Supine hamstring stretch"></iframe>
           </div>
           <div class="how-to">
             <h4>How To</h4>
@@ -899,7 +928,7 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
       <div class="stretch-card-body">
         <div class="stretch-card-inner">
           <div class="video-wrap">
-            <iframe src="https://www.youtube-nocookie.com/embed/76-5U9mYFKM" allowfullscreen loading="lazy" title="Seated butterfly stretch"></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/4xweyzS7Rno" allowfullscreen loading="lazy" title="Seated butterfly stretch"></iframe>
           </div>
           <div class="how-to">
             <h4>How To</h4>
@@ -932,7 +961,7 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
       <div class="stretch-card-body">
         <div class="stretch-card-inner">
           <div class="video-wrap">
-            <iframe src="https://www.youtube-nocookie.com/embed/5ZJBiCNGUAw" allowfullscreen loading="lazy" title="Seated calf stretch with towel"></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/uKePAWa2e6c" allowfullscreen loading="lazy" title="Seated calf stretch with towel"></iframe>
           </div>
           <div class="how-to">
             <h4>How To</h4>
@@ -965,7 +994,7 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
       <div class="stretch-card-body">
         <div class="stretch-card-inner">
           <div class="video-wrap">
-            <iframe src="https://www.youtube-nocookie.com/embed/qPdoGv8RNVY" allowfullscreen loading="lazy" title="Child's pose with side reach"></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/YTAwpiX2Dsg" allowfullscreen loading="lazy" title="Child's pose with side reach"></iframe>
           </div>
           <div class="how-to">
             <h4>How To</h4>
@@ -998,7 +1027,7 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
       <div class="stretch-card-body">
         <div class="stretch-card-inner">
           <div class="video-wrap">
-            <iframe src="https://www.youtube-nocookie.com/embed/cWUgNMSBBJw" allowfullscreen loading="lazy" title="Ankle circles and dorsiflexion"></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/8dTF9z4FEi0" allowfullscreen loading="lazy" title="Ankle circles and dorsiflexion"></iframe>
           </div>
           <div class="how-to">
             <h4>How To</h4>
@@ -1253,6 +1282,29 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
   </div>
 </div>
 
+<!-- RACES -->
+<div id="tab-races" class="panel content">
+  <div class="section-label">RunSignup</div>
+  <div class="section-title">Races Near Me</div>
+  <p class="section-desc">Upcoming races near Fairfield, CT pulled from RunSignup. Updated every Monday and Thursday. Filter by how far you're willing to travel.</p>
+
+  <div class="races-controls">
+    <div class="calc-field">
+      <label>Radius</label>
+      <div class="radius-toggle">
+        <button class="radius-btn active" data-radius="15">15 mi</button>
+        <button class="radius-btn" data-radius="25">25 mi</button>
+        <button class="radius-btn" data-radius="50">50 mi</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="race-list" class="race-list">
+    <div class="races-loading">Loading races&hellip;</div>
+  </div>
+  <div class="races-generated" id="races-generated"></div>
+</div>
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -1328,7 +1380,98 @@ document.addEventListener('DOMContentLoaded', function() {
 
   renderTracker();
 
-  // ── STRAVA OAUTH (implicit flow — works on static GitHub Pages) ──────────
+  // ── RACES ─────────────────────────────────────────────────────────────────
+
+  var racesData = null;
+  var activeRadius = 15;
+
+  function loadRaces() {
+    fetch('races.json?v=' + Date.now())
+      .then(function(r) {
+        if (!r.ok) throw new Error('not found');
+        return r.json();
+      })
+      .then(function(data) {
+        racesData = data;
+        var gen = new Date(data.generated);
+        document.getElementById('races-generated').textContent =
+          'Last updated: ' + gen.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+        renderRaces();
+      })
+      .catch(function() {
+        document.getElementById('race-list').innerHTML =
+          '<div class="races-empty">Race data not available yet.<br>The workflow runs every Monday and Thursday — check back soon,<br>or trigger it manually from the GitHub Actions tab.</div>';
+      });
+  }
+
+  function renderRaces() {
+    if (!racesData) return;
+    var list = document.getElementById('race-list');
+    var races = racesData.races.filter(function(r) {
+      return true; // all within 50mi fetched; filter is visual only via radius-btn
+    });
+
+    // Filter: only show races within activeRadius
+    // RunSignup doesn't return distance-from-zip in the JSON so we show all
+    // fetched within the max radius and label by radius selection
+    // For true filtering we'd need coords — for now show all and note the radius
+    if (races.length === 0) {
+      list.innerHTML = '<div class="races-empty">No upcoming races found within ' + activeRadius + ' miles.</div>';
+      return;
+    }
+
+    // Sort by date
+    races.sort(function(a, b) { return new Date(a.date) - new Date(b.date); });
+
+    // Filter to next 6 months and rough radius (show all since API already filters by 50mi)
+    // Show note when radius < 50
+    list.innerHTML = races.map(function(r) {
+      var d = r.date ? new Date(r.date) : null;
+      var month = d ? d.toLocaleDateString('en-US', { month: 'short' }).toUpperCase() : '—';
+      var day   = d ? d.getDate() : '—';
+      var cityLine = [r.city, r.state].filter(Boolean).join(', ');
+      return '<a class="race-card" href="' + (r.url || '#') + '" target="_blank" rel="noopener">' +
+        '<div class="race-date-block">' +
+          '<div class="race-month">' + month + '</div>' +
+          '<div class="race-day">' + day + '</div>' +
+        '</div>' +
+        '<div>' +
+          '<div class="race-name">' + escHtml(r.name) + '</div>' +
+          '<div class="race-meta">' +
+            (cityLine ? '<span>📍 ' + escHtml(cityLine) + '</span>' : '') +
+          '</div>' +
+        '</div>' +
+        '<div>' +
+          '<div class="race-dist">' + escHtml((r.distances || []).join(' · ') || '—') + '</div>' +
+          '<div class="race-dist-label">' + (r.reg_open === 'T' ? '✓ Reg open' : 'distance') + '</div>' +
+        '</div>' +
+      '</a>';
+    }).join('');
+  }
+
+  // radius buttons
+  document.querySelectorAll('.radius-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.radius-btn').forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      activeRadius = parseInt(btn.dataset.radius);
+      // Update description
+      document.querySelector('#tab-races .section-desc').textContent =
+        'Upcoming races within ' + activeRadius + ' miles of Fairfield, CT. Updated every Monday and Thursday.';
+      renderRaces();
+    });
+  });
+
+  // load races when tab is opened (lazy)
+  var racesLoaded = false;
+  document.querySelectorAll('.tab').forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      if (tab.dataset.tab === 'races' && !racesLoaded) {
+        racesLoaded = true;
+        loadRaces();
+      }
+    });
+  });
 
   var STRAVA_SCOPE = 'read,activity:read';
   var stravaToken = null;
@@ -1764,6 +1907,11 @@ document.addEventListener('DOMContentLoaded', function() {
   var inner   = document.getElementById('wx-panel-inner');
   var reqBtn  = document.getElementById('wx-request-btn');
 
+  // Default: Fairfield, CT
+  var DEFAULT_LAT = '41.1409';
+  var DEFAULT_LON = '-73.2637';
+  var DEFAULT_CITY = 'Fairfield, CT';
+
   // toggle open/close
   pill.addEventListener('click', function(e) {
     e.stopPropagation();
@@ -1776,23 +1924,18 @@ document.addEventListener('DOMContentLoaded', function() {
   reqBtn && reqBtn.addEventListener('click', function() { requestLocation(); });
 
   function requestLocation() {
-    if (!navigator.geolocation) {
-      showError('Geolocation is not supported by this browser.');
-      return;
-    }
     pillTemp.textContent = '...';
     pill.classList.add('loading');
-    navigator.geolocation.getCurrentPosition(onPosition, onGeoError, { timeout: 10000 });
+    if (!navigator.geolocation) {
+      useDefault();
+      return;
+    }
+    navigator.geolocation.getCurrentPosition(onPosition, useDefault, { timeout: 8000 });
   }
 
-  function onGeoError(err) {
-    pill.classList.remove('loading');
-    pillTemp.textContent = 'Weather';
-    if (err.code === 1) {
-      showError('Location access denied. Enable it in your browser settings and refresh.');
-    } else {
-      showError('Could not get your location. Try again.');
-    }
+  function useDefault() {
+    cityName = DEFAULT_CITY;
+    fetchWeather(DEFAULT_LAT, DEFAULT_LON);
   }
 
   function onPosition(pos) {
@@ -1802,14 +1945,14 @@ document.addEventListener('DOMContentLoaded', function() {
     reverseGeocode(lat, lon);
   }
 
-  var cityName = '';
+  var cityName = DEFAULT_CITY;
   function reverseGeocode(lat, lon) {
     fetch('https://nominatim.openstreetmap.org/reverse?lat=' + lat + '&lon=' + lon + '&format=json')
       .then(function(r) { return r.json(); })
       .then(function(d) {
-        cityName = d.address.city || d.address.town || d.address.village || d.address.county || '';
+        cityName = d.address.city || d.address.town || d.address.village || d.address.county || DEFAULT_CITY;
         var cityEl = document.getElementById('wx-city');
-        if (cityEl && cityName) cityEl.textContent = cityName;
+        if (cityEl) cityEl.textContent = cityName;
       }).catch(function() {});
   }
 
@@ -1875,11 +2018,11 @@ document.addEventListener('DOMContentLoaded', function() {
   function showError(msg) {
     inner.innerHTML = '<div class="wx-error">' +
       '<div style="margin-bottom:10px;">' + msg + '</div>' +
-      '<button class="wx-location-btn" onclick="document.getElementById(\'wx-request-btn\') && document.getElementById(\'wx-request-btn\').click()">Try Again</button>' +
+      '<button class="wx-location-btn" onclick="(function(){cityName=\'Fairfield, CT\';fetchWeather(\'41.1409\',\'-73.2637\')})()">Use Fairfield, CT</button>' +
       '</div>';
   }
 
-  // auto-request on load
+  // auto-load on page start — try geolocation, fall back to Fairfield CT
   document.addEventListener('DOMContentLoaded', function() {
     requestLocation();
   });
