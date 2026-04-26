@@ -14,29 +14,21 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Fetch races from RunSignup API
-        env:
-          API_KEY: ${{ secrets.RUNSIGNUP_API_KEY }}
-          API_SECRET: ${{ secrets.RUNSIGNUP_API_SECRET }}
+      - name: Fetch races from RunSignup API (unauthenticated)
         run: |
           python3 << 'EOF'
           import urllib.request
           import urllib.parse
           import json
-          import os
           from datetime import datetime, timedelta
 
-          api_key    = os.environ['API_KEY']
-          api_secret = os.environ['API_SECRET']
-          zipcode    = '06825'
-          radius     = 50   # fetch 50mi max — UI filters client-side by 15/25/50
+          zipcode  = '06825'
+          radius   = 50   # fetch 50mi max — UI filters client-side by 15/25/50
 
           today    = datetime.utcnow().strftime('%m/%d/%Y')
           end_date = (datetime.utcnow() + timedelta(days=180)).strftime('%m/%d/%Y')
 
           params = urllib.parse.urlencode({
-            'api_key':          api_key,
-            'api_secret':       api_secret,
             'format':           'json',
             'zipcode':          zipcode,
             'radius':           radius,
@@ -49,12 +41,22 @@ jobs:
           })
 
           url = 'https://api.runsignup.com/rest/races?' + params
+          print(f"Fetching: {url}")
+
           req = urllib.request.Request(url, headers={'User-Agent': 'RaceFinderBot/1.0'})
 
           with urllib.request.urlopen(req, timeout=30) as resp:
-            data = json.loads(resp.read().decode())
+            raw = resp.read().decode()
+            print(f"Response status: {resp.status}")
+            print(f"Response preview: {raw[:500]}")
+            data = json.loads(raw)
+
+          # Check for error response
+          if 'error' in data:
+            raise Exception(f"API error: {data['error']}")
 
           races_raw = data.get('races', [])
+          print(f"Found {len(races_raw)} races")
           races = []
 
           for item in races_raw:
@@ -64,10 +66,8 @@ jobs:
             if r.get('is_draft_race') == 'T' or r.get('is_private_race') == 'T':
               continue
 
-            # next_date is returned directly on the race object — no need to dig into events
             next_date = r.get('next_date', '')
 
-            # Gather unique non-volunteer distances from events
             events = r.get('events', [])
             distances = list(dict.fromkeys(
               e.get('distance', '') for e in events
@@ -108,3 +108,4 @@ jobs:
           git add races.json
           git diff --staged --quiet || git commit -m "chore: refresh races.json [skip ci]"
           git push
+
