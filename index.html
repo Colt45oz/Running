@@ -127,6 +127,134 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
 .streak-num { font-family: 'Bebas Neue', sans-serif; font-size: 48px; color: var(--accent); line-height: 1; }
 .streak-label { font-size: 13px; color: var(--muted); }
 .streak-label strong { display: block; font-size: 15px; color: var(--text); font-weight: 600; margin-bottom: 2px; }
+
+/* STRETCH ILLUSTRATIONS */
+.stretch-card { background: var(--surface); border: 1px solid var(--border); padding: 0; transition: border-color 0.2s; overflow: hidden; }
+.stretch-card:hover { border-color: var(--accent2); }
+.stretch-inner { display: grid; grid-template-columns: 1fr; }
+@media (min-width: 580px) { .stretch-inner { grid-template-columns: 120px 1fr; } }
+.stretch-illus { background: var(--surface2); display: flex; align-items: center; justify-content: center; padding: 20px; min-height: 110px; border-right: 1px solid var(--border); }
+.stretch-illus svg { width: 80px; height: 80px; }
+.stretch-text { padding: 18px 20px; }
+.stretch-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+.stretch-name { font-weight: 600; font-size: 15px; margin-bottom: 3px; }
+.stretch-target { font-size: 11px; color: var(--accent2); letter-spacing: 1px; text-transform: uppercase; }
+.stretch-duration { font-family: 'Bebas Neue', sans-serif; font-size: 26px; color: var(--accent); line-height: 1; white-space: nowrap; }
+.stretch-how { font-size: 13px; color: var(--muted); line-height: 1.7; }
+
+/* RESOURCES — CALCULATORS */
+.resources-grid { display: grid; grid-template-columns: 1fr; gap: 32px; }
+@media (min-width: 700px) { .resources-grid { grid-template-columns: 1fr 1fr; } }
+
+.calc-card { background: var(--surface); border: 1px solid var(--border); overflow: hidden; }
+.calc-card-header { padding: 20px 24px 16px; border-bottom: 1px solid var(--border); }
+.calc-card-header .section-label { margin-bottom: 4px; }
+.calc-card-header .section-title { font-size: 28px; margin-bottom: 0; }
+.calc-card-body { padding: 22px 24px; }
+
+/* inputs */
+.calc-input-row { display: flex; gap: 10px; margin-bottom: 18px; flex-wrap: wrap; align-items: flex-end; }
+.calc-field { display: flex; flex-direction: column; gap: 5px; }
+.calc-field label { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.calc-field input, .calc-field select {
+  background: var(--surface2); border: 1px solid var(--border); color: var(--text);
+  font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 600;
+  padding: 10px 12px; width: 90px; outline: none; transition: border-color 0.2s;
+  -moz-appearance: textfield;
+}
+.calc-field input::-webkit-outer-spin-button,
+.calc-field input::-webkit-inner-spin-button { -webkit-appearance: none; }
+.calc-field input:focus, .calc-field select:focus { border-color: var(--accent); }
+.calc-field select { width: 120px; cursor: pointer; }
+.calc-field .unit-label { font-size: 11px; color: var(--muted); padding-top: 2px; }
+.calc-separator { font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--border); padding-bottom: 10px; }
+.calc-btn { background: var(--accent); color: #000; border: none; font-family: 'DM Sans', sans-serif;
+  font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 11px 20px; cursor: pointer; transition: opacity 0.2s; align-self: flex-end; white-space: nowrap; }
+.calc-btn:hover { opacity: 0.85; }
+.calc-display { font-family: 'Bebas Neue', sans-serif; font-size: 42px; color: var(--accent); line-height: 1; margin-bottom: 4px; }
+.calc-display-label { font-size: 11px; color: var(--muted); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 20px; }
+.calc-toggle { display: flex; gap: 2px; margin-bottom: 18px; }
+.calc-toggle-btn { padding: 7px 16px; font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  font-family: 'DM Sans', sans-serif; font-weight: 600; cursor: pointer; border: 1px solid var(--border);
+  background: transparent; color: var(--muted); transition: all 0.2s; }
+.calc-toggle-btn.active { background: rgba(232,255,71,0.08); border-color: var(--accent); color: var(--accent); }
+
+/* finish time table */
+.finish-table { width: 100%; border-collapse: collapse; margin-top: 4px; font-size: 13px; }
+.finish-table th { font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted);
+  font-weight: 600; padding: 6px 8px; text-align: right; border-bottom: 1px solid var(--border); }
+.finish-table th:first-child { text-align: left; }
+.finish-table td { padding: 7px 8px; text-align: right; border-bottom: 1px solid rgba(42,44,56,0.5); color: #ccc; font-size: 13px; }
+.finish-table td:first-child { text-align: left; color: var(--muted); font-size: 12px; }
+.finish-table tr.highlight td { color: var(--text); font-weight: 600; }
+.finish-table tr.highlight td:first-child { color: var(--accent); }
+.finish-table tr.target-col td:nth-child(3) { color: var(--accent); font-weight: 600; }
+
+/* segment planner */
+.seg-table { width: 100%; border-collapse: collapse; margin-bottom: 16px; }
+.seg-table th { font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent);
+  font-weight: 600; padding: 8px 10px; text-align: left; border-bottom: 1px solid var(--border); }
+.seg-table td { padding: 4px 4px; border-bottom: 1px solid rgba(42,44,56,0.4); }
+.seg-table td input { background: var(--surface2); border: 1px solid var(--border); color: var(--text);
+  font-family: 'DM Sans', sans-serif; font-size: 13px; padding: 7px 8px; width: 100%; outline: none;
+  transition: border-color 0.2s; -moz-appearance: textfield; }
+.seg-table td input::-webkit-outer-spin-button, .seg-table td input::-webkit-inner-spin-button { -webkit-appearance: none; }
+.seg-table td input:focus { border-color: var(--accent); }
+.seg-table .seg-out { font-family: 'Bebas Neue', sans-serif; font-size: 16px; color: var(--accent);
+  padding: 7px 10px; font-weight: normal; white-space: nowrap; }
+.seg-table .seg-out.muted { color: var(--muted); font-family: 'DM Sans', sans-serif; font-size: 13px; }
+.seg-totals { background: var(--surface2); border: 1px solid var(--border); padding: 16px 18px;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.seg-total-val { font-family: 'Bebas Neue', sans-serif; font-size: 30px; color: var(--accent); line-height: 1; }
+.seg-total-label { font-size: 10px; color: var(--muted); letter-spacing: 1.5px; text-transform: uppercase; }
+.seg-add-btn { font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: var(--muted);
+  background: none; border: 1px solid var(--border); padding: 8px 16px; cursor: pointer;
+  font-family: 'DM Sans', sans-serif; transition: all 0.2s; margin-bottom: 16px; }
+.seg-add-btn:hover { border-color: var(--accent); color: var(--accent); }
+.seg-del { background: none; border: none; color: var(--border); cursor: pointer; font-size: 16px;
+  padding: 4px 8px; transition: color 0.2s; line-height: 1; }
+.seg-del:hover { color: var(--red); }
+
+/* download card */
+.download-card { background: var(--surface); border: 1px solid var(--border); padding: 24px;
+  display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+.download-icon { width: 48px; height: 48px; background: rgba(232,255,71,0.08);
+  border: 1px solid rgba(232,255,71,0.2); display: flex; align-items: center; justify-content: center;
+  font-size: 22px; flex-shrink: 0; }
+.download-info { flex: 1; min-width: 180px; }
+.download-name { font-weight: 600; font-size: 15px; margin-bottom: 4px; }
+.download-meta { font-size: 12px; color: var(--muted); }
+.download-btn { display: inline-flex; align-items: center; gap: 8px; background: transparent;
+  border: 1px solid var(--accent); color: var(--accent); font-family: 'DM Sans', sans-serif;
+  font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 10px 18px; cursor: pointer; text-decoration: none; transition: all 0.2s; }
+.download-btn:hover { background: rgba(232,255,71,0.08); }
+
+.strava-connect-box { background: var(--surface); border: 1px solid var(--border); padding: 32px 28px; margin-bottom: 28px; display: flex; flex-direction: column; align-items: flex-start; gap: 16px; }
+.strava-connect-box.connected { border-color: #FC4C02; }
+.strava-logo { display: flex; align-items: center; gap: 10px; }
+.strava-logo svg { width: 28px; height: 28px; }
+.strava-logo span { font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 1px; color: #FC4C02; }
+.strava-desc { font-size: 13px; color: var(--muted); line-height: 1.7; max-width: 480px; }
+.strava-btn { display: inline-flex; align-items: center; gap: 8px; background: #FC4C02; color: #fff; font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; border: none; padding: 12px 22px; cursor: pointer; text-decoration: none; transition: opacity 0.2s; }
+.strava-btn:hover { opacity: 0.85; }
+.strava-btn.disconnect { background: transparent; border: 1px solid var(--red); color: var(--red); }
+.strava-runs { display: flex; flex-direction: column; gap: 8px; }
+.run-row { display: grid; grid-template-columns: 1fr auto auto auto; gap: 16px; align-items: center; background: var(--surface); border: 1px solid var(--border); padding: 14px 18px; }
+.run-name { font-size: 14px; font-weight: 600; }
+.run-date { font-size: 11px; color: var(--muted); margin-top: 2px; }
+.run-stat { text-align: right; }
+.run-stat-val { font-family: 'Bebas Neue', sans-serif; font-size: 22px; color: var(--accent); line-height: 1; }
+.run-stat-label { font-size: 10px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; }
+.strava-note { font-size: 11px; color: var(--muted); margin-top: 8px; line-height: 1.6; border-left: 2px solid var(--border); padding-left: 12px; }
+.strava-note a { color: var(--accent); }
+.strava-setup { background: rgba(252,76,2,0.04); border: 1px solid rgba(252,76,2,0.2); padding: 16px 18px; font-size: 13px; color: var(--muted); line-height: 1.7; }
+.strava-setup code { background: var(--surface2); color: var(--accent); padding: 2px 6px; font-size: 11px; }
+.strava-profile { display: flex; align-items: center; gap: 14px; }
+.strava-avatar { width: 44px; height: 44px; border-radius: 50%; border: 2px solid #FC4C02; object-fit: cover; }
+.strava-profile-name { font-weight: 600; font-size: 15px; }
+.strava-profile-sub { font-size: 12px; color: var(--muted); }
 </style>
 </head>
 <body>
@@ -147,6 +275,8 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
   <button class="tab" data-tab="stretches">Stretches</button>
   <button class="tab" data-tab="program">Program</button>
   <button class="tab" data-tab="tracker">Tracker</button>
+  <button class="tab" data-tab="strava">Strava</button>
+  <button class="tab" data-tab="resources">Resources</button>
 </div>
 
 <!-- STRENGTHEN -->
@@ -181,7 +311,7 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
             <ul class="steps-list">
               <li><span class="step-num">1</span>Lie on your side, hips stacked, knees bent at 45 degrees</li>
               <li><span class="step-num">2</span>Keep feet together and rotate top knee upward like a clamshell opening</li>
-              <li><span class="step-num">3</span>Stop at 45 degrees -- do not let your hip roll back</li>
+              <li><span class="step-num">3</span>Stop at 45 degrees — do not let your hip roll back</li>
               <li><span class="step-num">4</span>Slowly lower back down with control</li>
             </ul>
             <div class="pro-tip"><strong>Pro tip:</strong> Add a resistance band above the knees once bodyweight feels easy. You should feel a burn in the side of your hip.</div>
@@ -214,7 +344,7 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
             <ul class="steps-list">
               <li><span class="step-num">1</span>Lie on back, feet flat on floor, knees bent at 90 degrees</li>
               <li><span class="step-num">2</span>Drive through heels and squeeze glutes to lift hips</li>
-              <li><span class="step-num">3</span>Hold at top for 2 seconds -- body forms a straight line</li>
+              <li><span class="step-num">3</span>Hold at top for 2 seconds — body forms a straight line</li>
               <li><span class="step-num">4</span>Lower slowly, do not let your hips drop quickly</li>
             </ul>
             <div class="pro-tip"><strong>Progress:</strong> Move to single-leg glute bridges once comfortable. Place a weight across your hips for added load.</div>
@@ -247,7 +377,7 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
             <ul class="steps-list">
               <li><span class="step-num">1</span>Stand on one leg with a slight bend in the knee</li>
               <li><span class="step-num">2</span>Hinge at hips, reach hands toward floor as rear leg extends back</li>
-              <li><span class="step-num">3</span>Keep back flat and hips square -- do not let hip rotate open</li>
+              <li><span class="step-num">3</span>Keep back flat and hips square — do not let hip rotate open</li>
               <li><span class="step-num">4</span>Squeeze glute to return to standing</li>
             </ul>
             <div class="pro-tip"><strong>Key:</strong> Go slow (3 sec down) to maximize glute and hip stability gains. Use a wall for balance if needed early on.</div>
@@ -280,8 +410,8 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
             <ul class="steps-list">
               <li><span class="step-num">1</span>Lie on your side with legs straight and stacked</li>
               <li><span class="step-num">2</span>Keeping foot flexed, lift top leg 12 to 18 inches</li>
-              <li><span class="step-num">3</span>Do not let the hip roll back -- keep it stacked</li>
-              <li><span class="step-num">4</span>Lower with control -- no dropping</li>
+              <li><span class="step-num">3</span>Do not let the hip roll back — keep it stacked</li>
+              <li><span class="step-num">4</span>Lower with control — no dropping</li>
             </ul>
             <div class="pro-tip"><strong>Level up:</strong> Add ankle weights or a resistance band at the ankles for more burn.</div>
           </div>
@@ -314,7 +444,7 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
               <li><span class="step-num">1</span>Place one foot on a sturdy box or step (8 to 12 inches)</li>
               <li><span class="step-num">2</span>Drive through your heel to step up, driving opposite knee up</li>
               <li><span class="step-num">3</span>Stand tall at the top, then lower the trailing leg slowly</li>
-              <li><span class="step-num">4</span>Keep knee tracking over second toe -- do not cave inward</li>
+              <li><span class="step-num">4</span>Keep knee tracking over second toe — do not cave inward</li>
             </ul>
             <div class="pro-tip"><strong>Runner specific:</strong> The knee drive mimics running mechanics and directly transfers to your stride.</div>
           </div>
@@ -355,6 +485,105 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
       </div>
     </div>
 
+    <div class="exercise-card">
+      <div class="card-header">
+        <div class="card-left">
+          <div class="card-num">07</div>
+          <div class="card-info">
+            <h3>Lateral Band Walk</h3>
+            <div class="card-meta">
+              <span class="badge sets">3 x 15 steps each way</span>
+              <span class="badge focus">Glute Med + Min</span>
+            </div>
+          </div>
+        </div>
+        <div class="chevron">&#9660;</div>
+      </div>
+      <div class="card-body">
+        <div class="card-body-inner">
+          <div class="video-wrap">
+            <iframe src="https://www.youtube-nocookie.com/embed/iBzIEQOdMDc" allowfullscreen loading="lazy" title="Lateral band walk"></iframe>
+          </div>
+          <div class="how-to">
+            <h4>How To</h4>
+            <ul class="steps-list">
+              <li><span class="step-num">1</span>Place a resistance band just above or below your knees</li>
+              <li><span class="step-num">2</span>Stand in a half-squat with feet hip-width apart and toes forward</li>
+              <li><span class="step-num">3</span>Step sideways, keeping band tension the whole way — do not let feet come together</li>
+              <li><span class="step-num">4</span>Take 15 steps left, then 15 right — that is one set</li>
+            </ul>
+            <div class="pro-tip"><strong>Form check:</strong> Keep your torso upright and avoid shifting your weight side to side. The glutes, not your lower back, should be doing the work.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="exercise-card">
+      <div class="card-header">
+        <div class="card-left">
+          <div class="card-num">08</div>
+          <div class="card-info">
+            <h3>Nordic Hamstring Curl</h3>
+            <div class="card-meta">
+              <span class="badge sets">3 x 6–8 reps</span>
+              <span class="badge focus">Hamstrings (Eccentric)</span>
+            </div>
+          </div>
+        </div>
+        <div class="chevron">&#9660;</div>
+      </div>
+      <div class="card-body">
+        <div class="card-body-inner">
+          <div class="video-wrap">
+            <iframe src="https://www.youtube-nocookie.com/embed/X1nREfrKBU4" allowfullscreen loading="lazy" title="Nordic hamstring curl"></iframe>
+          </div>
+          <div class="how-to">
+            <h4>How To</h4>
+            <ul class="steps-list">
+              <li><span class="step-num">1</span>Kneel on a pad with feet anchored under a couch or bar</li>
+              <li><span class="step-num">2</span>With hands ready to catch you, lower your torso forward as slowly as possible</li>
+              <li><span class="step-num">3</span>Use your hands to push off the floor, then contract your hamstrings to pull back up</li>
+              <li><span class="step-num">4</span>Aim for a 4 to 6 second lowering phase</li>
+            </ul>
+            <div class="pro-tip"><strong>Why it's elite:</strong> Eccentric hamstring strength is one of the best injury-prevention tools in running. Studies show it reduces hamstring and knee injuries by up to 50%. Start Phase 2 only.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="exercise-card">
+      <div class="card-header">
+        <div class="card-left">
+          <div class="card-num">09</div>
+          <div class="card-info">
+            <h3>Terminal Knee Extension (TKE)</h3>
+            <div class="card-meta">
+              <span class="badge sets">3 x 20 each leg</span>
+              <span class="badge focus">VMO / Quad Control</span>
+            </div>
+          </div>
+        </div>
+        <div class="chevron">&#9660;</div>
+      </div>
+      <div class="card-body">
+        <div class="card-body-inner">
+          <div class="video-wrap">
+            <iframe src="https://www.youtube-nocookie.com/embed/fL7gITJpYA8" allowfullscreen loading="lazy" title="Terminal knee extension"></iframe>
+          </div>
+          <div class="how-to">
+            <h4>How To</h4>
+            <ul class="steps-list">
+              <li><span class="step-num">1</span>Anchor a resistance band to a fixed point at knee height and loop it behind your knee</li>
+              <li><span class="step-num">2</span>Step away to create tension, stand on one leg with knee slightly bent</li>
+              <li><span class="step-num">3</span>Straighten your knee against the band resistance by contracting your quad — focus on feeling the VMO (inner quad) fire</li>
+              <li><span class="step-num">4</span>Slowly return to the start, controlling the band</li>
+            </ul>
+            <div class="pro-tip"><strong>Physical therapy staple:</strong> The TKE is one of the most targeted exercises for patellofemoral pain. It trains the VMO in the exact range where runner's knee hurts most — near full extension.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -365,55 +594,339 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
   <p class="section-desc">Do these after every run and strength session. Hold each for the time shown. No bouncing. Consistency here prevents future flare-ups.</p>
 
   <div class="stretch-grid">
+
+    <!-- 1. Standing Quad -->
     <div class="stretch-card">
-      <div class="stretch-top">
-        <div><div class="stretch-name">Standing Quad Stretch</div><div class="stretch-target">Quadriceps / Kneecap Tension</div></div>
-        <div class="stretch-duration">30s x 3</div>
+      <div class="stretch-inner">
+        <div class="stretch-illus">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- head -->
+            <circle cx="40" cy="10" r="7" fill="#e8ff47" opacity="0.9"/>
+            <!-- torso upright -->
+            <line x1="40" y1="17" x2="40" y2="45" stroke="#e8ff47" stroke-width="3" stroke-linecap="round"/>
+            <!-- standing leg -->
+            <line x1="40" y1="45" x2="38" y2="68" stroke="#e8ff47" stroke-width="3" stroke-linecap="round"/>
+            <line x1="38" y1="68" x2="36" y2="75" stroke="#e8ff47" stroke-width="2.5" stroke-linecap="round"/>
+            <!-- bent leg pulled back -->
+            <path d="M40 45 Q52 52 50 62" stroke="#ff6b35" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <!-- arm reaching back to grab foot -->
+            <path d="M40 28 Q55 36 50 62" stroke="#888" stroke-width="2" stroke-linecap="round" fill="none" stroke-dasharray="3 2"/>
+            <!-- foot dot -->
+            <circle cx="50" cy="62" r="3" fill="#ff6b35" opacity="0.8"/>
+            <!-- wall line -->
+            <line x1="20" y1="15" x2="20" y2="75" stroke="#2a2c38" stroke-width="2"/>
+            <!-- arm on wall -->
+            <line x1="40" y1="28" x2="20" y2="30" stroke="#888" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="stretch-text">
+          <div class="stretch-top">
+            <div><div class="stretch-name">Standing Quad Stretch</div><div class="stretch-target">Quadriceps / Kneecap Tension</div></div>
+            <div class="stretch-duration">30s x 3</div>
+          </div>
+          <div class="stretch-how">Stand tall, pull one foot toward your glute, keeping knees together. Tilt your pelvis slightly forward for a deeper stretch. Use a wall for balance. Essential — tight quads are a top cause of patellofemoral pain.</div>
+        </div>
       </div>
-      <div class="stretch-how">Stand tall, pull one foot toward your glute, keeping knees together. Tilt your pelvis slightly forward for a deeper stretch. Use a wall for balance. Essential -- tight quads are a top cause of patellofemoral pain.</div>
     </div>
+
+    <!-- 2. Figure-4 -->
     <div class="stretch-card">
-      <div class="stretch-top">
-        <div><div class="stretch-name">Figure-4 Piriformis Stretch</div><div class="stretch-target">Glutes / Piriformis / IT Band</div></div>
-        <div class="stretch-duration">45s x 2</div>
+      <div class="stretch-inner">
+        <div class="stretch-illus">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- head -->
+            <circle cx="40" cy="12" r="6" fill="#e8ff47" opacity="0.9"/>
+            <!-- torso slightly raised on elbows -->
+            <line x1="40" y1="18" x2="40" y2="42" stroke="#e8ff47" stroke-width="3" stroke-linecap="round"/>
+            <!-- floor leg bent -->
+            <path d="M40 42 Q30 52 22 50" stroke="#e8ff47" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <path d="M22 50 Q18 60 24 65" stroke="#e8ff47" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <!-- figure-4 crossed leg -->
+            <path d="M40 42 Q50 46 48 55" stroke="#ff6b35" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <path d="M48 55 Q36 58 22 50" stroke="#ff6b35" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <!-- arms -->
+            <line x1="40" y1="28" x2="28" y2="38" stroke="#888" stroke-width="2" stroke-linecap="round"/>
+            <line x1="40" y1="28" x2="52" y2="38" stroke="#888" stroke-width="2" stroke-linecap="round"/>
+            <!-- floor -->
+            <line x1="10" y1="72" x2="70" y2="72" stroke="#2a2c38" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="stretch-text">
+          <div class="stretch-top">
+            <div><div class="stretch-name">Figure-4 Piriformis Stretch</div><div class="stretch-target">Glutes / Piriformis / IT Band</div></div>
+            <div class="stretch-duration">45s x 2</div>
+          </div>
+          <div class="stretch-how">Lying on your back, cross one ankle over the opposite knee. Pull the lower leg toward your chest until you feel a deep stretch in the outer glute. Tight piriformis alters hip mechanics and stresses the knee.</div>
+        </div>
       </div>
-      <div class="stretch-how">Lying on your back, cross one ankle over the opposite knee. Pull the lower leg toward your chest until you feel a deep stretch in the outer glute. Tight piriformis alters hip mechanics and stresses the knee.</div>
     </div>
+
+    <!-- 3. Hip Flexor Lunge -->
     <div class="stretch-card">
-      <div class="stretch-top">
-        <div><div class="stretch-name">Hip Flexor Lunge Stretch</div><div class="stretch-target">Hip Flexors / Psoas</div></div>
-        <div class="stretch-duration">45s x 2 each</div>
+      <div class="stretch-inner">
+        <div class="stretch-illus">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- head -->
+            <circle cx="42" cy="10" r="6" fill="#e8ff47" opacity="0.9"/>
+            <!-- upright torso -->
+            <line x1="42" y1="16" x2="42" y2="38" stroke="#e8ff47" stroke-width="3" stroke-linecap="round"/>
+            <!-- front leg (knee up, foot flat) -->
+            <path d="M42 38 Q48 42 50 52" stroke="#e8ff47" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <path d="M50 52 Q52 60 52 65" stroke="#e8ff47" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <!-- back leg (kneeling) -->
+            <path d="M42 38 Q32 44 28 58" stroke="#ff6b35" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <path d="M28 58 Q30 65 34 67" stroke="#ff6b35" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <!-- knee dot on floor -->
+            <circle cx="28" cy="60" r="3" fill="#ff6b35" opacity="0.5"/>
+            <!-- arms up/relaxed -->
+            <line x1="42" y1="25" x2="30" y2="35" stroke="#888" stroke-width="2" stroke-linecap="round"/>
+            <line x1="42" y1="25" x2="54" y2="32" stroke="#888" stroke-width="2" stroke-linecap="round"/>
+            <!-- floor -->
+            <line x1="10" y1="68" x2="70" y2="68" stroke="#2a2c38" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="stretch-text">
+          <div class="stretch-top">
+            <div><div class="stretch-name">Hip Flexor Lunge Stretch</div><div class="stretch-target">Hip Flexors / Psoas</div></div>
+            <div class="stretch-duration">45s x 2 each</div>
+          </div>
+          <div class="stretch-how">In a kneeling lunge, push hips forward until you feel a stretch in the front of the back hip. Keep core braced and torso tall. Tight hip flexors change your stride pattern and overload the knee.</div>
+        </div>
       </div>
-      <div class="stretch-how">In a kneeling lunge, push hips forward until you feel a stretch in the front of the back hip. Keep core braced and torso tall. Tight hip flexors change your stride pattern and overload the knee.</div>
     </div>
+
+    <!-- 4. IT Band -->
     <div class="stretch-card">
-      <div class="stretch-top">
-        <div><div class="stretch-name">IT Band Stretch (Cross-Leg)</div><div class="stretch-target">IT Band / TFL</div></div>
-        <div class="stretch-duration">30s x 3 each</div>
+      <div class="stretch-inner">
+        <div class="stretch-illus">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- wall -->
+            <line x1="18" y1="5" x2="18" y2="75" stroke="#2a2c38" stroke-width="2"/>
+            <!-- head -->
+            <circle cx="42" cy="10" r="6" fill="#e8ff47" opacity="0.9"/>
+            <!-- torso leaning sideways -->
+            <path d="M42 16 Q38 28 35 42" stroke="#e8ff47" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <!-- standing leg -->
+            <line x1="35" y1="42" x2="36" y2="68" stroke="#e8ff47" stroke-width="3" stroke-linecap="round"/>
+            <!-- cross leg behind -->
+            <path d="M35 42 Q46 50 48 65" stroke="#ff6b35" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <!-- IT band highlight line -->
+            <path d="M46 42 Q50 55 48 65" stroke="#ff6b35" stroke-width="1.5" stroke-dasharray="3 2" opacity="0.6" fill="none"/>
+            <!-- arm on wall -->
+            <line x1="35" y1="28" x2="18" y2="26" stroke="#888" stroke-width="2" stroke-linecap="round"/>
+            <!-- floor -->
+            <line x1="10" y1="70" x2="70" y2="70" stroke="#2a2c38" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="stretch-text">
+          <div class="stretch-top">
+            <div><div class="stretch-name">IT Band Stretch (Cross-Leg)</div><div class="stretch-target">IT Band / TFL</div></div>
+            <div class="stretch-duration">30s x 3 each</div>
+          </div>
+          <div class="stretch-how">Stand and cross one leg behind the other. Lean toward the side of the back leg, pushing your hip out. You will feel a stretch along the outer thigh and into the knee. A tight IT band pulls the kneecap laterally.</div>
+        </div>
       </div>
-      <div class="stretch-how">Stand and cross one leg behind the other. Lean toward the side of the back leg, pushing your hip out. You will feel a stretch along the outer thigh and into the knee. A tight IT band pulls the kneecap laterally.</div>
     </div>
+
+    <!-- 5. Downward Dog -->
     <div class="stretch-card">
-      <div class="stretch-top">
-        <div><div class="stretch-name">Downward Dog Calf Stretch</div><div class="stretch-target">Calves / Achilles</div></div>
-        <div class="stretch-duration">30s x 2</div>
+      <div class="stretch-inner">
+        <div class="stretch-illus">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- head down -->
+            <circle cx="16" cy="42" r="5" fill="#e8ff47" opacity="0.9"/>
+            <!-- arms -->
+            <line x1="16" y1="42" x2="26" y2="28" stroke="#e8ff47" stroke-width="3" stroke-linecap="round"/>
+            <!-- torso (hips up = inverted V) -->
+            <line x1="26" y1="28" x2="46" y2="20" stroke="#e8ff47" stroke-width="3" stroke-linecap="round"/>
+            <!-- legs -->
+            <line x1="46" y1="20" x2="56" y2="38" stroke="#e8ff47" stroke-width="3" stroke-linecap="round"/>
+            <line x1="56" y1="38" x2="60" y2="55" stroke="#ff6b35" stroke-width="3" stroke-linecap="round"/>
+            <!-- heel press highlight -->
+            <circle cx="60" cy="57" r="4" fill="#ff6b35" opacity="0.7"/>
+            <!-- hands on floor -->
+            <circle cx="26" cy="30" r="3" fill="#e8ff47" opacity="0.4"/>
+            <!-- floor -->
+            <line x1="10" y1="62" x2="70" y2="62" stroke="#2a2c38" stroke-width="1.5"/>
+            <!-- hip apex dot -->
+            <circle cx="46" cy="20" r="3" fill="#e8ff47" opacity="0.5"/>
+          </svg>
+        </div>
+        <div class="stretch-text">
+          <div class="stretch-top">
+            <div><div class="stretch-name">Downward Dog Calf Stretch</div><div class="stretch-target">Calves / Achilles</div></div>
+            <div class="stretch-duration">30s x 2</div>
+          </div>
+          <div class="stretch-how">In downward dog, alternate pressing each heel toward the floor. Tight calves change landing mechanics and increase knee load with every step. Add a foam roll on the calves first for best results.</div>
+        </div>
       </div>
-      <div class="stretch-how">In downward dog, alternate pressing each heel toward the floor. Tight calves change landing mechanics and increase knee load with every step. Add a foam roll on the calves first for best results.</div>
     </div>
+
+    <!-- 6. Supine Hamstring -->
     <div class="stretch-card">
-      <div class="stretch-top">
-        <div><div class="stretch-name">Supine Hamstring Stretch</div><div class="stretch-target">Hamstrings / Posterior Chain</div></div>
-        <div class="stretch-duration">45s x 2 each</div>
+      <div class="stretch-inner">
+        <div class="stretch-illus">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- head -->
+            <circle cx="14" cy="38" r="5.5" fill="#e8ff47" opacity="0.9"/>
+            <!-- flat torso -->
+            <line x1="14" y1="43" x2="45" y2="50" stroke="#e8ff47" stroke-width="3" stroke-linecap="round"/>
+            <!-- flat leg on floor -->
+            <line x1="45" y1="50" x2="68" y2="52" stroke="#e8ff47" stroke-width="3" stroke-linecap="round"/>
+            <!-- raised leg vertical -->
+            <path d="M45 50 Q38 35 35 18" stroke="#ff6b35" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <!-- foot at top -->
+            <circle cx="35" cy="16" r="3.5" fill="#ff6b35" opacity="0.8"/>
+            <!-- strap/hands -->
+            <path d="M22 44 Q28 30 35 16" stroke="#888" stroke-width="1.5" stroke-dasharray="3 2" fill="none"/>
+            <!-- floor -->
+            <line x1="8" y1="58" x2="72" y2="58" stroke="#2a2c38" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="stretch-text">
+          <div class="stretch-top">
+            <div><div class="stretch-name">Supine Hamstring Stretch</div><div class="stretch-target">Hamstrings / Posterior Chain</div></div>
+            <div class="stretch-duration">45s x 2 each</div>
+          </div>
+          <div class="stretch-how">Lie on your back and lift one leg, holding behind the knee or calf. Keep the opposite leg flat on the floor. Tight hamstrings pull on the pelvis and increase compressive forces at the kneecap. Use a strap if needed.</div>
+        </div>
       </div>
-      <div class="stretch-how">Lie on your back and lift one leg, holding behind the knee or calf. Keep the opposite leg flat on the floor. Tight hamstrings pull on the pelvis and increase compressive forces at the kneecap. Use a strap if needed.</div>
     </div>
+
+    <!-- 7. Seated Butterfly -->
     <div class="stretch-card">
-      <div class="stretch-top">
-        <div><div class="stretch-name">Seated Butterfly Stretch</div><div class="stretch-target">Hip Adductors / Groin</div></div>
-        <div class="stretch-duration">60s x 1</div>
+      <div class="stretch-inner">
+        <div class="stretch-illus">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- head -->
+            <circle cx="40" cy="14" r="6" fill="#e8ff47" opacity="0.9"/>
+            <!-- torso -->
+            <line x1="40" y1="20" x2="40" y2="46" stroke="#e8ff47" stroke-width="3" stroke-linecap="round"/>
+            <!-- left leg butterfly -->
+            <path d="M40 46 Q28 50 20 58" stroke="#ff6b35" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <!-- right leg butterfly -->
+            <path d="M40 46 Q52 50 60 58" stroke="#ff6b35" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <!-- feet meeting -->
+            <circle cx="40" cy="62" r="4" fill="#ff6b35" opacity="0.6"/>
+            <!-- knees pushed down by elbows -->
+            <circle cx="22" cy="57" r="3" fill="#888" opacity="0.5"/>
+            <circle cx="58" cy="57" r="3" fill="#888" opacity="0.5"/>
+            <!-- arms pressing down -->
+            <line x1="40" y1="36" x2="22" y2="52" stroke="#888" stroke-width="2" stroke-linecap="round"/>
+            <line x1="40" y1="36" x2="58" y2="52" stroke="#888" stroke-width="2" stroke-linecap="round"/>
+            <!-- floor -->
+            <line x1="10" y1="68" x2="70" y2="68" stroke="#2a2c38" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="stretch-text">
+          <div class="stretch-top">
+            <div><div class="stretch-name">Seated Butterfly Stretch</div><div class="stretch-target">Hip Adductors / Groin</div></div>
+            <div class="stretch-duration">60s x 1</div>
+          </div>
+          <div class="stretch-how">Sit with soles of feet together, knees falling out to the sides. Gently press knees toward the floor with your elbows. Tight adductors pull the knee inward, a direct cause of kneecap irritation in runners.</div>
+        </div>
       </div>
-      <div class="stretch-how">Sit with soles of feet together, knees falling out to the sides. Gently press knees toward the floor with your elbows. Tight adductors pull the knee inward, a direct cause of kneecap irritation in runners.</div>
     </div>
+
+    <!-- 8. NEW: Seated Calf / Plantar Stretch -->
+    <div class="stretch-card">
+      <div class="stretch-inner">
+        <div class="stretch-illus">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- head -->
+            <circle cx="18" cy="22" r="6" fill="#e8ff47" opacity="0.9"/>
+            <!-- torso leaning forward -->
+            <path d="M18 28 Q28 38 42 44" stroke="#e8ff47" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <!-- legs straight out -->
+            <line x1="42" y1="44" x2="68" y2="46" stroke="#e8ff47" stroke-width="3" stroke-linecap="round"/>
+            <!-- foot flexed / strap -->
+            <path d="M68 46 Q70 40 68 38" stroke="#ff6b35" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <circle cx="68" cy="37" r="3" fill="#ff6b35" opacity="0.8"/>
+            <!-- strap from hands -->
+            <path d="M28 36 Q50 30 68 37" stroke="#888" stroke-width="1.5" stroke-dasharray="3 2" fill="none"/>
+            <!-- floor -->
+            <line x1="10" y1="55" x2="72" y2="55" stroke="#2a2c38" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="stretch-text">
+          <div class="stretch-top">
+            <div><div class="stretch-name">Seated Towel Calf Stretch</div><div class="stretch-target">Gastrocnemius / Soleus</div></div>
+            <div class="stretch-duration">45s x 2 each</div>
+          </div>
+          <div class="stretch-how">Sit on the floor, legs straight. Loop a towel or strap around the ball of your foot and gently pull toes toward you. Keep knee straight for the gastroc; slightly bent for the soleus. Directly reduces Achilles load and knee compression.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9. NEW: Child's Pose with Lat Reach -->
+    <div class="stretch-card">
+      <div class="stretch-inner">
+        <div class="stretch-illus">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- head down -->
+            <circle cx="62" cy="38" r="5" fill="#e8ff47" opacity="0.9"/>
+            <!-- torso reaching forward -->
+            <path d="M62 38 Q48 34 32 32" stroke="#e8ff47" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <!-- arms extended -->
+            <line x1="32" y1="32" x2="14" y2="30" stroke="#e8ff47" stroke-width="3" stroke-linecap="round"/>
+            <!-- hips sat back -->
+            <path d="M62 38 Q62 50 60 55" stroke="#e8ff47" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <!-- knees on floor -->
+            <path d="M60 55 Q52 58 46 56" stroke="#888" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <!-- glute highlight -->
+            <ellipse cx="61" cy="50" rx="6" ry="4" fill="#ff6b35" opacity="0.15"/>
+            <!-- floor -->
+            <line x1="8" y1="62" x2="72" y2="62" stroke="#2a2c38" stroke-width="1.5"/>
+            <!-- hands on floor -->
+            <circle cx="14" cy="32" r="3" fill="#e8ff47" opacity="0.4"/>
+          </svg>
+        </div>
+        <div class="stretch-text">
+          <div class="stretch-top">
+            <div><div class="stretch-name">Child's Pose with Side Reach</div><div class="stretch-target">Thoracic / Lats / Glutes</div></div>
+            <div class="stretch-duration">45s x 2 each side</div>
+          </div>
+          <div class="stretch-how">From child's pose, walk both hands to one side and hold. Creates a lateral stretch through the spine, lats, and outer hip. Thoracic stiffness affects arm swing, which cascades down to altered hip mechanics and knee stress during running.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 10. NEW: Ankle Circles & Dorsiflexion -->
+    <div class="stretch-card">
+      <div class="stretch-inner">
+        <div class="stretch-illus">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- seated figure, side view -->
+            <circle cx="22" cy="18" r="6" fill="#e8ff47" opacity="0.9"/>
+            <!-- torso -->
+            <line x1="22" y1="24" x2="24" y2="46" stroke="#e8ff47" stroke-width="3" stroke-linecap="round"/>
+            <!-- thigh -->
+            <line x1="24" y1="46" x2="46" y2="48" stroke="#e8ff47" stroke-width="3" stroke-linecap="round"/>
+            <!-- lower leg -->
+            <line x1="46" y1="48" x2="52" y2="65" stroke="#e8ff47" stroke-width="3" stroke-linecap="round"/>
+            <!-- ankle / foot -->
+            <path d="M52 65 Q58 68 62 64" stroke="#ff6b35" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <!-- rotation arc arrows -->
+            <path d="M58 58 Q68 55 66 65" stroke="#ff6b35" stroke-width="1.5" stroke-dasharray="2 2" fill="none"/>
+            <path d="M66 65 Q65 72 58 70" stroke="#ff6b35" stroke-width="1.5" stroke-dasharray="2 2" fill="none"/>
+            <!-- arrowhead -->
+            <polygon points="58,69 56,73 62,71" fill="#ff6b35" opacity="0.7"/>
+            <!-- chair/bench -->
+            <rect x="12" y="46" width="36" height="3" fill="#2a2c38" rx="1"/>
+            <!-- floor -->
+            <line x1="8" y1="72" x2="72" y2="72" stroke="#2a2c38" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="stretch-text">
+          <div class="stretch-top">
+            <div><div class="stretch-name">Ankle Circles & Dorsiflexion</div><div class="stretch-target">Ankle Mobility / Knee Alignment</div></div>
+            <div class="stretch-duration">20 circles + 30s hold each</div>
+          </div>
+          <div class="stretch-how">Seated, lift one foot and make 10 large clockwise circles, then 10 counter-clockwise. Then flex the foot strongly and hold 30 seconds. Poor ankle dorsiflexion is a commonly missed driver of runner's knee — it forces the knee to compensate with every footstrike.</div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -427,7 +940,7 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
     <div class="timeline-item">
       <div class="timeline-dot">1</div>
       <div class="timeline-content">
-        <div class="timeline-phase">Weeks 1-2 - Phase 1</div>
+        <div class="timeline-phase">Weeks 1-2 — Phase 1</div>
         <div class="timeline-title">Calm the Inflammation</div>
         <div class="timeline-desc">Ice 15 to 20 min after activity. Stop running or drop to easy walks only. Do the full stretch routine daily. Begin Exercises 01, 02, and 04 only at low load, high reps, pain-free range only.</div>
       </div>
@@ -435,7 +948,7 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
     <div class="timeline-item">
       <div class="timeline-dot">2</div>
       <div class="timeline-content">
-        <div class="timeline-phase">Weeks 3-5 - Phase 2</div>
+        <div class="timeline-phase">Weeks 3-5 — Phase 2</div>
         <div class="timeline-title">Build the Foundation</div>
         <div class="timeline-desc">Add all 6 exercises 3x per week. Reintroduce easy running at 30 to 40% of previous volume on flat surfaces only. No speed work. Focus on cadence, aim for 170 to 180 spm to reduce knee load.</div>
       </div>
@@ -443,7 +956,7 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
     <div class="timeline-item">
       <div class="timeline-dot">3</div>
       <div class="timeline-content">
-        <div class="timeline-phase">Weeks 6-8 - Phase 3</div>
+        <div class="timeline-phase">Weeks 6-8 — Phase 3</div>
         <div class="timeline-title">Load and Return</div>
         <div class="timeline-desc">Progress to resistance bands and added weight. Gradually rebuild run volume at +10% per week max. Introduce hills carefully. Maintain strength work 2x per week as maintenance going forward.</div>
       </div>
@@ -467,7 +980,7 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
 <div id="tab-tracker" class="panel content">
   <div class="section-label">Your Progress</div>
   <div class="section-title">2-Week Tracker</div>
-  <p class="section-desc">Tap a day to mark it complete. Consistency is everything, even partial sessions count.</p>
+  <p class="section-desc">Tap a day to mark it complete. Consistency is everything — even partial sessions count.</p>
   <div class="tracker-header">
     <div style="font-size:12px;color:var(--muted);letter-spacing:1px;text-transform:uppercase;">Week 1 + Week 2</div>
     <button class="reset-btn" id="reset-btn">Reset</button>
@@ -479,6 +992,177 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
       <strong id="streak-label">Days Completed</strong>
       <span id="streak-sub">Keep it going. Consistency heals.</span>
     </div>
+  </div>
+</div>
+
+<!-- STRAVA -->
+<div id="tab-strava" class="panel content">
+  <div class="section-label">Training Integration</div>
+  <div class="section-title">Strava Connect</div>
+  <p class="section-desc">Connect Strava to pull your recent runs and track your return-to-running volume directly alongside this program. Works entirely in your browser — no server, no account needed.</p>
+
+  <div class="strava-setup" id="strava-setup-notice" style="margin-bottom:24px;">
+    <strong style="color:var(--text);display:block;margin-bottom:8px;">&#9888; One-time setup required</strong>
+    To connect Strava, you need a free Strava API app (takes ~2 minutes):<br><br>
+    1. Go to <a href="https://www.strava.com/settings/api" target="_blank" style="color:#FC4C02;">strava.com/settings/api</a> and create an application<br>
+    2. Set <code>Authorization Callback Domain</code> to your GitHub Pages domain (e.g. <code>yourusername.github.io</code>)<br>
+    3. Copy your <strong>Client ID</strong> and paste it below — that's all you need for the read-only connection<br><br>
+    <span style="color:var(--green);font-size:12px;">&#10003; This uses Strava's implicit OAuth flow — your data never leaves your browser.</span>
+  </div>
+
+  <div class="strava-connect-box" id="strava-box">
+    <div class="strava-logo">
+      <svg viewBox="0 0 24 24" fill="#FC4C02"><path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.172"/></svg>
+      <span>STRAVA</span>
+    </div>
+
+    <div id="strava-disconnected">
+      <p class="strava-desc">Enter your Strava API Client ID to connect. Your recent runs will appear here so you can monitor your return-to-running volume.</p>
+      <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:4px;">
+        <input id="strava-client-id" type="text" placeholder="Client ID (numbers only)" style="background:var(--surface2);border:1px solid var(--border);color:var(--text);padding:10px 14px;font-family:'DM Sans',sans-serif;font-size:13px;width:220px;outline:none;" />
+        <button class="strava-btn" id="strava-auth-btn">Connect Strava</button>
+      </div>
+      <div class="strava-note">Your Client ID is not a secret — it's safe to use in a public page. Only read access to your activities is requested.</div>
+    </div>
+
+    <div id="strava-connected" style="display:none;width:100%;">
+      <div class="strava-profile" id="strava-profile-area"></div>
+      <button class="strava-btn disconnect" id="strava-disconnect-btn" style="margin-top:16px;">Disconnect</button>
+    </div>
+  </div>
+
+  <div id="strava-runs-section" style="display:none;">
+    <div class="section-label" style="margin-top:8px;">Recent Runs</div>
+    <div class="section-title" style="font-size:26px;margin-bottom:16px;">Your Activity</div>
+    <p class="section-desc" style="margin-bottom:20px;">Your last 10 runs. Use this to stay within the +10%/week volume rule during Phase 3.</p>
+    <div class="strava-runs" id="strava-runs-list"></div>
+    <div class="strava-note" style="margin-top:16px;">Data fetched directly from Strava. Refresh the page to update. <a href="https://www.strava.com/athlete/training" target="_blank">View full history on Strava →</a></div>
+  </div>
+</div>
+
+<!-- RESOURCES -->
+<div id="tab-resources" class="panel content">
+  <div class="section-label">Tools &amp; Downloads</div>
+  <div class="section-title">Resources</div>
+  <p class="section-desc">Pace calculators built from the original Excel workbook, plus the full spreadsheet available to download for offline use.</p>
+
+  <!-- DOWNLOAD CARD -->
+  <div class="download-card" style="margin-bottom:36px;">
+    <div class="download-icon">📊</div>
+    <div class="download-info">
+      <div class="download-name">Running Calculators Workbook</div>
+      <div class="download-meta">Excel (.xlsx) · Pace per mile, Treadmill MPH, Segment Calculator · 3 tabs</div>
+    </div>
+    <a class="download-btn" id="xlsx-download-btn" href="Running_Calculators_xlsb.xlsx" download="Running_Calculators.xlsx">
+      &#8595; Download Excel
+    </a>
+  </div>
+
+  <div class="resources-grid">
+
+    <!-- PACE + FINISH TIMES -->
+    <div class="calc-card" style="grid-column: 1 / -1;">
+      <div class="calc-card-header">
+        <div class="section-label">Calculator 1</div>
+        <div class="section-title">Pace &amp; Finish Times</div>
+      </div>
+      <div class="calc-card-body">
+        <p style="font-size:13px;color:var(--muted);margin-bottom:18px;line-height:1.7;">Enter your target pace or treadmill speed to see finish time projections across every key race distance, with a ±10 second spread around your target.</p>
+        <div class="calc-toggle" style="margin-bottom:20px;">
+          <button class="calc-toggle-btn pf-mode-btn active" data-mode="pace">Pace (min/mi or km)</button>
+          <button class="calc-toggle-btn pf-mode-btn" data-mode="mph">Treadmill (MPH)</button>
+        </div>
+        <div class="calc-input-row" id="pf-input-area"></div>
+        <div id="pf-results" style="display:none;">
+          <div class="calc-display" id="pf-pace-display">8:20</div>
+          <div class="calc-display-label" id="pf-pace-label">min / mile</div>
+          <div style="overflow-x:auto;">
+            <table class="finish-table">
+              <thead id="pf-thead"></thead>
+              <tbody id="pf-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TREADMILL -->
+    <div class="calc-card">
+      <div class="calc-card-header">
+        <div class="section-label">Calculator 2</div>
+        <div class="section-title">Treadmill Speed</div>
+      </div>
+      <div class="calc-card-body">
+        <p style="font-size:13px;color:var(--muted);margin-bottom:18px;line-height:1.7;">Enter your treadmill display speed (MPH) and see your real-world pace and finish time projections.</p>
+        <div class="calc-input-row">
+          <div class="calc-field">
+            <label>Speed (MPH)</label>
+            <input type="number" id="tm-mph" min="1" max="20" step="0.1" value="7.5" style="width:110px;" />
+          </div>
+        </div>
+        <div id="tm-results">
+          <div style="display:flex;gap:28px;margin-bottom:20px;flex-wrap:wrap;">
+            <div>
+              <div class="calc-display" id="tm-pace-mi">8:00</div>
+              <div class="calc-display-label">min / mile</div>
+            </div>
+            <div>
+              <div class="calc-display" id="tm-pace-km">4:58</div>
+              <div class="calc-display-label">min / km</div>
+            </div>
+          </div>
+          <div style="overflow-x:auto;">
+            <table class="finish-table">
+              <thead id="tm-thead"></thead>
+              <tbody id="tm-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEGMENT PLANNER -->
+    <div class="calc-card">
+      <div class="calc-card-header">
+        <div class="section-label">Calculator 3</div>
+        <div class="section-title">Segment Planner</div>
+      </div>
+      <div class="calc-card-body">
+        <p style="font-size:13px;color:var(--muted);margin-bottom:18px;line-height:1.7;">Plan a run with varying paces — warmup, tempo, cooldown. Enter distance (mi) and speed (mph) per segment.</p>
+        <div style="overflow-x:auto;">
+          <table class="seg-table">
+            <thead>
+              <tr>
+                <th style="width:32px;">#</th>
+                <th>Dist (mi)</th>
+                <th>Speed (mph)</th>
+                <th>Seg Time</th>
+                <th>Cumul. Dist</th>
+                <th>Cumul. Time</th>
+                <th style="width:32px;"></th>
+              </tr>
+            </thead>
+            <tbody id="seg-body"></tbody>
+          </table>
+        </div>
+        <button class="seg-add-btn" id="seg-add-btn">+ Add Segment</button>
+        <div class="seg-totals">
+          <div>
+            <div class="seg-total-val" id="seg-total-dist">0.00</div>
+            <div class="seg-total-label">Total Miles</div>
+          </div>
+          <div>
+            <div class="seg-total-val" id="seg-total-time">0:00</div>
+            <div class="seg-total-label">Total Time</div>
+          </div>
+          <div>
+            <div class="seg-total-val" id="seg-avg-pace">—</div>
+            <div class="seg-total-label">Avg Pace / mi</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -528,7 +1212,7 @@ document.addEventListener('DOMContentLoaded', function() {
       var s1 = document.createElement('span');
       s1.textContent = day;
       var s2 = document.createElement('span');
-      s2.textContent = completed.indexOf(i) > -1 ? 'V' : restDays.indexOf(i) > -1 ? '~' : String(i + 1);
+      s2.textContent = completed.indexOf(i) > -1 ? '✓' : restDays.indexOf(i) > -1 ? '~' : String(i + 1);
       el.appendChild(s1);
       el.appendChild(s2);
       el.addEventListener('click', function() {
@@ -543,7 +1227,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var count = completed.length;
     document.getElementById('streak-count').textContent = String(count);
     document.getElementById('streak-label').textContent = count >= 10 ? 'Outstanding!' : count >= 6 ? 'Great Progress!' : 'Days Completed';
-    document.getElementById('streak-sub').textContent = count === 0 ? 'Tap a day to mark it done.' : count >= 12 ? 'You are basically healed. Keep it up.' : count >= 6 ? 'You are over halfway, momentum is building.' : 'Early days. Show up tomorrow.';
+    document.getElementById('streak-sub').textContent = count === 0 ? 'Tap a day to mark it done.' : count >= 12 ? 'You are basically healed. Keep it up.' : count >= 6 ? 'You are over halfway — momentum is building.' : 'Early days. Show up tomorrow.';
   }
 
   document.getElementById('reset-btn').addEventListener('click', function() {
@@ -556,9 +1240,383 @@ document.addEventListener('DOMContentLoaded', function() {
 
   renderTracker();
 
+  // ── STRAVA OAUTH (implicit flow — works on static GitHub Pages) ──────────
+
+  var STRAVA_SCOPE = 'read,activity:read';
+  var stravaToken = null;
+
+  // Check if we're returning from Strava OAuth redirect (token in URL hash)
+  (function checkStravaCallback() {
+    var hash = window.location.hash;
+    if (!hash) return;
+    var params = {};
+    hash.replace(/^#/, '').split('&').forEach(function(pair) {
+      var parts = pair.split('=');
+      params[decodeURIComponent(parts[0])] = decodeURIComponent(parts[1] || '');
+    });
+    if (params.access_token) {
+      stravaToken = params.access_token;
+      try { localStorage.setItem('stravaToken', stravaToken); } catch(e) {}
+      // Clean URL
+      history.replaceState(null, '', window.location.pathname);
+      showStravaConnected();
+    }
+  })();
+
+  // Restore saved token
+  if (!stravaToken) {
+    try { stravaToken = localStorage.getItem('stravaToken'); } catch(e) {}
+    if (stravaToken) showStravaConnected();
+  }
+
+  // Restore saved client ID
+  try {
+    var savedId = localStorage.getItem('stravaClientId');
+    if (savedId) document.getElementById('strava-client-id').value = savedId;
+  } catch(e) {}
+
+  document.getElementById('strava-auth-btn').addEventListener('click', function() {
+    var clientId = document.getElementById('strava-client-id').value.trim();
+    if (!clientId || isNaN(Number(clientId))) {
+      alert('Please enter a valid numeric Strava Client ID.');
+      return;
+    }
+    try { localStorage.setItem('stravaClientId', clientId); } catch(e) {}
+    var redirectUri = encodeURIComponent(window.location.href.split('#')[0]);
+    var url = 'https://www.strava.com/oauth/authorize'
+      + '?client_id=' + clientId
+      + '&response_type=token'
+      + '&redirect_uri=' + redirectUri
+      + '&approval_prompt=auto'
+      + '&scope=' + STRAVA_SCOPE;
+    window.location.href = url;
+  });
+
+  document.getElementById('strava-disconnect-btn').addEventListener('click', function() {
+    stravaToken = null;
+    try { localStorage.removeItem('stravaToken'); } catch(e) {}
+    document.getElementById('strava-connected').style.display = 'none';
+    document.getElementById('strava-disconnected').style.display = 'block';
+    document.getElementById('strava-runs-section').style.display = 'none';
+    document.getElementById('strava-box').classList.remove('connected');
+  });
+
+  function showStravaConnected() {
+    document.getElementById('strava-disconnected').style.display = 'none';
+    document.getElementById('strava-connected').style.display = 'block';
+    document.getElementById('strava-box').classList.add('connected');
+    fetchStravaAthlete();
+    fetchStravaRuns();
+  }
+
+  function fetchStravaAthlete() {
+    fetch('https://www.strava.com/api/v3/athlete', {
+      headers: { 'Authorization': 'Bearer ' + stravaToken }
+    })
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      if (data.errors) { handleStravaError(); return; }
+      var area = document.getElementById('strava-profile-area');
+      area.innerHTML = (data.profile ? '<img class="strava-avatar" src="' + data.profile + '" alt="Profile">' : '')
+        + '<div><div class="strava-profile-name">' + (data.firstname || '') + ' ' + (data.lastname || '') + '</div>'
+        + '<div class="strava-profile-sub" style="color:#FC4C02;">&#10003; Strava Connected</div></div>';
+    })
+    .catch(handleStravaError);
+  }
+
+  function fetchStravaRuns() {
+    fetch('https://www.strava.com/api/v3/athlete/activities?per_page=10&page=1', {
+      headers: { 'Authorization': 'Bearer ' + stravaToken }
+    })
+    .then(function(r) { return r.json(); })
+    .then(function(activities) {
+      if (!Array.isArray(activities)) { handleStravaError(); return; }
+      var runs = activities.filter(function(a) { return a.type === 'Run'; });
+      var list = document.getElementById('strava-runs-list');
+      if (runs.length === 0) {
+        list.innerHTML = '<div style="color:var(--muted);font-size:13px;padding:20px 0;">No runs found in your recent activity.</div>';
+      } else {
+        list.innerHTML = runs.map(function(run) {
+          var km = (run.distance / 1000).toFixed(1);
+          var pace = run.moving_time && run.distance ? formatPace(run.moving_time, run.distance) : '—';
+          var date = new Date(run.start_date_local).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+          return '<div class="run-row">'
+            + '<div><div class="run-name">' + escHtml(run.name) + '</div><div class="run-date">' + date + '</div></div>'
+            + '<div class="run-stat"><div class="run-stat-val">' + km + '</div><div class="run-stat-label">km</div></div>'
+            + '<div class="run-stat"><div class="run-stat-val">' + pace + '</div><div class="run-stat-label">min/km</div></div>'
+            + '<div class="run-stat"><div class="run-stat-val">' + formatTime(run.moving_time) + '</div><div class="run-stat-label">time</div></div>'
+            + '</div>';
+        }).join('');
+      }
+      document.getElementById('strava-runs-section').style.display = 'block';
+    })
+    .catch(handleStravaError);
+  }
+
+  function formatPace(seconds, meters) {
+    var secPerKm = seconds / (meters / 1000);
+    var min = Math.floor(secPerKm / 60);
+    var sec = Math.round(secPerKm % 60);
+    return min + ':' + (sec < 10 ? '0' : '') + sec;
+  }
+
+  function formatTime(seconds) {
+    var h = Math.floor(seconds / 3600);
+    var m = Math.floor((seconds % 3600) / 60);
+    var s = seconds % 60;
+    if (h > 0) return h + ':' + (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s;
+    return m + ':' + (s < 10 ? '0' : '') + s;
+  }
+
+  function escHtml(str) {
+    return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  function handleStravaError() {
+    stravaToken = null;
+    try { localStorage.removeItem('stravaToken'); } catch(e) {}
+    document.getElementById('strava-connected').style.display = 'none';
+    document.getElementById('strava-disconnected').style.display = 'block';
+    document.getElementById('strava-box').classList.remove('connected');
+    document.getElementById('strava-runs-section').style.display = 'none';
+    document.getElementById('strava-client-id').placeholder = 'Token expired — reconnect';
+  }
+
 });
+
+// ── RESOURCES: PACE CALCULATORS ─────────────────────────────────────────────
+
+(function() {
+
+  // ── shared distances ──
+  var DISTANCES = [
+    { label: '1 mi',         mi: 1,        key: '1mi' },
+    { label: '2 mi',         mi: 2,        key: '2mi' },
+    { label: '3 mi',         mi: 3,        key: '3mi' },
+    { label: '5K',           mi: 3.10686,  key: '5k',  hl: true },
+    { label: '4 mi',         mi: 4,        key: '4mi' },
+    { label: '5 mi',         mi: 5,        key: '5mi' },
+    { label: '6 mi',         mi: 6,        key: '6mi' },
+    { label: '10K',          mi: 6.21371,  key: '10k', hl: true },
+    { label: '10 mi',        mi: 10,       key: '10mi' },
+    { label: 'Half Marathon',mi: 13.1094,  key: 'half', hl: true },
+    { label: '20 mi',        mi: 20,       key: '20mi' },
+    { label: 'Marathon',     mi: 26.2188,  key: 'mara', hl: true },
+    { label: '50K',          mi: 31.0686,  key: '50k' },
+  ];
+
+  // ── helper: seconds → "H:MM:SS" or "M:SS" ──
+  function fmtTime(sec) {
+    sec = Math.round(sec);
+    var h = Math.floor(sec / 3600);
+    var m = Math.floor((sec % 3600) / 60);
+    var s = sec % 60;
+    if (h > 0) return h + ':' + pad(m) + ':' + pad(s);
+    return m + ':' + pad(s);
+  }
+  function pad(n) { return n < 10 ? '0' + n : String(n); }
+
+  // ── PACE & FINISH TIME CALCULATOR ──────────────────────────────────────────
+
+  var pfMode = 'pace'; // 'pace' | 'mph'
+
+  function pfRender() {
+    var wrapper = document.getElementById('pf-input-area');
+    if (!wrapper) return;
+    if (pfMode === 'pace') {
+      wrapper.innerHTML =
+        '<div class="calc-field"><label>Minutes</label><input type="number" id="pf-min" min="0" max="59" value="8" /></div>' +
+        '<div class="calc-separator">:</div>' +
+        '<div class="calc-field"><label>Seconds</label><input type="number" id="pf-sec" min="0" max="59" value="20" /></div>' +
+        '<div class="calc-field"><label>Unit</label><select id="pf-unit"><option value="mi">per mile</option><option value="km">per km</option></select></div>' +
+        '<button class="calc-btn" id="pf-go">Calculate</button>';
+    } else {
+      wrapper.innerHTML =
+        '<div class="calc-field"><label>Speed (MPH)</label><input type="number" id="pf-mph" min="1" max="25" step="0.1" value="7.5" style="width:100px" /></div>' +
+        '<button class="calc-btn" id="pf-go">Calculate</button>';
+    }
+    document.getElementById('pf-go').addEventListener('click', pfCalculate);
+    ['pf-min','pf-sec','pf-mph','pf-unit'].forEach(function(id) {
+      var el = document.getElementById(id);
+      if (el) el.addEventListener('keydown', function(e) { if (e.key === 'Enter') pfCalculate(); });
+    });
+  }
+
+  function pfCalculate() {
+    var secPerMi;
+    if (pfMode === 'pace') {
+      var mins = parseInt(document.getElementById('pf-min').value) || 0;
+      var secs = parseInt(document.getElementById('pf-sec').value) || 0;
+      var unit = document.getElementById('pf-unit').value;
+      var secPerUnit = mins * 60 + secs;
+      if (secPerUnit <= 0) return;
+      secPerMi = unit === 'km' ? secPerUnit * 1.60934 : secPerUnit;
+    } else {
+      var mph = parseFloat(document.getElementById('pf-mph').value) || 0;
+      if (mph <= 0) return;
+      secPerMi = 3600 / mph;
+    }
+
+    // display your pace
+    var dispMin = Math.floor(secPerMi / 60);
+    var dispSec = Math.round(secPerMi % 60);
+    document.getElementById('pf-pace-display').textContent = dispMin + ':' + pad(dispSec);
+    document.getElementById('pf-pace-label').textContent = 'min / mile  ·  ' +
+      (function(){ var s=secPerMi/1.60934; return Math.floor(s/60)+':'+pad(Math.round(s%60)); })() + ' min / km';
+
+    // build table: 5 columns: -10s, -5s, TARGET, +5s, +5s
+    var offsets = [-10, -5, 0, 5, 10];
+    var paces = offsets.map(function(o) { return secPerMi + o; });
+    var thead = document.getElementById('pf-thead');
+    var tbody = document.getElementById('pf-tbody');
+    thead.innerHTML = '<tr><th>Distance</th>' + paces.map(function(p, i) {
+      var m = Math.floor(p/60), s = Math.round(p%60);
+      return '<th' + (i===2 ? ' style="color:var(--accent)"' : '') + '>' + m+':'+pad(s) + '/mi</th>';
+    }).join('') + '</tr>';
+    tbody.innerHTML = DISTANCES.map(function(d) {
+      var times = paces.map(function(p) { return fmtTime(p * d.mi); });
+      return '<tr class="' + (d.hl ? 'highlight ' : '') + 'target-col">' +
+        '<td>' + d.label + '</td>' +
+        times.map(function(t, i) { return '<td' + (i===2 ? ' style="color:var(--accent);font-weight:600"' : '') + '>' + t + '</td>'; }).join('') +
+        '</tr>';
+    }).join('');
+
+    document.getElementById('pf-results').style.display = 'block';
+  }
+
+  // ── SEGMENT PLANNER ────────────────────────────────────────────────────────
+
+  var segRows = 5;
+  function segBuild() {
+    var tbody = document.getElementById('seg-body');
+    if (!tbody) return;
+    tbody.innerHTML = '';
+    for (var i = 0; i < segRows; i++) segAddRow(tbody, i);
+    segCalc();
+  }
+
+  function segAddRow(tbody, i) {
+    var tr = document.createElement('tr');
+    tr.dataset.idx = i;
+    tr.innerHTML =
+      '<td style="width:32px;color:var(--muted);font-size:11px;padding-left:10px;">' + (i+1) + '</td>' +
+      '<td><input type="number" class="seg-dist" min="0" step="0.01" placeholder="0.0" /></td>' +
+      '<td><input type="number" class="seg-spd" min="0" step="0.1" placeholder="mph" /></td>' +
+      '<td><div class="seg-out seg-time muted">—</div></td>' +
+      '<td><div class="seg-out seg-cumD muted">—</div></td>' +
+      '<td><div class="seg-out seg-cumT muted">—</div></td>' +
+      '<td><button class="seg-del" title="Remove">×</button></td>';
+    tbody.appendChild(tr);
+    tr.querySelectorAll('input').forEach(function(inp) {
+      inp.addEventListener('input', segCalc);
+    });
+    tr.querySelector('.seg-del').addEventListener('click', function() {
+      tr.remove();
+      // re-number
+      document.querySelectorAll('#seg-body tr').forEach(function(r, idx) {
+        r.dataset.idx = idx;
+        r.querySelector('td:first-child').textContent = idx + 1;
+      });
+      segCalc();
+    });
+  }
+
+  function segCalc() {
+    var rows = document.querySelectorAll('#seg-body tr');
+    var cumDist = 0, cumSec = 0, totalDist = 0, totalSec = 0, count = 0;
+    rows.forEach(function(tr) {
+      var dist = parseFloat(tr.querySelector('.seg-dist').value) || 0;
+      var spd  = parseFloat(tr.querySelector('.seg-spd').value)  || 0;
+      var segSec = (spd > 0 && dist > 0) ? (dist / spd) * 3600 : 0;
+      cumDist += dist;
+      cumSec  += segSec;
+      if (dist > 0 && spd > 0) { count++; }
+
+      tr.querySelector('.seg-time').textContent  = segSec > 0  ? fmtTime(segSec)  : '—';
+      tr.querySelector('.seg-cumD').textContent  = cumDist > 0 ? cumDist.toFixed(2) + ' mi' : '—';
+      tr.querySelector('.seg-cumT').textContent  = cumSec  > 0 ? fmtTime(cumSec)  : '—';
+      tr.querySelector('.seg-time').className  = 'seg-out seg-time'  + (segSec  > 0 ? '' : ' muted');
+      tr.querySelector('.seg-cumD').className  = 'seg-out seg-cumD'  + (cumDist > 0 ? '' : ' muted');
+      tr.querySelector('.seg-cumT').className  = 'seg-out seg-cumT'  + (cumSec  > 0 ? '' : ' muted');
+
+      totalDist = cumDist;
+      totalSec  = cumSec;
+    });
+
+    document.getElementById('seg-total-dist').textContent = totalDist > 0 ? totalDist.toFixed(2) : '0.00';
+    document.getElementById('seg-total-time').textContent = totalSec  > 0 ? fmtTime(totalSec) : '0:00';
+    var avgPaceSec = (totalDist > 0 && totalSec > 0) ? totalSec / totalDist : 0;
+    document.getElementById('seg-avg-pace').textContent = avgPaceSec > 0
+      ? Math.floor(avgPaceSec/60) + ':' + pad(Math.round(avgPaceSec%60))
+      : '—';
+  }
+
+  // ── TREADMILL CALCULATOR ───────────────────────────────────────────────────
+
+  function tmCalc() {
+    var mph = parseFloat(document.getElementById('tm-mph').value) || 0;
+    if (mph <= 0) { document.getElementById('tm-results').style.display='none'; return; }
+    var secPerMi = 3600 / mph;
+    var pMin = Math.floor(secPerMi/60), pSec = Math.round(secPerMi%60);
+    var secPerKm = secPerMi / 1.60934;
+    var kMin = Math.floor(secPerKm/60), kSec = Math.round(secPerKm%60);
+    document.getElementById('tm-pace-mi').textContent = pMin + ':' + pad(pSec);
+    document.getElementById('tm-pace-km').textContent = kMin + ':' + pad(kSec);
+
+    var offsets = [-0.2, -0.1, 0, 0.1, 0.2];
+    var speeds = offsets.map(function(o) { return mph + o; });
+    var paces  = speeds.map(function(s) { return 3600 / s; });
+    var thead = document.getElementById('tm-thead');
+    var tbody = document.getElementById('tm-tbody');
+    thead.innerHTML = '<tr><th>Distance</th>' + speeds.map(function(s, i) {
+      return '<th' + (i===2 ? ' style="color:var(--accent)"' : '') + '>' + s.toFixed(1) + ' mph</th>';
+    }).join('') + '</tr>';
+    tbody.innerHTML = DISTANCES.map(function(d) {
+      var times = paces.map(function(p) { return fmtTime(p * d.mi); });
+      return '<tr class="' + (d.hl ? 'highlight ' : '') + 'target-col">' +
+        '<td>' + d.label + '</td>' +
+        times.map(function(t, i) { return '<td' + (i===2 ? ' style="color:var(--accent);font-weight:600"' : '') + '>' + t + '</td>'; }).join('') +
+        '</tr>';
+    }).join('');
+    document.getElementById('tm-results').style.display = 'block';
+  }
+
+  // ── INIT ───────────────────────────────────────────────────────────────────
+
+  document.addEventListener('DOMContentLoaded', function() {
+
+    // toggle pace/mph
+    document.querySelectorAll('.pf-mode-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.pf-mode-btn').forEach(function(b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        pfMode = btn.dataset.mode;
+        pfRender();
+        document.getElementById('pf-results').style.display = 'none';
+      });
+    });
+
+    pfRender();
+    pfCalculate(); // auto-compute on load
+
+    // segment planner
+    segBuild();
+    var addBtn = document.getElementById('seg-add-btn');
+    if (addBtn) addBtn.addEventListener('click', function() {
+      var tbody = document.getElementById('seg-body');
+      segAddRow(tbody, tbody.rows.length);
+    });
+
+    // treadmill auto-calc
+    var tmInp = document.getElementById('tm-mph');
+    if (tmInp) {
+      tmInp.addEventListener('input', tmCalc);
+      tmCalc();
+    }
+  });
+
+})();
 </script>
 
 </body>
 </html>
-
