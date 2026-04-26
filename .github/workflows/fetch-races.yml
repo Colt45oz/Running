@@ -25,8 +25,8 @@ jobs:
           zipcode  = '06825'
           radius   = 50   # fetch 50mi max — UI filters client-side by 15/25/50
 
-          today    = datetime.utcnow().strftime('%m/%d/%Y')
-          end_date = (datetime.utcnow() + timedelta(days=180)).strftime('%m/%d/%Y')
+          today    = datetime.utcnow().strftime('%Y-%m-%d')
+          end_date = (datetime.utcnow() + timedelta(days=180)).strftime('%Y-%m-%d')
 
           params = urllib.parse.urlencode({
             'format':           'json',
