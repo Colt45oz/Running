@@ -20,7 +20,35 @@ jobs:
           import urllib.request
           import urllib.parse
           import json
+          import math
           from datetime import datetime, timedelta
+
+          # Fairfield CT coords
+          HOME_LAT, HOME_LON = 41.1409, -73.2637
+
+          # Zip code → lat/lon lookup (covers CT/NY/MA race area)
+          ZIP_COORDS = {
+            '06825':(41.1409,-73.2637),'06820':(41.0762,-73.4618),'06840':(41.1290,-73.4801),
+            '06880':(41.1415,-73.3579),'06897':(41.2015,-73.3845),'06851':(41.1220,-73.4079),
+            '06902':(41.0534,-73.5387),'06830':(41.0262,-73.6282),'06460':(41.2223,-73.0566),
+            '06510':(41.3081,-72.9282),'06604':(41.1865,-73.1952),'06605':(41.1726,-73.2079),
+            '06606':(41.1976,-73.2218),'06611':(41.2512,-73.0929),'06614':(41.2165,-73.1368),
+            '06702':(41.5584,-73.0512),'06704':(41.5762,-73.0290),'06708':(41.5248,-73.0740),
+            '06401':(41.3401,-73.0651),'06410':(41.5051,-72.8904),'06450':(41.5362,-72.7918),
+            '06457':(41.5623,-72.6512),'06468':(41.3329,-73.1040),'06470':(41.3748,-73.2290),
+            '06482':(41.3901,-73.2240),'06484':(41.3065,-73.1368),'06492':(41.4573,-72.8240),
+            '10001':(40.7484,-73.9967),'10036':(40.7590,-73.9845),'10306':(40.5565,-74.1596),
+            '10541':(41.3887,-73.7401),'10543':(40.9562,-73.7290),'10580':(40.9834,-73.6734),
+            '10601':(41.0334,-73.7929),'10701':(40.9262,-73.8985),'10801':(40.9112,-73.7834),
+            '10804':(40.9534,-73.7818),'01060':(42.3237,-72.6357),'01101':(42.1015,-72.5898),
+          }
+
+          def haversine(lat1, lon1, lat2, lon2):
+            R = 3958.8
+            dlat = math.radians(lat2 - lat1)
+            dlon = math.radians(lon2 - lon1)
+            a = math.sin(dlat/2)**2 + math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) * math.sin(dlon/2)**2
+            return R * 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
 
           zipcode  = '06825'
           radius   = 50   # fetch 50mi max — UI filters client-side by 15/25/50
@@ -74,17 +102,25 @@ jobs:
               if e.get('distance') and e.get('volunteer') != 'T'
             ))
 
+            # Calculate distance from Fairfield CT
+            distance_mi = None
+            race_zip = r.get('address', {}).get('zipcode', '').strip().split('-')[0]
+            if race_zip in ZIP_COORDS:
+              coords = ZIP_COORDS[race_zip]
+              distance_mi = round(haversine(HOME_LAT, HOME_LON, coords[0], coords[1]))
+
             races.append({
-              'id':        r.get('race_id', ''),
-              'name':      r.get('name', ''),
-              'date':      next_date,
-              'city':      r.get('address', {}).get('city', ''),
-              'state':     r.get('address', {}).get('state', ''),
-              'zipcode':   r.get('address', {}).get('zipcode', ''),
-              'distances': distances,
-              'url':       r.get('url', ''),
-              'logo':      r.get('logo_url', ''),
-              'reg_open':  r.get('is_registration_open', 'F'),
+              'id':          r.get('race_id', ''),
+              'name':        r.get('name', ''),
+              'date':        next_date,
+              'city':        r.get('address', {}).get('city', ''),
+              'state':       r.get('address', {}).get('state', ''),
+              'zipcode':     race_zip,
+              'distance_mi': distance_mi,
+              'distances':   distances,
+              'url':         r.get('url', ''),
+              'logo':        r.get('logo_url', ''),
+              'reg_open':    r.get('is_registration_open', 'F'),
             })
 
           output = {
