@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-27T00:11:07Z",
+  "generated": "2026-04-27T10:52:46Z",
   "zipcode": "06825",
   "radius_mi": 50,
   "count": 200,
@@ -388,7 +388,7 @@
       "distances": [],
       "url": "https://runsignup.com/Race/NJ/Cresskill/HealthyKidsRunningSeriesCresskillNJ",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race148336-scaled-logo-0.bMiuUJ.png",
-      "reg_open": "T"
+      "reg_open": "F"
     },
     {
       "id": 189336,
