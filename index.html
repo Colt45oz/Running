@@ -331,28 +331,38 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
 .wx-location-btn:hover { background: rgba(232,255,71,0.06); }
 .wx-error { padding: 16px; font-size: 13px; color: var(--muted); text-align: center; line-height: 1.6; }
 /* RACES */
-.races-controls { display: flex; gap: 10px; align-items: flex-end; flex-wrap: wrap; margin-bottom: 28px; }
-.races-controls .calc-field input { width: 110px; }
-.radius-toggle { display: flex; gap: 2px; }
-.radius-btn { padding: 7px 14px; font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+.races-filters { display: flex; flex-direction: column; gap: 16px; margin-bottom: 28px; padding: 20px; background: var(--surface); border: 1px solid var(--border); }
+.races-filter-row { display: flex; gap: 24px; flex-wrap: wrap; align-items: flex-start; }
+.races-filter-group { display: flex; flex-direction: column; gap: 6px; }
+.races-filter-label { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+.filter-toggle { display: flex; gap: 2px; flex-wrap: wrap; }
+.filter-btn { padding: 6px 13px; font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
   font-family: 'DM Sans', sans-serif; font-weight: 600; cursor: pointer; border: 1px solid var(--border);
-  background: transparent; color: var(--muted); transition: all 0.2s; }
-.radius-btn.active { background: rgba(232,255,71,0.08); border-color: var(--accent); color: var(--accent); }
+  background: transparent; color: var(--muted); transition: all 0.2s; white-space: nowrap; }
+.filter-btn:hover { border-color: var(--text); color: var(--text); }
+.filter-btn.active { background: rgba(232,255,71,0.08); border-color: var(--accent); color: var(--accent); }
+.filter-btn.active.orange { background: rgba(255,107,53,0.08); border-color: var(--accent2); color: var(--accent2); }
+.races-results-bar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; flex-wrap: wrap; gap: 8px; }
+.races-count { font-size: 12px; color: var(--muted); letter-spacing: 1px; }
+.races-count strong { color: var(--text); }
 .race-list { display: flex; flex-direction: column; gap: 8px; }
-.race-card { display: grid; grid-template-columns: 64px 1fr auto; gap: 16px; align-items: center;
-  background: var(--surface); border: 1px solid var(--border); padding: 16px 18px;
+.race-card { display: grid; grid-template-columns: 56px 1fr auto; gap: 16px; align-items: center;
+  background: var(--surface); border: 1px solid var(--border); padding: 14px 18px;
   text-decoration: none; transition: border-color 0.2s; }
 .race-card:hover { border-color: var(--accent); }
-.race-date-block { text-align: center; }
-.race-month { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent2); font-weight: 600; }
-.race-day { font-family: 'Bebas Neue', sans-serif; font-size: 34px; color: var(--text); line-height: 1; }
-.race-name { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
-.race-meta { font-size: 12px; color: var(--muted); }
-.race-meta span { margin-right: 12px; }
-.race-dist { font-family: 'Bebas Neue', sans-serif; font-size: 22px; color: var(--accent); line-height: 1;
-  white-space: nowrap; text-align: right; }
-.race-dist-label { font-size: 10px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; text-align: right; }
-.races-empty { padding: 40px 0; text-align: center; color: var(--muted); font-size: 14px; }
+.race-date-block { text-align: center; border-right: 1px solid var(--border); padding-right: 16px; }
+.race-month { font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent2); font-weight: 600; }
+.race-day { font-family: 'Bebas Neue', sans-serif; font-size: 32px; color: var(--text); line-height: 1; }
+.race-year { font-size: 9px; color: var(--muted); letter-spacing: 1px; }
+.race-name { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
+.race-meta { font-size: 11px; color: var(--muted); display: flex; gap: 12px; flex-wrap: wrap; }
+.race-right { text-align: right; min-width: 70px; }
+.race-dist-pill { display: inline-block; font-size: 10px; letter-spacing: 1px; text-transform: uppercase;
+  padding: 2px 7px; border: 1px solid var(--border); color: var(--muted); margin-bottom: 4px; }
+.race-dist-pill.hi { border-color: var(--accent); color: var(--accent); }
+.race-mi { font-size: 11px; color: var(--muted); }
+.race-reg-open { font-size: 10px; color: var(--green); letter-spacing: 0.5px; }
+.races-empty { padding: 48px 0; text-align: center; color: var(--muted); font-size: 14px; line-height: 1.8; }
 .races-generated { font-size: 11px; color: var(--border); margin-top: 20px; text-align: right; }
 .races-loading { display: flex; align-items: center; gap: 10px; color: var(--muted); font-size: 13px; padding: 20px 0; }
 .races-loading::before { content: ''; width: 14px; height: 14px; border: 2px solid var(--border);
@@ -1286,17 +1296,41 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
 <div id="tab-races" class="panel content">
   <div class="section-label">RunSignup</div>
   <div class="section-title">Races Near Me</div>
-  <p class="section-desc">Upcoming races near Fairfield, CT pulled from RunSignup. Updated every Monday and Thursday. Filter by how far you're willing to travel.</p>
+  <p class="section-desc">Upcoming races near Fairfield, CT. Updated every Monday and Thursday.</p>
 
-  <div class="races-controls">
-    <div class="calc-field">
-      <label>Radius</label>
-      <div class="radius-toggle">
-        <button class="radius-btn active" data-radius="15">15 mi</button>
-        <button class="radius-btn" data-radius="25">25 mi</button>
-        <button class="radius-btn" data-radius="50">50 mi</button>
+  <div class="races-filters">
+    <div class="races-filter-row">
+      <div class="races-filter-group">
+        <div class="races-filter-label">Radius</div>
+        <div class="filter-toggle">
+          <button class="filter-btn active" data-filter="radius" data-value="15">15 mi</button>
+          <button class="filter-btn" data-filter="radius" data-value="25">25 mi</button>
+          <button class="filter-btn" data-filter="radius" data-value="50">50 mi</button>
+        </div>
+      </div>
+      <div class="races-filter-group">
+        <div class="races-filter-label">Date Range</div>
+        <div class="filter-toggle">
+          <button class="filter-btn active" data-filter="date" data-value="180">All upcoming</button>
+          <button class="filter-btn" data-filter="date" data-value="30">Next 30 days</button>
+          <button class="filter-btn" data-filter="date" data-value="60">Next 60 days</button>
+          <button class="filter-btn" data-filter="date" data-value="90">Next 90 days</button>
+        </div>
       </div>
     </div>
+    <div class="races-filter-row">
+      <div class="races-filter-group">
+        <div class="races-filter-label">Race Distance</div>
+        <div class="filter-toggle" id="distance-filter-btns">
+          <button class="filter-btn active" data-filter="dist" data-value="all">All</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="races-results-bar">
+    <div class="races-count" id="races-count"></div>
+    <div style="font-size:11px;color:var(--muted);">Sorted chronologically</div>
   </div>
 
   <div id="race-list" class="race-list">
@@ -1383,86 +1417,213 @@ document.addEventListener('DOMContentLoaded', function() {
   // ── RACES ─────────────────────────────────────────────────────────────────
 
   var racesData = null;
-  var activeRadius = 15;
+  var raceFilters = { radius: 15, date: 180, dist: 'all' };
+
+  // Haversine distance between two lat/lon points in miles
+  function haversine(lat1, lon1, lat2, lon2) {
+    var R = 3958.8;
+    var dLat = (lat2 - lat1) * Math.PI / 180;
+    var dLon = (lon2 - lon1) * Math.PI / 180;
+    var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+            Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+            Math.sin(dLon/2) * Math.sin(dLon/2);
+    return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+  }
+
+  // Fairfield CT coords
+  var HOME_LAT = 41.1409, HOME_LON = -73.2637;
+
+  // Rough zip → lat/lon for CT/NY/MA area zips using a small lookup
+  // Falls back to showing all if zip unknown
+  function zipToLatLon(zip) {
+    var lookup = {
+      // CT
+      '06825':[ 41.1409,-73.2637],'06820':[ 41.0762,-73.4618],'06840':[ 41.1290,-73.4801],
+      '06880':[ 41.1415,-73.3579],'06897':[ 41.2015,-73.3845],'06851':[ 41.1220,-73.4079],
+      '06902':[ 41.0534,-73.5387],'06830':[ 41.0262,-73.6282],'06460':[ 41.2223,-73.0566],
+      '06510':[ 41.3081,-72.9282],'06511':[ 41.3165,-72.9282],'06512':[ 41.2887,-72.8929],
+      '06516':[ 41.2721,-72.9618],'06604':[ 41.1865,-73.1952],'06605':[ 41.1726,-73.2079],
+      '06606':[ 41.1976,-73.2218],'06607':[ 41.1690,-73.1790],'06608':[ 41.1801,-73.1735],
+      '06610':[ 41.2040,-73.1618],'06611':[ 41.2512,-73.0929],'06614':[ 41.2165,-73.1368],
+      '06615':[ 41.2098,-73.1282],'06702':[ 41.5584,-73.0512],'06704':[ 41.5762,-73.0290],
+      '06705':[ 41.5401,-73.0368],'06708':[ 41.5248,-73.0740],'06710':[ 41.5587,-73.0626],
+      '06712':[ 41.5476,-73.0179],'06401':[ 41.3401,-73.0651],'06403':[ 41.3401,-73.0568],
+      '06405':[ 41.2726,-72.8068],'06410':[ 41.5051,-72.8904],'06418':[ 41.2857,-73.1004],
+      '06422':[ 41.3637,-72.7804],'06437':[ 41.3698,-72.7240],'06443':[ 41.3340,-72.7982],
+      '06450':[ 41.5362,-72.7918],'06451':[ 41.5426,-72.7754],'06457':[ 41.5623,-72.6512],
+      '06468':[ 41.3329,-73.1040],'06470':[ 41.3748,-73.2290],'06482':[ 41.3901,-73.2240],
+      '06484':[ 41.3065,-73.1368],'06488':[ 41.4762,-73.2151],'06492':[ 41.4573,-72.8240],
+      '06902':[ 41.0534,-73.5387],'06903':[ 41.1154,-73.5490],'06905':[ 41.0573,-73.5040],
+      '06906':[ 41.0698,-73.5290],'06907':[ 41.0862,-73.5418],
+      // NY
+      '10001':[ 40.7484,-73.9967],'10011':[ 40.7418,-74.0002],'10036':[ 40.7590,-73.9845],
+      '10306':[ 40.5565,-74.1596],'10312':[ 40.5412,-74.1929],'10314':[ 40.5985,-74.1651],
+      '10451':[ 40.8248,-73.9229],'10461':[ 40.8384,-73.8429],'10541':[ 41.3887,-73.7401],
+      '10543':[ 40.9562,-73.7290],'10580':[ 40.9834,-73.6734],'10601':[ 41.0334,-73.7929],
+      '10605':[ 41.0234,-73.7829],'10701':[ 40.9262,-73.8985],'10710':[ 40.9484,-73.8554],
+      '10801':[ 40.9112,-73.7834],'10804':[ 40.9534,-73.7818],'10805':[ 40.9265,-73.7751],
+      // MA
+      '01002':[ 42.3751,-72.5040],'01060':[ 42.3237,-72.6357],'01101':[ 42.1015,-72.5898],
+    };
+    return lookup[String(zip)] || null;
+  }
 
   function loadRaces() {
     fetch('races.json?v=' + Date.now())
-      .then(function(r) {
-        if (!r.ok) throw new Error('not found');
-        return r.json();
-      })
+      .then(function(r) { if (!r.ok) throw new Error('not found'); return r.json(); })
       .then(function(data) {
         racesData = data;
         var gen = new Date(data.generated);
         document.getElementById('races-generated').textContent =
           'Last updated: ' + gen.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+        buildDistanceFilters();
         renderRaces();
       })
       .catch(function() {
         document.getElementById('race-list').innerHTML =
           '<div class="races-empty">Race data not available yet.<br>The workflow runs every Monday and Thursday — check back soon,<br>or trigger it manually from the GitHub Actions tab.</div>';
+        document.getElementById('races-count').textContent = '';
       });
+  }
+
+  function buildDistanceFilters() {
+    // Collect all unique distances across all races
+    var distSet = {};
+    (racesData.races || []).forEach(function(r) {
+      (r.distances || []).forEach(function(d) { if (d) distSet[d] = true; });
+    });
+
+    // Common order for sorting
+    var order = ['1 Mile','5K','8K','10K','15K','10 Mile','Half Marathon','Marathon','50K','50 Mile','100K','100 Mile'];
+    var dists = Object.keys(distSet).sort(function(a, b) {
+      var ai = order.indexOf(a), bi = order.indexOf(b);
+      if (ai === -1 && bi === -1) return a.localeCompare(b);
+      if (ai === -1) return 1;
+      if (bi === -1) return -1;
+      return ai - bi;
+    });
+
+    var container = document.getElementById('distance-filter-btns');
+    container.innerHTML = '<button class="filter-btn active" data-filter="dist" data-value="all">All</button>';
+    dists.forEach(function(d) {
+      var btn = document.createElement('button');
+      btn.className = 'filter-btn';
+      btn.dataset.filter = 'dist';
+      btn.dataset.value = d;
+      btn.textContent = d;
+      container.appendChild(btn);
+    });
+
+    // Re-bind filter button events
+    bindFilterButtons();
   }
 
   function renderRaces() {
     if (!racesData) return;
     var list = document.getElementById('race-list');
-    var races = racesData.races.filter(function(r) {
-      return true; // all within 50mi fetched; filter is visual only via radius-btn
+    var now = new Date();
+    var cutoff = new Date(now.getTime() + raceFilters.date * 24 * 60 * 60 * 1000);
+
+    var races = (racesData.races || []).filter(function(r) {
+      // Date filter
+      var d = r.date ? new Date(r.date) : null;
+      if (!d || d < now || d > cutoff) return false;
+
+      // Distance filter
+      if (raceFilters.dist !== 'all') {
+        if (!r.distances || r.distances.indexOf(raceFilters.dist) === -1) return false;
+      }
+
+      // Radius filter — use stored distance_mi if available, otherwise calc from zip
+      if (r.distance_mi !== undefined) {
+        return r.distance_mi <= raceFilters.radius;
+      }
+      if (r.zipcode) {
+        var coords = zipToLatLon(r.zipcode);
+        if (coords) {
+          r.distance_mi = Math.round(haversine(HOME_LAT, HOME_LON, coords[0], coords[1]));
+          return r.distance_mi <= raceFilters.radius;
+        }
+      }
+      // Unknown zip — include in all/50mi, exclude from tighter filters
+      return raceFilters.radius === 50;
     });
 
-    // Filter: only show races within activeRadius
-    // RunSignup doesn't return distance-from-zip in the JSON so we show all
-    // fetched within the max radius and label by radius selection
-    // For true filtering we'd need coords — for now show all and note the radius
+    // Sort chronologically
+    races.sort(function(a, b) { return new Date(a.date) - new Date(b.date); });
+
+    // Update count
+    document.getElementById('races-count').innerHTML =
+      '<strong>' + races.length + '</strong> race' + (races.length !== 1 ? 's' : '') +
+      ' within <strong>' + raceFilters.radius + ' mi</strong>' +
+      (raceFilters.dist !== 'all' ? ' · <strong>' + escHtml(raceFilters.dist) + '</strong>' : '') +
+      ' · next <strong>' + (raceFilters.date === 180 ? '6 months' : raceFilters.date + ' days') + '</strong>';
+
     if (races.length === 0) {
-      list.innerHTML = '<div class="races-empty">No upcoming races found within ' + activeRadius + ' miles.</div>';
+      list.innerHTML = '<div class="races-empty">No races found matching your filters.<br>Try expanding the radius or date range.</div>';
       return;
     }
 
-    // Sort by date
-    races.sort(function(a, b) { return new Date(a.date) - new Date(b.date); });
-
-    // Filter to next 6 months and rough radius (show all since API already filters by 50mi)
-    // Show note when radius < 50
     list.innerHTML = races.map(function(r) {
-      var d = r.date ? new Date(r.date) : null;
-      var month = d ? d.toLocaleDateString('en-US', { month: 'short' }).toUpperCase() : '—';
-      var day   = d ? d.getDate() : '—';
+      var d = new Date(r.date);
+      var month = d.toLocaleDateString('en-US', { month: 'short' }).toUpperCase();
+      var day   = d.getDate();
+      var year  = d.getFullYear();
       var cityLine = [r.city, r.state].filter(Boolean).join(', ');
-      return '<a class="race-card" href="' + (r.url || '#') + '" target="_blank" rel="noopener">' +
+      var miStr = r.distance_mi !== undefined ? r.distance_mi + ' mi away' : '';
+      var dists = (r.distances || []);
+      var distHtml = dists.length
+        ? dists.map(function(dd, i) {
+            return '<span class="race-dist-pill' + (i === 0 ? ' hi' : '') + '">' + escHtml(dd) + '</span>';
+          }).join(' ')
+        : '<span class="race-dist-pill">—</span>';
+
+      return '<a class="race-card" href="' + escHtml(r.url || '#') + '" target="_blank" rel="noopener">' +
         '<div class="race-date-block">' +
           '<div class="race-month">' + month + '</div>' +
           '<div class="race-day">' + day + '</div>' +
+          '<div class="race-year">' + year + '</div>' +
         '</div>' +
         '<div>' +
           '<div class="race-name">' + escHtml(r.name) + '</div>' +
           '<div class="race-meta">' +
             (cityLine ? '<span>📍 ' + escHtml(cityLine) + '</span>' : '') +
+            (miStr    ? '<span>🏃 ' + miStr + '</span>' : '') +
           '</div>' +
         '</div>' +
-        '<div>' +
-          '<div class="race-dist">' + escHtml((r.distances || []).join(' · ') || '—') + '</div>' +
-          '<div class="race-dist-label">' + (r.reg_open === 'T' ? '✓ Reg open' : 'distance') + '</div>' +
+        '<div class="race-right">' +
+          distHtml +
+          (r.reg_open === 'T' ? '<div class="race-reg-open">✓ Reg open</div>' : '') +
         '</div>' +
       '</a>';
     }).join('');
   }
 
-  // radius buttons
-  document.querySelectorAll('.radius-btn').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      document.querySelectorAll('.radius-btn').forEach(function(b) { b.classList.remove('active'); });
-      btn.classList.add('active');
-      activeRadius = parseInt(btn.dataset.radius);
-      // Update description
-      document.querySelector('#tab-races .section-desc').textContent =
-        'Upcoming races within ' + activeRadius + ' miles of Fairfield, CT. Updated every Monday and Thursday.';
-      renderRaces();
-    });
-  });
+  function bindFilterButtons() {
+    document.querySelectorAll('.filter-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var filterType = btn.dataset.filter;
+        // Deactivate siblings of same filter type
+        document.querySelectorAll('.filter-btn[data-filter="' + filterType + '"]').forEach(function(b) {
+          b.classList.remove('active', 'orange');
+        });
+        btn.classList.add('active');
+        if (filterType === 'dist' && btn.dataset.value !== 'all') btn.classList.add('orange');
 
-  // load races when tab is opened (lazy)
+        // Update state
+        var val = btn.dataset.value;
+        if (filterType === 'radius') raceFilters.radius = parseInt(val);
+        else if (filterType === 'date') raceFilters.date = parseInt(val);
+        else if (filterType === 'dist') raceFilters.dist = val;
+
+        renderRaces();
+      });
+    });
+  }
+
+  bindFilterButtons();
+
+  // Load races lazily when tab is first opened
   var racesLoaded = false;
   document.querySelectorAll('.tab').forEach(function(tab) {
     tab.addEventListener('click', function() {
