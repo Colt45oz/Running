@@ -65,9 +65,13 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
 .card-body-inner { display: grid; grid-template-columns: 1fr; gap: 20px; padding-top: 20px; }
 @media (min-width: 600px) { .card-body-inner { grid-template-columns: 1fr 1fr; } }
 
-/* VIDEO */
-.video-wrap { position: relative; width: 100%; padding-bottom: 56.25%; background: #000; }
-.video-wrap iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+/* VIDEO THUMBNAIL */
+.video-wrap { position: relative; width: 100%; padding-bottom: 56.25%; background: #000; display: block; text-decoration: none; overflow: hidden; cursor: pointer; }
+.video-wrap img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: opacity 0.2s; }
+.video-wrap:hover img { opacity: 0.85; }
+.video-play-btn { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 56px; height: 56px; background: rgba(0,0,0,0.75); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: background 0.2s; pointer-events: none; }
+.video-wrap:hover .video-play-btn { background: #ff0000; }
+.video-play-btn::after { content: ''; width: 0; height: 0; border-style: solid; border-width: 10px 0 10px 20px; border-color: transparent transparent transparent #fff; margin-left: 4px; }
 
 /* HOW TO */
 .how-to h4 { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; font-weight: 600; }
@@ -431,9 +435,10 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
       </div>
       <div class="card-body">
         <div class="card-body-inner">
-          <div class="video-wrap">
-            <iframe src="https://www.youtube-nocookie.com/embed/wXbXHy8tjpw" allowfullscreen loading="lazy" title="Clamshell exercise"></iframe>
-          </div>
+          <a class="video-wrap" href="https://www.youtube.com/watch?v=wXbXHy8tjpw" target="_blank" rel="noopener" title="Watch: Clamshell exercise">
+            <img src="https://img.youtube.com/vi/wXbXHy8tjpw/hqdefault.jpg" alt="Clamshell exercise" loading="lazy"/>
+            <div class="video-play-btn"></div>
+          </a>
           <div class="how-to">
             <h4>How To</h4>
             <ul class="steps-list">
@@ -464,9 +469,10 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
       </div>
       <div class="card-body">
         <div class="card-body-inner">
-          <div class="video-wrap">
-            <iframe src="https://www.youtube-nocookie.com/embed/tqp5XQPpTxY" allowfullscreen loading="lazy" title="Glute bridge"></iframe>
-          </div>
+          <a class="video-wrap" href="https://www.youtube.com/watch?v=tqp5XQPpTxY" target="_blank" rel="noopener" title="Watch: Glute bridge">
+            <img src="https://img.youtube.com/vi/tqp5XQPpTxY/hqdefault.jpg" alt="Glute bridge" loading="lazy"/>
+            <div class="video-play-btn"></div>
+          </a>
           <div class="how-to">
             <h4>How To</h4>
             <ul class="steps-list">
@@ -497,9 +503,10 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
       </div>
       <div class="card-body">
         <div class="card-body-inner">
-          <div class="video-wrap">
-            <iframe src="https://www.youtube-nocookie.com/embed/Zfr6wizR8rs" allowfullscreen loading="lazy" title="Single leg RDL"></iframe>
-          </div>
+          <a class="video-wrap" href="https://www.youtube.com/watch?v=Zfr6wizR8rs" target="_blank" rel="noopener" title="Watch: Single leg RDL">
+            <img src="https://img.youtube.com/vi/Zfr6wizR8rs/hqdefault.jpg" alt="Single leg RDL" loading="lazy"/>
+            <div class="video-play-btn"></div>
+          </a>
           <div class="how-to">
             <h4>How To</h4>
             <ul class="steps-list">
@@ -530,9 +537,10 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
       </div>
       <div class="card-body">
         <div class="card-body-inner">
-          <div class="video-wrap">
-            <iframe src="https://www.youtube-nocookie.com/embed/DAAjOdwZdks" allowfullscreen loading="lazy" title="Hip abduction"></iframe>
-          </div>
+          <a class="video-wrap" href="https://www.youtube.com/watch?v=DAAjOdwZdks" target="_blank" rel="noopener" title="Watch: Hip abduction">
+            <img src="https://img.youtube.com/vi/DAAjOdwZdks/hqdefault.jpg" alt="Hip abduction" loading="lazy"/>
+            <div class="video-play-btn"></div>
+          </a>
           <div class="how-to">
             <h4>How To</h4>
             <ul class="steps-list">
@@ -563,9 +571,10 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
       </div>
       <div class="card-body">
         <div class="card-body-inner">
-          <div class="video-wrap">
-            <iframe src="https://www.youtube-nocookie.com/embed/dQqApCGd5Ss" allowfullscreen loading="lazy" title="Step ups"></iframe>
-          </div>
+          <a class="video-wrap" href="https://www.youtube.com/watch?v=dQqApCGd5Ss" target="_blank" rel="noopener" title="Watch: Step ups">
+            <img src="https://img.youtube.com/vi/dQqApCGd5Ss/hqdefault.jpg" alt="Step ups" loading="lazy"/>
+            <div class="video-play-btn"></div>
+          </a>
           <div class="how-to">
             <h4>How To</h4>
             <ul class="steps-list">
@@ -596,9 +605,10 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
       </div>
       <div class="card-body">
         <div class="card-body-inner">
-          <div class="video-wrap">
-            <iframe src="https://www.youtube-nocookie.com/embed/y-wV4Venusw" allowfullscreen loading="lazy" title="Wall sit"></iframe>
-          </div>
+          <a class="video-wrap" href="https://www.youtube.com/watch?v=y-wV4Venusw" target="_blank" rel="noopener" title="Watch: Wall sit">
+            <img src="https://img.youtube.com/vi/y-wV4Venusw/hqdefault.jpg" alt="Wall sit" loading="lazy"/>
+            <div class="video-play-btn"></div>
+          </a>
           <div class="how-to">
             <h4>How To</h4>
             <ul class="steps-list">
@@ -629,9 +639,10 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
       </div>
       <div class="card-body">
         <div class="card-body-inner">
-          <div class="video-wrap">
-            <iframe src="https://www.youtube-nocookie.com/embed/iBzIEQOdMDc" allowfullscreen loading="lazy" title="Lateral band walk"></iframe>
-          </div>
+          <a class="video-wrap" href="https://www.youtube.com/watch?v=iBzIEQOdMDc" target="_blank" rel="noopener" title="Watch: Lateral band walk">
+            <img src="https://img.youtube.com/vi/iBzIEQOdMDc/hqdefault.jpg" alt="Lateral band walk" loading="lazy"/>
+            <div class="video-play-btn"></div>
+          </a>
           <div class="how-to">
             <h4>How To</h4>
             <ul class="steps-list">
@@ -662,9 +673,10 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
       </div>
       <div class="card-body">
         <div class="card-body-inner">
-          <div class="video-wrap">
-            <iframe src="https://www.youtube-nocookie.com/embed/X1nREfrKBU4" allowfullscreen loading="lazy" title="Nordic hamstring curl"></iframe>
-          </div>
+          <a class="video-wrap" href="https://www.youtube.com/watch?v=X1nREfrKBU4" target="_blank" rel="noopener" title="Watch: Nordic hamstring curl">
+            <img src="https://img.youtube.com/vi/X1nREfrKBU4/hqdefault.jpg" alt="Nordic hamstring curl" loading="lazy"/>
+            <div class="video-play-btn"></div>
+          </a>
           <div class="how-to">
             <h4>How To</h4>
             <ul class="steps-list">
@@ -695,9 +707,10 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
       </div>
       <div class="card-body">
         <div class="card-body-inner">
-          <div class="video-wrap">
-            <iframe src="https://www.youtube-nocookie.com/embed/fL7gITJpYA8" allowfullscreen loading="lazy" title="Terminal knee extension"></iframe>
-          </div>
+          <a class="video-wrap" href="https://www.youtube.com/watch?v=fL7gITJpYA8" target="_blank" rel="noopener" title="Watch: Terminal knee extension">
+            <img src="https://img.youtube.com/vi/fL7gITJpYA8/hqdefault.jpg" alt="Terminal knee extension" loading="lazy"/>
+            <div class="video-play-btn"></div>
+          </a>
           <div class="how-to">
             <h4>How To</h4>
             <ul class="steps-list">
@@ -739,9 +752,10 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
       </div>
       <div class="stretch-card-body">
         <div class="stretch-card-inner">
-          <div class="video-wrap">
-            <iframe src="https://www.youtube-nocookie.com/embed/BhQimqvU1tM" allowfullscreen loading="lazy" title="Standing quad stretch"></iframe>
-          </div>
+          <a class="video-wrap" href="https://www.youtube.com/watch?v=BhQimqvU1tM" target="_blank" rel="noopener" title="Watch: Standing quad stretch">
+            <img src="https://img.youtube.com/vi/BhQimqvU1tM/hqdefault.jpg" alt="Standing quad stretch" loading="lazy"/>
+            <div class="video-play-btn"></div>
+          </a>
           <div class="how-to">
             <h4>How To</h4>
             <ul class="steps-list">
@@ -772,9 +786,10 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
       </div>
       <div class="stretch-card-body">
         <div class="stretch-card-inner">
-          <div class="video-wrap">
-            <iframe src="https://www.youtube-nocookie.com/embed/-g0nuyTHMrI" allowfullscreen loading="lazy" title="Figure 4 piriformis stretch"></iframe>
-          </div>
+          <a class="video-wrap" href="https://www.youtube.com/watch?v=-g0nuyTHMrI" target="_blank" rel="noopener" title="Watch: Figure 4 piriformis stretch">
+            <img src="https://img.youtube.com/vi/-g0nuyTHMrI/hqdefault.jpg" alt="Figure 4 piriformis stretch" loading="lazy"/>
+            <div class="video-play-btn"></div>
+          </a>
           <div class="how-to">
             <h4>How To</h4>
             <ul class="steps-list">
@@ -805,9 +820,10 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
       </div>
       <div class="stretch-card-body">
         <div class="stretch-card-inner">
-          <div class="video-wrap">
-            <iframe src="https://www.youtube-nocookie.com/embed/tsGPYSQbZx4" allowfullscreen loading="lazy" title="Hip flexor lunge stretch"></iframe>
-          </div>
+          <a class="video-wrap" href="https://www.youtube.com/watch?v=tsGPYSQbZx4" target="_blank" rel="noopener" title="Watch: Hip flexor lunge stretch">
+            <img src="https://img.youtube.com/vi/tsGPYSQbZx4/hqdefault.jpg" alt="Hip flexor lunge stretch" loading="lazy"/>
+            <div class="video-play-btn"></div>
+          </a>
           <div class="how-to">
             <h4>How To</h4>
             <ul class="steps-list">
@@ -838,9 +854,10 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
       </div>
       <div class="stretch-card-body">
         <div class="stretch-card-inner">
-          <div class="video-wrap">
-            <iframe src="https://www.youtube-nocookie.com/embed/wzDoSQ8-GWY" allowfullscreen loading="lazy" title="IT band stretch"></iframe>
-          </div>
+          <a class="video-wrap" href="https://www.youtube.com/watch?v=wzDoSQ8-GWY" target="_blank" rel="noopener" title="Watch: IT band stretch">
+            <img src="https://img.youtube.com/vi/wzDoSQ8-GWY/hqdefault.jpg" alt="IT band stretch" loading="lazy"/>
+            <div class="video-play-btn"></div>
+          </a>
           <div class="how-to">
             <h4>How To</h4>
             <ul class="steps-list">
@@ -871,9 +888,10 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
       </div>
       <div class="stretch-card-body">
         <div class="stretch-card-inner">
-          <div class="video-wrap">
-            <iframe src="https://www.youtube-nocookie.com/embed/Aqt5ooM-pn4" allowfullscreen loading="lazy" title="Downward dog calf stretch"></iframe>
-          </div>
+          <a class="video-wrap" href="https://www.youtube.com/watch?v=Aqt5ooM-pn4" target="_blank" rel="noopener" title="Watch: Downward dog calf stretch">
+            <img src="https://img.youtube.com/vi/Aqt5ooM-pn4/hqdefault.jpg" alt="Downward dog calf stretch" loading="lazy"/>
+            <div class="video-play-btn"></div>
+          </a>
           <div class="how-to">
             <h4>How To</h4>
             <ul class="steps-list">
@@ -904,9 +922,10 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
       </div>
       <div class="stretch-card-body">
         <div class="stretch-card-inner">
-          <div class="video-wrap">
-            <iframe src="https://www.youtube-nocookie.com/embed/Il1L75v6gq0" allowfullscreen loading="lazy" title="Supine hamstring stretch"></iframe>
-          </div>
+          <a class="video-wrap" href="https://www.youtube.com/watch?v=Il1L75v6gq0" target="_blank" rel="noopener" title="Watch: Supine hamstring stretch">
+            <img src="https://img.youtube.com/vi/Il1L75v6gq0/hqdefault.jpg" alt="Supine hamstring stretch" loading="lazy"/>
+            <div class="video-play-btn"></div>
+          </a>
           <div class="how-to">
             <h4>How To</h4>
             <ul class="steps-list">
@@ -937,9 +956,10 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
       </div>
       <div class="stretch-card-body">
         <div class="stretch-card-inner">
-          <div class="video-wrap">
-            <iframe src="https://www.youtube-nocookie.com/embed/wiLfp6iM07s" allowfullscreen loading="lazy" title="Seated butterfly stretch"></iframe>
-          </div>
+          <a class="video-wrap" href="https://www.youtube.com/watch?v=wiLfp6iM07s" target="_blank" rel="noopener" title="Watch: Seated butterfly stretch">
+            <img src="https://img.youtube.com/vi/wiLfp6iM07s/hqdefault.jpg" alt="Seated butterfly stretch" loading="lazy"/>
+            <div class="video-play-btn"></div>
+          </a>
           <div class="how-to">
             <h4>How To</h4>
             <ul class="steps-list">
@@ -970,9 +990,10 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
       </div>
       <div class="stretch-card-body">
         <div class="stretch-card-inner">
-          <div class="video-wrap">
-            <iframe src="https://www.youtube-nocookie.com/embed/6ifswsHkwlA" allowfullscreen loading="lazy" title="Seated calf stretch with towel"></iframe>
-          </div>
+          <a class="video-wrap" href="https://www.youtube.com/watch?v=6ifswsHkwlA" target="_blank" rel="noopener" title="Watch: Seated calf stretch with towel">
+            <img src="https://img.youtube.com/vi/6ifswsHkwlA/hqdefault.jpg" alt="Seated calf stretch with towel" loading="lazy"/>
+            <div class="video-play-btn"></div>
+          </a>
           <div class="how-to">
             <h4>How To</h4>
             <ul class="steps-list">
@@ -1003,9 +1024,10 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
       </div>
       <div class="stretch-card-body">
         <div class="stretch-card-inner">
-          <div class="video-wrap">
-            <iframe src="https://www.youtube-nocookie.com/embed/CXV7dseQdBg" allowfullscreen loading="lazy" title="Child's pose with side reach"></iframe>
-          </div>
+          <a class="video-wrap" href="https://www.youtube.com/watch?v=CXV7dseQdBg" target="_blank" rel="noopener" title="Watch: Child's pose with side reach">
+            <img src="https://img.youtube.com/vi/CXV7dseQdBg/hqdefault.jpg" alt="Child's pose with side reach" loading="lazy"/>
+            <div class="video-play-btn"></div>
+          </a>
           <div class="how-to">
             <h4>How To</h4>
             <ul class="steps-list">
@@ -1036,9 +1058,10 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-s
       </div>
       <div class="stretch-card-body">
         <div class="stretch-card-inner">
-          <div class="video-wrap">
-            <iframe src="https://www.youtube-nocookie.com/embed/mzTQGYGI0Ng" allowfullscreen loading="lazy" title="Ankle circles and dorsiflexion"></iframe>
-          </div>
+          <a class="video-wrap" href="https://www.youtube.com/watch?v=mzTQGYGI0Ng" target="_blank" rel="noopener" title="Watch: Ankle circles and dorsiflexion">
+            <img src="https://img.youtube.com/vi/mzTQGYGI0Ng/hqdefault.jpg" alt="Ankle circles and dorsiflexion" loading="lazy"/>
+            <div class="video-play-btn"></div>
+          </a>
           <div class="how-to">
             <h4>How To</h4>
             <ul class="steps-list">
