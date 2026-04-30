@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-27T10:52:46Z",
+  "generated": "2026-04-30T10:46:22Z",
   "zipcode": "06825",
   "radius_mi": 50,
   "count": 200,
@@ -30,41 +30,6 @@
       "distances": [],
       "url": "https://runsignup.com/Race/NY/Nyack/RocklandRoadRunnersGroupRun",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-102723-1767739567.8684-0.bPxzcV.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 125304,
-      "name": "Weekend Group Runs At Rockland Lake",
-      "date": null,
-      "city": "Valley Cottage",
-      "state": "NY",
-      "zipcode": "10989",
-      "distance_mi": null,
-      "distances": [],
-      "url": "https://runsignup.com/Race/NY/ValleyCottage/RRRSundayGroupRun",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race125304-scaled-logo-0.bMitNN.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 43489,
-      "name": "SUFFOLK COUNTY MARATHON",
-      "date": null,
-      "city": "BAY SHORE",
-      "state": "NY",
-      "zipcode": "11706",
-      "distance_mi": null,
-      "distances": [
-        "29.3 Miles",
-        "16.2 Miles",
-        "9.3 Miles",
-        "26.2 Miles",
-        "13.1 Miles",
-        "6.2 Miles",
-        "3.1 Miles",
-        "1K"
-      ],
-      "url": "https://runsignup.com/Race/NY/BAYSHORE/SuffolkCountyMarathonHalfMarathonand5K",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-50199-1730553708.7351-0.bNjIDS.png",
       "reg_open": "T"
     },
     {
@@ -1090,7 +1055,7 @@
       "distances": [],
       "url": "https://runsignup.com/Race/NY/LakeSuccess/TunneltoTowersNationalGolfSeriesNewYorkGolfClassic",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-148724-1736798975.4485-0.bNHxl_.png",
-      "reg_open": "T"
+      "reg_open": "F"
     },
     {
       "id": 144666,
@@ -2063,18 +2028,18 @@
       "reg_open": "T"
     },
     {
-      "id": 21091,
-      "name": "Get Smart for Wilton 5K",
-      "date": "05/22/2026",
-      "city": "Wilton",
-      "state": "CT",
-      "zipcode": "06897",
-      "distance_mi": 8,
+      "id": 183797,
+      "name": "PS 199 RUN HARD, BE KIND 5K (2026)",
+      "date": "05/17/2026",
+      "city": "New York",
+      "state": "NY",
+      "zipcode": "10069",
+      "distance_mi": null,
       "distances": [
         "5K"
       ],
-      "url": "https://runsignup.com/Race/CT/Wilton/GetSmartforWilton5K",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race21091-logo-0.bKC6jY.png",
+      "url": "https://runsignup.com/Race/NY/NewYork/PSRUNHARDBEKIND5KSpring",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-241276-1731277149.7105-0.bNmtfD.png",
       "reg_open": "T"
     },
     {
@@ -2090,6 +2055,67 @@
       ],
       "url": "https://runsignup.com/Race/NY/Bronx/4forFahy",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race129267-logo-0.bIyHdv.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 21091,
+      "name": "Get Smart for Wilton 5K",
+      "date": "05/22/2026",
+      "city": "Wilton",
+      "state": "CT",
+      "zipcode": "06897",
+      "distance_mi": 8,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/CT/Wilton/GetSmartforWilton5K",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race21091-logo-0.bKC6jY.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 201234,
+      "name": "Roxbury Road Race Series #12",
+      "date": "05/23/2026",
+      "city": "Roxbury",
+      "state": "CT",
+      "zipcode": "06783",
+      "distance_mi": null,
+      "distances": [
+        "1 Miles"
+      ],
+      "url": "https://runsignup.com/Race/CT/Roxbury/RoxburyRoadRaceSeries12",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-273107-1771182761.4523-0.bPKHQP.jpg",
+      "reg_open": "T"
+    },
+    {
+      "id": 202646,
+      "name": "5K Walk/Jog/Run for Jon",
+      "date": "05/23/2026",
+      "city": "Woodbury",
+      "state": "CT",
+      "zipcode": "06798",
+      "distance_mi": null,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/CT/Woodbury/5KWalkJogRunForJon",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/img/logos/genericWebsiteLogos/group-300px.bMjMog.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 84996,
+      "name": "32nd Annual | Weston Memorial Day Weekend 5K & Kids Fun Run",
+      "date": "05/23/2026",
+      "city": "Weston",
+      "state": "CT",
+      "zipcode": "06883",
+      "distance_mi": null,
+      "distances": [
+        "5K",
+        "1 Miles"
+      ],
+      "url": "https://runsignup.com/Race/CT/Weston/WestonCTMemorialDay5KRoadRace",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-91647-1768968178.1538-0.bPCe_Y.png",
       "reg_open": "T"
     },
     {
@@ -2165,34 +2191,6 @@
       "reg_open": "F"
     },
     {
-      "id": 200788,
-      "name": "Lift For Kindness",
-      "date": "05/23/2026",
-      "city": "North Haven",
-      "state": "CT",
-      "zipcode": "06473",
-      "distance_mi": null,
-      "distances": [],
-      "url": "https://runsignup.com/Race/CT/NorthHaven/LiftForKindness",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-274102-1770502259.2077-0.bPH7HZ.png",
-      "reg_open": "F"
-    },
-    {
-      "id": 199757,
-      "name": "Savin Rock Waves of Hope 5k",
-      "date": "05/23/2026",
-      "city": "West Haven",
-      "state": "CT",
-      "zipcode": "06516",
-      "distance_mi": null,
-      "distances": [
-        "3.1 Miles"
-      ],
-      "url": "https://runsignup.com/Race/CT/WestHaven/SavinRockWavesOfHope",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-272858-1770220078.8974-0.bPG2OU.png",
-      "reg_open": "T"
-    },
-    {
       "id": 163961,
       "name": "Bronxville Memorial Day Run for Fun & Field Day",
       "date": "05/23/2026",
@@ -2256,64 +2254,31 @@
       "reg_open": "T"
     },
     {
-      "id": 201234,
-      "name": "Roxbury Road Race Series #12",
+      "id": 200788,
+      "name": "Lift For Kindness",
       "date": "05/23/2026",
-      "city": "Roxbury",
+      "city": "North Haven",
       "state": "CT",
-      "zipcode": "06783",
+      "zipcode": "06473",
       "distance_mi": null,
-      "distances": [
-        "1 Miles"
-      ],
-      "url": "https://runsignup.com/Race/CT/Roxbury/RoxburyRoadRaceSeries12",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-273107-1771182761.4523-0.bPKHQP.jpg",
-      "reg_open": "T"
+      "distances": [],
+      "url": "https://runsignup.com/Race/CT/NorthHaven/LiftForKindness",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-274102-1770502259.2077-0.bPH7HZ.png",
+      "reg_open": "F"
     },
     {
-      "id": 202646,
-      "name": "5K Walk/Jog/Run for Jon",
+      "id": 199757,
+      "name": "Savin Rock Waves of Hope 5k",
       "date": "05/23/2026",
-      "city": "Woodbury",
+      "city": "West Haven",
       "state": "CT",
-      "zipcode": "06798",
+      "zipcode": "06516",
       "distance_mi": null,
       "distances": [
-        "5K"
+        "3.1 Miles"
       ],
-      "url": "https://runsignup.com/Race/CT/Woodbury/5KWalkJogRunForJon",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/img/logos/genericWebsiteLogos/group-300px.bMjMog.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 84996,
-      "name": "32nd Annual | Weston Memorial Day Weekend 5K & Kids Fun Run",
-      "date": "05/23/2026",
-      "city": "Weston",
-      "state": "CT",
-      "zipcode": "06883",
-      "distance_mi": null,
-      "distances": [
-        "5K",
-        "1 Miles"
-      ],
-      "url": "https://runsignup.com/Race/CT/Weston/WestonCTMemorialDay5KRoadRace",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-91647-1768968178.1538-0.bPCe_Y.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 128216,
-      "name": "Forest Park Runners Classic 4 Mile Road and Trail Race",
-      "date": "05/24/2026",
-      "city": "Woodhaven",
-      "state": "NY",
-      "zipcode": "11421",
-      "distance_mi": null,
-      "distances": [
-        "4 Miles"
-      ],
-      "url": "https://runsignup.com/Race/NY/Woodhaven/ForestParkRunnersClassic4MileroadandTrailRace",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race128216-logo-0.bIrYkY.png",
+      "url": "https://runsignup.com/Race/CT/WestHaven/SavinRockWavesOfHope",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-272858-1770220078.8974-0.bPG2OU.png",
       "reg_open": "T"
     },
     {
@@ -2347,6 +2312,21 @@
       "reg_open": "T"
     },
     {
+      "id": 128216,
+      "name": "Forest Park Runners Classic 4 Mile Road and Trail Race",
+      "date": "05/24/2026",
+      "city": "Woodhaven",
+      "state": "NY",
+      "zipcode": "11421",
+      "distance_mi": null,
+      "distances": [
+        "4 Miles"
+      ],
+      "url": "https://runsignup.com/Race/NY/Woodhaven/ForestParkRunnersClassic4MileroadandTrailRace",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race128216-logo-0.bIrYkY.png",
+      "reg_open": "T"
+    },
+    {
       "id": 137788,
       "name": "Run the Vineyards - Memorial Day at Pindar 5K",
       "date": "05/24/2026",
@@ -2360,22 +2340,6 @@
       ],
       "url": "https://runsignup.com/Race/NY/Peconic/RuntheVineyardsMemorialDayatPindar5K",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-144357-1766068821.7469-0.bPrbjv.jpg",
-      "reg_open": "T"
-    },
-    {
-      "id": 90273,
-      "name": "Jim Fixx Memorial Day Run",
-      "date": "05/25/2026",
-      "city": "Greenwich",
-      "state": "CT",
-      "zipcode": "06830",
-      "distance_mi": 21,
-      "distances": [
-        "5K",
-        "0.5 Miles"
-      ],
-      "url": "https://runsignup.com/Race/CT/Greenwich/JimFixxMemorialDay5MileRun",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-96916-1742416291.286-0.bN2YMJ.png",
       "reg_open": "T"
     },
     {
@@ -2421,6 +2385,50 @@
       ],
       "url": "https://runsignup.com/Race/CT/Waterbury/OhBoy5K",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-244375-1767984441.1837-0.bPyu05.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 90273,
+      "name": "Jim Fixx Memorial Day Run",
+      "date": "05/25/2026",
+      "city": "Greenwich",
+      "state": "CT",
+      "zipcode": "06830",
+      "distance_mi": 21,
+      "distances": [
+        "5K",
+        "0.5 Miles"
+      ],
+      "url": "https://runsignup.com/Race/CT/Greenwich/JimFixxMemorialDay5MileRun",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-96916-1742416291.286-0.bN2YMJ.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 184812,
+      "name": "Blue Jeans Mile hosted by Manhattan Track Club",
+      "date": "05/26/2026",
+      "city": "New York",
+      "state": "NY",
+      "zipcode": "10031",
+      "distance_mi": null,
+      "distances": [
+        "1 Miles"
+      ],
+      "url": "https://runsignup.com/Race/NY/NewYork/BlueJeansMTC",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-254829-1747798273.3921-0.bOluKb.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 130827,
+      "name": "RRR Summer Track 2026",
+      "date": "05/26/2026",
+      "city": "Blauvelt",
+      "state": "NY",
+      "zipcode": "10913",
+      "distance_mi": null,
+      "distances": [],
+      "url": "https://runsignup.com/Race/NY/Blauvelt/RRRSummerTrack2022",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-137396-1717375828.0126-0.bMxrnu.png",
       "reg_open": "T"
     },
     {
@@ -2512,37 +2520,6 @@
       "reg_open": "T"
     },
     {
-      "id": 128767,
-      "name": "Robbie's Run 5k",
-      "date": "05/30/2026",
-      "city": "Merrick",
-      "state": "NY",
-      "zipcode": "11566",
-      "distance_mi": null,
-      "distances": [
-        "5K",
-        "1 Miles"
-      ],
-      "url": "https://runsignup.com/Race/NY/Merrick/RobbiesRun5k",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race128767-logo-0.bKqt3j.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 199042,
-      "name": "ENDURE- Last Man Standing",
-      "date": "05/30/2026",
-      "city": "Bethpage",
-      "state": "NY",
-      "zipcode": "11714",
-      "distance_mi": null,
-      "distances": [
-        "4.2 Miles"
-      ],
-      "url": "https://runsignup.com/Race/NY/Bethpage/EndureLastManStanding",
-      "logo": "",
-      "reg_open": "T"
-    },
-    {
       "id": 201235,
       "name": "Roxbury Road Race Series #13",
       "date": "05/30/2026",
@@ -2573,61 +2550,34 @@
       "reg_open": "T"
     },
     {
-      "id": 26776,
-      "name": "TriRidgefield Sprint Triathlon and Duathlon",
-      "date": "05/31/2026",
-      "city": "Ridgefield",
-      "state": "CT",
-      "zipcode": "06877",
-      "distance_mi": null,
-      "distances": [],
-      "url": "https://runsignup.com/Race/CT/Ridgefield/TriRidgefield",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race26776-logo-0.bLAFHf.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 190951,
-      "name": "Fort Lee Historic Park 5K",
-      "date": "05/31/2026",
-      "city": "Fort Lee",
-      "state": "NJ",
-      "zipcode": "07024",
+      "id": 128767,
+      "name": "Robbie's Run 5k",
+      "date": "05/30/2026",
+      "city": "Merrick",
+      "state": "NY",
+      "zipcode": "11566",
       "distance_mi": null,
       "distances": [
         "5K",
         "1 Miles"
       ],
-      "url": "https://runsignup.com/Race/NJ/FortLee/FortLeeHistoricPark5K",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-262326-1757166596.8092-0.bOVdWe.jpg",
+      "url": "https://runsignup.com/Race/NY/Merrick/RobbiesRun5k",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race128767-logo-0.bKqt3j.png",
       "reg_open": "T"
     },
     {
-      "id": 46406,
-      "name": "The Joe Keany Memorial 5K and 1 Mile Fun Run",
-      "date": "05/31/2026",
-      "city": "Miller Place",
+      "id": 199042,
+      "name": "ENDURE- Last Man Standing",
+      "date": "05/30/2026",
+      "city": "Bethpage",
       "state": "NY",
-      "zipcode": "11764",
+      "zipcode": "11714",
       "distance_mi": null,
       "distances": [
-        "5K",
-        "1 Miles"
+        "4.2 Miles"
       ],
-      "url": "https://runsignup.com/Race/NY/MillerPlace/TheJoeKeanyMemorial5KRunWalk",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-53109-1767568081.0493-0.bPwVlr.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 54923,
-      "name": "Mighty North Fork Triathlon",
-      "date": "05/31/2026",
-      "city": "Southold",
-      "state": "NY",
-      "zipcode": "11971",
-      "distance_mi": null,
-      "distances": [],
-      "url": "https://runsignup.com/Race/NY/Southold/MightyNorthFork",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race54923-logo-0.bEtTXL.png",
+      "url": "https://runsignup.com/Race/NY/Bethpage/EndureLastManStanding",
+      "logo": "",
       "reg_open": "T"
     },
     {
@@ -2672,6 +2622,64 @@
       ],
       "url": "https://runsignup.com/Race/NY/LloydHarbor/LittleAppleFunRun",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-64785-1776177015.2697-0.bP3K93.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 46406,
+      "name": "The Joe Keany Memorial 5K and 1 Mile Fun Run",
+      "date": "05/31/2026",
+      "city": "Miller Place",
+      "state": "NY",
+      "zipcode": "11764",
+      "distance_mi": null,
+      "distances": [
+        "5K",
+        "1 Miles"
+      ],
+      "url": "https://runsignup.com/Race/NY/MillerPlace/TheJoeKeanyMemorial5KRunWalk",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-53109-1767568081.0493-0.bPwVlr.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 54923,
+      "name": "Mighty North Fork Triathlon",
+      "date": "05/31/2026",
+      "city": "Southold",
+      "state": "NY",
+      "zipcode": "11971",
+      "distance_mi": null,
+      "distances": [],
+      "url": "https://runsignup.com/Race/NY/Southold/MightyNorthFork",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race54923-logo-0.bEtTXL.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 26776,
+      "name": "TriRidgefield Sprint Triathlon and Duathlon",
+      "date": "05/31/2026",
+      "city": "Ridgefield",
+      "state": "CT",
+      "zipcode": "06877",
+      "distance_mi": null,
+      "distances": [],
+      "url": "https://runsignup.com/Race/CT/Ridgefield/TriRidgefield",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race26776-logo-0.bLAFHf.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 190951,
+      "name": "Fort Lee Historic Park 5K",
+      "date": "05/31/2026",
+      "city": "Fort Lee",
+      "state": "NJ",
+      "zipcode": "07024",
+      "distance_mi": null,
+      "distances": [
+        "5K",
+        "1 Miles"
+      ],
+      "url": "https://runsignup.com/Race/NJ/FortLee/FortLeeHistoricPark5K",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-262326-1757166596.8092-0.bOVdWe.jpg",
       "reg_open": "T"
     },
     {
@@ -3023,22 +3031,6 @@
       "distances": [],
       "url": "https://runsignup.com/Race/NY/Sayville/SayvilleSummerSeries",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-25073-1739466660.8843-0.bNRIEK.jpg",
-      "reg_open": "T"
-    },
-    {
-      "id": 129970,
-      "name": "47th Annual Joseph McDonald / Bill Crusie Memorial Run",
-      "date": "06/06/2026",
-      "city": "Wappingers Falls",
-      "state": "NY",
-      "zipcode": "12590",
-      "distance_mi": null,
-      "distances": [
-        "1 Miles",
-        "10K"
-      ],
-      "url": "https://runsignup.com/Race/NY/WappingersFalls/McDonaldandCrusieMemorialRuns",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/img/logos/genericWebsiteLogos/running-shoe-300px.bMjMog.png",
       "reg_open": "T"
     }
   ]
