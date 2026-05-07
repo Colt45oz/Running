@@ -1,9 +1,24 @@
 {
-  "generated": "2026-05-04T10:55:49Z",
+  "generated": "2026-05-07T11:00:46Z",
   "zipcode": "06825",
   "radius_mi": 50,
   "count": 200,
   "races": [
+    {
+      "id": 25402,
+      "name": "Raven Events",
+      "date": null,
+      "city": "Cross River",
+      "state": "NY",
+      "zipcode": "10518",
+      "distance_mi": null,
+      "distances": [
+        "10K"
+      ],
+      "url": "https://runsignup.com/Race/NY/CrossRiver/RavenRocksRun",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-32148-1762837492.5395-0.bPeSp0.png",
+      "reg_open": "T"
+    },
     {
       "id": 196230,
       "name": "Hell No! It's Hudson Hill",
@@ -95,19 +110,6 @@
       "url": "https://runsignup.com/Race/AU/Rishikesh/YogainRishikesh",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race127568-logo-0.bIoh70.png",
       "reg_open": "F"
-    },
-    {
-      "id": 128340,
-      "name": "New York, NY Galloway Running Club and Training Program",
-      "date": null,
-      "city": "New York",
-      "state": "NY",
-      "zipcode": "10001",
-      "distance_mi": 47,
-      "distances": [],
-      "url": "https://runsignup.com/Race/NY/NewYork/NewYorkNYGallowayRunningClubandTrainingProgram",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-134909-1742223918.2966-0.bN2dOU.png",
-      "reg_open": "T"
     },
     {
       "id": 195935,
@@ -416,6 +418,19 @@
       "distances": [],
       "url": "https://runsignup.com/Race/NY/Poughkeepsie/FleetFeetPoughkeepsieSummer2021TrailSeries",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race113346-logo-0.bGUQhF.png",
+      "reg_open": "F"
+    },
+    {
+      "id": 128340,
+      "name": "New York, NY Galloway Running Club and Training Program",
+      "date": "04/26/2026",
+      "city": "New York",
+      "state": "NY",
+      "zipcode": "10001",
+      "distance_mi": 47,
+      "distances": [],
+      "url": "https://runsignup.com/Race/NY/NewYork/NewYorkNYGallowayRunningClubandTrainingProgram",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-134909-1742223918.2966-0.bN2dOU.png",
       "reg_open": "T"
     },
     {
@@ -507,19 +522,6 @@
       "reg_open": "T"
     },
     {
-      "id": 142155,
-      "name": "Tunnel to Towers National Golf Series New York Golf Classic",
-      "date": "05/04/2026",
-      "city": "Lake Success",
-      "state": "NY",
-      "zipcode": "11020",
-      "distance_mi": null,
-      "distances": [],
-      "url": "https://runsignup.com/Race/NY/LakeSuccess/TunneltoTowersNationalGolfSeriesNewYorkGolfClassic",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-148724-1736798975.4485-0.bNHxl_.png",
-      "reg_open": "F"
-    },
-    {
       "id": 144666,
       "name": "Loucks Masters Mile",
       "date": "05/07/2026",
@@ -547,7 +549,7 @@
       ],
       "url": "https://runsignup.com/Race/NY/Harrison/StVincentsSpringSprint",
       "logo": "",
-      "reg_open": "F"
+      "reg_open": "T"
     },
     {
       "id": 133181,
@@ -594,7 +596,7 @@
       ],
       "url": "https://runsignup.com/Race/NY/Orangeburg/MotherSDayREXtravaganza",
       "logo": "",
-      "reg_open": "T"
+      "reg_open": "F"
     },
     {
       "id": 172409,
@@ -1008,7 +1010,7 @@
       ],
       "url": "https://runsignup.com/Race/CT/Brookfield/WeCareMothersDay5K",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-134129-1774805926.9355-0.bPYwoM.jpg",
-      "reg_open": "T"
+      "reg_open": "F"
     },
     {
       "id": 122144,
@@ -1444,7 +1446,7 @@
     },
     {
       "id": 199451,
-      "name": "Running Battles- A 5k\"ish\" Race To The Finish",
+      "name": "Running Battles- A 5k\"ish\" Race To The Finish (Timed Race)",
       "date": "05/17/2026",
       "city": "Wolcott",
       "state": "CT",
@@ -1454,7 +1456,7 @@
         "3.5 Miles"
       ],
       "url": "https://runsignup.com/Race/CT/Wolcott/RunningBattlesARaceToTheFinish",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-272469-1769717217.6278-0.bPE73H.png",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-272469-1778105841.9887-0.bP-73X.png",
       "reg_open": "T"
     },
     {
@@ -2324,6 +2326,19 @@
       "reg_open": "T"
     },
     {
+      "id": 92466,
+      "name": "Summer Cross Country Series",
+      "date": "06/02/2026",
+      "city": "New Canaan",
+      "state": "CT",
+      "zipcode": "06840",
+      "distance_mi": 11,
+      "distances": [],
+      "url": "https://runsignup.com/Race/CT/NewCanaan/SummerCrossCountrySeries",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-99109-1778103261.1255-0.bP-7pD.png",
+      "reg_open": "F"
+    },
+    {
       "id": 159710,
       "name": "Belltown Spring Sprint 2M Run & Walk, Kids Run",
       "date": "06/02/2026",
@@ -3019,23 +3034,6 @@
       ],
       "url": "https://runsignup.com/Race/NJ/Tenafly/Tenafly5KRunandDogWalk",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-15618-1775082546.7782-0.bPZzWY.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 132775,
-      "name": "WALK4VALOR",
-      "date": "06/07/2026",
-      "city": "Southold",
-      "state": "NY",
-      "zipcode": "11791",
-      "distance_mi": null,
-      "distances": [
-        "22 Miles",
-        "5 Miles",
-        "11 Miles"
-      ],
-      "url": "https://runsignup.com/Race/NY/Southold/WALK4VALOR",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-139344-1737996960.4335-0.bNL7QG.jpg",
       "reg_open": "T"
     }
   ]
