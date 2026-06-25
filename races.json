@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-22T14:24:42Z",
+  "generated": "2026-06-25T11:31:58Z",
   "zipcode": "06825",
   "radius_mi": 50,
   "count": 200,
@@ -468,7 +468,7 @@
       "distance_mi": 8,
       "distances": [
         "5000m",
-        "10000m"
+        "800m"
       ],
       "url": "https://runsignup.com/Race/CT/Wilton/NovemberTrack5000",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-109157-1750889082.7176-0.bOxhj6.jpg",
@@ -953,7 +953,7 @@
         "4 Miles"
       ],
       "url": "https://runsignup.com/Race/CT/NewCanaan/FourontheFourthCT",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-93402-1782136569.8486-0.bQot75.png",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-93402-1782148649.4366-0.bQow4P.png",
       "reg_open": "T"
     },
     {
@@ -2065,7 +2065,7 @@
       ],
       "url": "https://runsignup.com/Race/NY/NewYorkCity/RunForPBJ5K10KNYC",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-271781-1768497884.3116-0.bPAslC.png",
-      "reg_open": "T"
+      "reg_open": "F"
     },
     {
       "id": 199399,
@@ -2083,7 +2083,7 @@
       ],
       "url": "https://runsignup.com/Race/NY/NewYorkCity/BagelRun5K10KNYC",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-271231-1768499871.3349-0.bPAsQF.png",
-      "reg_open": "T"
+      "reg_open": "F"
     },
     {
       "id": 188256,
@@ -2321,7 +2321,7 @@
         "5K"
       ],
       "url": "https://runsignup.com/Race/NY/NewYork/VyshyvankaRunNYC",
-      "logo": "",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-234172-1782384930.5018-0.bQpqKI.jpg",
       "reg_open": "T"
     },
     {
