@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-06T12:35:05Z",
+  "generated": "2026-07-09T11:44:35Z",
   "zipcode": "06825",
   "radius_mi": 50,
   "count": 200,
@@ -286,7 +286,7 @@
       "distances": [],
       "url": "https://runsignup.com/Race/CT/NewCanaan/SummerCrossCountrySeries",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-99109-1778103261.1255-0.bP-7pD.png",
-      "reg_open": "T"
+      "reg_open": "F"
     },
     {
       "id": 18268,
@@ -402,64 +402,6 @@
       "reg_open": "T"
     },
     {
-      "id": 210141,
-      "name": "Test Run: JCCI 5K Virtual Run Tournament",
-      "date": "06/29/2026",
-      "city": "New York",
-      "state": "NY",
-      "zipcode": "10020",
-      "distance_mi": null,
-      "distances": [],
-      "url": "https://runsignup.com/Race/NY/NewYork/JCCI5KVirtualRunTournament",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-285876-1782768408.9737-0.bQqUmy.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 208191,
-      "name": "2026 July 4th Virtual Run - United States",
-      "date": "07/03/2026",
-      "city": "USA",
-      "state": "NY",
-      "zipcode": "10001",
-      "distance_mi": 47,
-      "distances": [
-        "5K"
-      ],
-      "url": "https://runsignup.com/Race/NY/USA/JulyThVirtualRunUnitedStates",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-283446-1779397455.6731-0.bQd3np.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 209526,
-      "name": "2026 July 4th Virtual Run - New York",
-      "date": "07/03/2026",
-      "city": "New York",
-      "state": "NY",
-      "zipcode": "10199",
-      "distance_mi": null,
-      "distances": [
-        "5K"
-      ],
-      "url": "https://runsignup.com/Race/NY/NewYork/JulyThVirtualRunNewYork",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-283446-1779397455.6731-0.bQd3np.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 210459,
-      "name": "2026 July 4th Virtual Run - Yonkers",
-      "date": "07/03/2026",
-      "city": "Yonkers",
-      "state": "NY",
-      "zipcode": "10701",
-      "distance_mi": 36,
-      "distances": [
-        "5K"
-      ],
-      "url": "https://runsignup.com/Race/NY/Yonkers/JulyThVirtualRunYonkers",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-283446-1779397455.6731-0.bQd3np.png",
-      "reg_open": "T"
-    },
-    {
       "id": 92655,
       "name": "Sayville & Smithtown Running Co Summer XC Training",
       "date": "07/07/2026",
@@ -510,7 +452,7 @@
         "5K"
       ],
       "url": "https://runsignup.com/Race/CT/EastHampton/RailsToTrailsEastHampton",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-278452-1773965789.3462-0.bPVjhD.jpg",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-278452-1783551973.9525-0.bQtTFL.png",
       "reg_open": "T"
     },
     {
@@ -557,7 +499,7 @@
       ],
       "url": "https://runsignup.com/Race/CT/OldLyme/PointOWoodsBeach5KRunWalk",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-246281-1740846119.9006-0.bNWZqN.jpg",
-      "reg_open": "T"
+      "reg_open": "F"
     },
     {
       "id": 198672,
@@ -646,6 +588,21 @@
       ],
       "url": "https://runsignup.com/Race/CT/Roxbury/RoxburyRoadRaceSeries18",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-273107-1771182761.4523-0.bPKHQP.jpg",
+      "reg_open": "T"
+    },
+    {
+      "id": 86751,
+      "name": "Four on the Fourth",
+      "date": "07/12/2026",
+      "city": "New Canaan",
+      "state": "CT",
+      "zipcode": "06840",
+      "distance_mi": 11,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/CT/NewCanaan/FourontheFourthCT",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-93402-1782148649.4366-0.bQow4P.png",
       "reg_open": "T"
     },
     {
@@ -1789,7 +1746,7 @@
     },
     {
       "id": 111853,
-      "name": "17th Annual Saybrook Point 5k Road Race 2026",
+      "name": "17th Annual Saybrook Point 5k Road Race",
       "date": "08/22/2026",
       "city": "Old Saybrook",
       "state": "CT",
@@ -2403,7 +2360,7 @@
       ],
       "url": "https://runsignup.com/Race/CT/WestHaven/RivaRunsTheBoardwalk5k",
       "logo": "",
-      "reg_open": "F"
+      "reg_open": "T"
     },
     {
       "id": 201296,
@@ -2693,22 +2650,6 @@
       "reg_open": "T"
     },
     {
-      "id": 190055,
-      "name": "HALF WAY TO ST. PATS DAY 5K",
-      "date": "09/13/2026",
-      "city": "Stratford",
-      "state": "CT",
-      "zipcode": "06615",
-      "distance_mi": null,
-      "distances": [
-        "5K",
-        "300 Yards"
-      ],
-      "url": "https://runsignup.com/Race/CT/Stratford/HALFWAYTOSTPATSDAY5K",
-      "logo": "",
-      "reg_open": "F"
-    },
-    {
       "id": 63036,
       "name": "EDRRC - High Watch Recovery Center's Sprint for Sobriety 5K Run/Walk",
       "date": "09/13/2026",
@@ -2918,22 +2859,6 @@
       "reg_open": "T"
     },
     {
-      "id": 86275,
-      "name": "The Hub 5k and Family Fun Run",
-      "date": "09/19/2026",
-      "city": "Cold Spring",
-      "state": "NY",
-      "zipcode": "10516",
-      "distance_mi": null,
-      "distances": [
-        "5K",
-        "0.3 Miles"
-      ],
-      "url": "https://runsignup.com/Race/NY/ColdSpring/Hub5kandFamilyFunRun",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-92926-1780950380.8176-0.bQjYvS.png",
-      "reg_open": "F"
-    },
-    {
       "id": 78613,
       "name": "KVIS 2026 Michael P. Berardino Memorial Road Race",
       "date": "09/19/2026",
@@ -3023,6 +2948,83 @@
       ],
       "url": "https://runsignup.com/Race/NY/Poughkeepsie/MHRRCDutchessCountyClassic",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race128971-logo-0.bIyi4J.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 177579,
+      "name": "MIGHTY MADISON'S BIRTHDAY 5K",
+      "date": "09/20/2026",
+      "city": "Massapequa",
+      "state": "NY",
+      "zipcode": "11758",
+      "distance_mi": null,
+      "distances": [
+        "3.1 Miles",
+        "0.25 Miles"
+      ],
+      "url": "https://runsignup.com/Race/NY/Massapequa/MIGHTYMADISONSBIRTHDAY5K",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-245805-1737032487.8622-0.bNIqmN.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 163069,
+      "name": "WANTAGH WARRIOR 5k",
+      "date": "09/20/2026",
+      "city": "Wantagh",
+      "state": "NY",
+      "zipcode": "11793",
+      "distance_mi": null,
+      "distances": [
+        "5K",
+        "400m"
+      ],
+      "url": "https://runsignup.com/Race/NY/Wantagh/WantaghWarriors911Memorial5k",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-227872-1716313012.832-0.bMtnU0.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 1818,
+      "name": "I RUN BEACON 5K RUN/WALK 2026",
+      "date": "09/20/2026",
+      "city": "Beacon",
+      "state": "NY",
+      "zipcode": "12508",
+      "distance_mi": null,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/NY/Beacon/IRunBeacon5KRunWalk",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race1818-logo-0.bIIOkr.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 61265,
+      "name": "BDMS Cupcake 5k",
+      "date": "09/20/2026",
+      "city": "Newburgh",
+      "state": "NY",
+      "zipcode": "12550",
+      "distance_mi": null,
+      "distances": [
+        "3.10686 Miles"
+      ],
+      "url": "https://runsignup.com/Race/NY/Newburgh/BDMSCupcake5kRunWalk",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-67941-1783166481.6939-0.bQspyr.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 134992,
+      "name": "17th Annual Farmington River Run 5K Trail Race",
+      "date": "09/20/2026",
+      "city": "Farmington",
+      "state": "CT",
+      "zipcode": "06032",
+      "distance_mi": null,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/CT/Farmington/FarmingtonRiverRun5KTrailRace",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race134992-logo-0.bJba4F.png",
       "reg_open": "T"
     }
   ]
