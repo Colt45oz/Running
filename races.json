@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-13T11:50:20Z",
+  "generated": "2026-07-16T10:48:43Z",
   "zipcode": "06825",
   "radius_mi": 50,
   "count": 200,
@@ -471,66 +471,6 @@
       "reg_open": "F"
     },
     {
-      "id": 209829,
-      "name": "HOKA Clifton PRO Prophecy Time Predication Run",
-      "date": "07/13/2026",
-      "city": "Poughkeepsie",
-      "state": "NY",
-      "zipcode": "12601",
-      "distance_mi": null,
-      "distances": [
-        "1 Miles"
-      ],
-      "url": "https://runsignup.com/Race/NY/Poughkeepsie/HOKACliftonPROPredicationRun",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/img/logos/genericWebsiteLogos/running-shoe1-300px.bMjMog.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 142375,
-      "name": "Bowdoin Bushwhack Presented by Peace, Love, Trails",
-      "date": "07/15/2026",
-      "city": "Wappingers Falls",
-      "state": "NY",
-      "zipcode": "12590",
-      "distance_mi": null,
-      "distances": [
-        "5 Miles"
-      ],
-      "url": "https://runsignup.com/Race/NY/WappingersFalls/BowdoinBushwhack",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-148944-1773612259.0667-0.bPTYZJ.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 160501,
-      "name": "Ambulance Driver 5K                                 at BADSONS Brewery",
-      "date": "07/15/2026",
-      "city": "Derby",
-      "state": "CT",
-      "zipcode": "06418",
-      "distance_mi": null,
-      "distances": [
-        "5K"
-      ],
-      "url": "https://runsignup.com/Race/CT/Derby/Brewery5K",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race160501-logo-0.bL0JEL.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 60888,
-      "name": "THE FAIRFIELD POLICE SUNSET 5K - Presented by Moneco Advisors",
-      "date": "07/15/2026",
-      "city": "Fairfield",
-      "state": "CT",
-      "zipcode": "06824",
-      "distance_mi": null,
-      "distances": [
-        "5K"
-      ],
-      "url": "https://runsignup.com/Race/CT/Fairfield/THEFAIRFIELDPOLICESUNSET5KOnemilewalkandKidsCopsScamper",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-67564-1771433013.7297-0.bPLEW1.png",
-      "reg_open": "T"
-    },
-    {
       "id": 210156,
       "name": "Partners in the Long Run",
       "date": "07/17/2026",
@@ -661,6 +601,37 @@
       "reg_open": "T"
     },
     {
+      "id": 147903,
+      "name": "New Milford Parks & Recreation Road Race",
+      "date": "07/25/2026",
+      "city": "New Milford",
+      "state": "CT",
+      "zipcode": "06776",
+      "distance_mi": null,
+      "distances": [
+        "3.1 Miles",
+        "8 Miles"
+      ],
+      "url": "https://runsignup.com/Race/CT/NewMilford/NewMilford8mileand5kRoadRace",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-209822-1775230505.4071-0.bPZ94P.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 21659,
+      "name": "Southwest Cafe Margarita 5K",
+      "date": "07/25/2026",
+      "city": "Ridgefield",
+      "state": "CT",
+      "zipcode": "06877",
+      "distance_mi": null,
+      "distances": [
+        "3.1 Miles"
+      ],
+      "url": "https://runsignup.com/Race/CT/Ridgefield/SouthwestCafeMargarita5K",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-28463-1781726143.8172-0.bQmVU_.png",
+      "reg_open": "T"
+    },
+    {
       "id": 191512,
       "name": "Run for Coffee Lovers 5K/10K/13.1 NYC",
       "date": "07/25/2026",
@@ -761,37 +732,6 @@
       ],
       "url": "https://runsignup.com/Race/NY/Flushing/TrackMorningNYCEarlyBirdSpecial",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-280402-1776364216.3215-0.bP4sQ4.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 147903,
-      "name": "New Milford Parks & Recreation Road Race",
-      "date": "07/25/2026",
-      "city": "New Milford",
-      "state": "CT",
-      "zipcode": "06776",
-      "distance_mi": null,
-      "distances": [
-        "3.1 Miles",
-        "8 Miles"
-      ],
-      "url": "https://runsignup.com/Race/CT/NewMilford/NewMilford8mileand5kRoadRace",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-209822-1775230505.4071-0.bPZ94P.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 21659,
-      "name": "Southwest Cafe Margarita 5K",
-      "date": "07/25/2026",
-      "city": "Ridgefield",
-      "state": "CT",
-      "zipcode": "06877",
-      "distance_mi": null,
-      "distances": [
-        "3.1 Miles"
-      ],
-      "url": "https://runsignup.com/Race/CT/Ridgefield/SouthwestCafeMargarita5K",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-28463-1781726143.8172-0.bQmVU_.png",
       "reg_open": "T"
     },
     {
@@ -943,20 +883,33 @@
       "reg_open": "F"
     },
     {
-      "id": 196465,
-      "name": "NYC Summer Half, 5 Miler",
+      "id": 179978,
+      "name": "CT Hospice Miles for Memories",
       "date": "08/01/2026",
-      "city": "New York",
-      "state": "NY",
-      "zipcode": "10029",
+      "city": "Branford",
+      "state": "CT",
+      "zipcode": "06405",
       "distance_mi": null,
       "distances": [
-        "13.1 Miles",
-        "5 Miles"
+        "2 Miles",
+        "1 Miles"
       ],
-      "url": "https://runsignup.com/Race/NY/NewYork/NYCSummerHalf5Miler",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-268935-1764878926.6-0.bPmEPo.png",
-      "reg_open": "F"
+      "url": "https://runsignup.com/Race/CT/Branford/CTHospiceMilesforMemories",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-248926-1742838950.308-0.bN4zYM.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 49570,
+      "name": "Race4Chase Triathlon Program FINALE Race: Connecticut",
+      "date": "08/01/2026",
+      "city": "Southington",
+      "state": "CT",
+      "zipcode": "06489",
+      "distance_mi": null,
+      "distances": [],
+      "url": "https://runsignup.com/Race/CT/Southington/Race4ChaseTriathlonProgramFINALERace",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-56267-1772568738.4941-0.bPP0cI.jpg",
+      "reg_open": "T"
     },
     {
       "id": 201243,
@@ -989,33 +942,20 @@
       "reg_open": "T"
     },
     {
-      "id": 179978,
-      "name": "CT Hospice Miles for Memories",
+      "id": 196465,
+      "name": "NYC Summer Half, 5 Miler",
       "date": "08/01/2026",
-      "city": "Branford",
-      "state": "CT",
-      "zipcode": "06405",
+      "city": "New York",
+      "state": "NY",
+      "zipcode": "10029",
       "distance_mi": null,
       "distances": [
-        "2 Miles",
-        "1 Miles"
+        "13.1 Miles",
+        "5 Miles"
       ],
-      "url": "https://runsignup.com/Race/CT/Branford/CTHospiceMilesforMemories",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-248926-1742838950.308-0.bN4zYM.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 49570,
-      "name": "Race4Chase Triathlon Program FINALE Race: Connecticut",
-      "date": "08/01/2026",
-      "city": "Southington",
-      "state": "CT",
-      "zipcode": "06489",
-      "distance_mi": null,
-      "distances": [],
-      "url": "https://runsignup.com/Race/CT/Southington/Race4ChaseTriathlonProgramFINALERace",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-56267-1772568738.4941-0.bPP0cI.jpg",
-      "reg_open": "T"
+      "url": "https://runsignup.com/Race/NY/NewYork/NYCSummerHalf5Miler",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-268935-1764878926.6-0.bPmEPo.png",
+      "reg_open": "F"
     },
     {
       "id": 314,
@@ -1030,6 +970,23 @@
       ],
       "url": "https://runsignup.com/Race/CT/Milford/boysandgirlsclubofmilfordicecream5k",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-7534-1746815947.9238-0.bOhKVl.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 196470,
+      "name": "Queens NYC Half, 10k, 5k",
+      "date": "08/02/2026",
+      "city": "Corona",
+      "state": "NY",
+      "zipcode": "11368",
+      "distance_mi": null,
+      "distances": [
+        "13.1 Miles",
+        "10K",
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/NY/Corona/QueensNYC",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-268940-1764881015.8126-0.bPmFj3.png",
       "reg_open": "T"
     },
     {
@@ -1059,23 +1016,6 @@
       "url": "https://runsignup.com/Race/NY/Southampton/RaceofHope5K",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race79015-logo-0.bG2Fhc.png",
       "reg_open": "F"
-    },
-    {
-      "id": 196470,
-      "name": "Queens NYC Half, 10k, 5k",
-      "date": "08/02/2026",
-      "city": "Corona",
-      "state": "NY",
-      "zipcode": "11368",
-      "distance_mi": null,
-      "distances": [
-        "13.1 Miles",
-        "10K",
-        "5K"
-      ],
-      "url": "https://runsignup.com/Race/NY/Corona/QueensNYC",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-268940-1764881015.8126-0.bPmFj3.png",
-      "reg_open": "T"
     },
     {
       "id": 208686,
@@ -1436,6 +1376,22 @@
       ],
       "url": "https://runsignup.com/Race/NY/Millbrook/MillbrookVineyardsWineRun5k",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race126613-scaled-logo-0.bMitV9.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 210765,
+      "name": "Fleet Feet's RUNegades 2.5K + Kids .5 Mile Dash",
+      "date": "08/16/2026",
+      "city": "Wappingers Falls",
+      "state": "NY",
+      "zipcode": "12590",
+      "distance_mi": null,
+      "distances": [
+        "0.5 Miles",
+        "2.5K"
+      ],
+      "url": "https://runsignup.com/Race/NY/WappingersFalls/FleetFeetRenegadesRun",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-286616-1783971867.7078-0.bQvuaB.png",
       "reg_open": "T"
     },
     {
@@ -2084,7 +2040,7 @@
     },
     {
       "id": 209985,
-      "name": "9/11 Stair Climb New York City",
+      "name": "Team RWB 9/11 Stair Climb New York City",
       "date": "09/11/2026",
       "city": "Flushing",
       "state": "NY",
@@ -2138,6 +2094,21 @@
       "url": "https://runsignup.com/Race/NY/StonyPoint/2024Toughman",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/img/logos/genericWebsiteLogos/bike-300px.bMjMog.png",
       "reg_open": "T"
+    },
+    {
+      "id": 133385,
+      "name": "6th Annual Living Water 5K  Run/Walk",
+      "date": "09/12/2026",
+      "city": "Valley Cottage",
+      "state": "NY",
+      "zipcode": "10989",
+      "distance_mi": null,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/NY/ValleyCottage/5klivingwaterrun",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-139954-1753194162.0674-0.bOF56Y.png",
+      "reg_open": "F"
     },
     {
       "id": 132659,
@@ -2418,6 +2389,21 @@
       "reg_open": "T"
     },
     {
+      "id": 210622,
+      "name": "New Hyde Park Mineola Runners Club - 48th Annual 8K Race",
+      "date": "09/13/2026",
+      "city": "New Hyde Park",
+      "state": "NY",
+      "zipcode": "11042",
+      "distance_mi": null,
+      "distances": [
+        "8K"
+      ],
+      "url": "https://runsignup.com/Race/NY/NewHydePark/NewHydeParkMineolaRunnersClubThAnnual8KRace",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-286432-1783294672.2061-0.bQsURq.png",
+      "reg_open": "T"
+    },
+    {
       "id": 168153,
       "name": "Healthy Kids Running Series Fall 2026 - Rockville Centre, NY",
       "date": "09/13/2026",
@@ -2638,6 +2624,21 @@
       ],
       "url": "https://runsignup.com/Race/NY/Katonah/Katonah5K",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-85264-1778551645.4319-0.bQaOTD.jpg",
+      "reg_open": "T"
+    },
+    {
+      "id": 185901,
+      "name": "TYathlon Sprint Triathlon & 5K",
+      "date": "09/19/2026",
+      "city": "Mahopac",
+      "state": "NY",
+      "zipcode": "10541",
+      "distance_mi": 30,
+      "distances": [
+        "2.7 Miles"
+      ],
+      "url": "https://runsignup.com/Race/NY/Mahopac/TYathlonSprintTriathlon5K",
+      "logo": "",
       "reg_open": "T"
     },
     {
