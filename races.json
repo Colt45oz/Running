@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-17T09:29:19Z",
+  "generated": "2026-08-20T09:23:09Z",
   "zipcode": "06825",
   "radius_mi": 50,
   "count": 200,
@@ -271,7 +271,7 @@
       "distances": [],
       "url": "https://runsignup.com/Race/CT/NewCanaan/SummerCrossCountrySeries",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-99109-1778103261.1255-0.bP-7pD.png",
-      "reg_open": "T"
+      "reg_open": "F"
     },
     {
       "id": 208785,
@@ -563,34 +563,6 @@
       ],
       "url": "https://runsignup.com/Race/CT/Stamford/USAVIRTUALMILEStamford",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-289047-1786564793.4312-0.bQFnc5.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 60910,
-      "name": "NCPD Police Officer Memorial 5K Run",
-      "date": "08/17/2026",
-      "city": "East Meadow",
-      "state": "NY",
-      "zipcode": "11554",
-      "distance_mi": null,
-      "distances": [
-        "3.1 Miles"
-      ],
-      "url": "https://runsignup.com/Race/NY/EastMeadow/NCPDPOMEMORIAL5k",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race60910-logo-0.bA2FUJ.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 38802,
-      "name": "Guess Your Time 2.5 mile Race",
-      "date": "08/19/2026",
-      "city": "Yorktown Heights",
-      "state": "NY",
-      "zipcode": "10598",
-      "distance_mi": null,
-      "distances": [],
-      "url": "https://runsignup.com/Race/NY/YorktownHeights/GuessYourTime",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race38802-scaled-logo-0.bytXh1.png",
       "reg_open": "T"
     },
     {
@@ -1083,7 +1055,7 @@
       ],
       "url": "https://runsignup.com/Race/NY/Yorktown/SecondAnnualKatonahASP5K",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/img/logos/genericWebsiteLogos/running-shoe1-300px.bMjMog.png",
-      "reg_open": "F"
+      "reg_open": "T"
     },
     {
       "id": 127769,
@@ -2586,7 +2558,7 @@
       ],
       "url": "https://runsignup.com/Race/NY/NewYorkCity/OktoberfestRun5K10KNYCSouthside",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-270828-1768499607.6052-0.bPAsMx.png",
-      "reg_open": "T"
+      "reg_open": "F"
     },
     {
       "id": 200193,
@@ -2604,7 +2576,7 @@
       ],
       "url": "https://runsignup.com/Race/NY/NewYorkCity/RunForDonuts5K10KNYCSouthside926",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-271229-1768500017.4213-0.bPAsSX.png",
-      "reg_open": "T"
+      "reg_open": "F"
     },
     {
       "id": 205048,
@@ -2996,6 +2968,35 @@
       "reg_open": "T"
     },
     {
+      "id": 209406,
+      "name": "Run 191",
+      "date": "10/01/2026",
+      "city": "New York",
+      "state": "NY",
+      "zipcode": "10037",
+      "distance_mi": null,
+      "distances": [],
+      "url": "https://runsignup.com/Race/NY/NewYork/Run191",
+      "logo": "",
+      "reg_open": "T"
+    },
+    {
+      "id": 10399,
+      "name": "Pounding the Pavement for Pink Races",
+      "date": "10/02/2026",
+      "city": "Seymour",
+      "state": "CT",
+      "zipcode": "06483",
+      "distance_mi": null,
+      "distances": [
+        "5K",
+        "1 Miles"
+      ],
+      "url": "https://runsignup.com/Race/CT/Seymour/PoundingthePavementforPink5K",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-17246-1780163478.237-0.bQgYow.png",
+      "reg_open": "T"
+    },
+    {
       "id": 181154,
       "name": "Denali - 40 Mile + (40 Miler) - if you can only spare your whole weekend - Elevation Endurance Ultra Trail Marathon - 43 + Miles | 48 Hour - IronHike (Iron Hike) Fall (October / Oct) - Solo - Mohawk Mountain, Connecticut (CT) - Run, Hike or Walk with us as we redefine race day.",
       "date": "10/02/2026",
@@ -3042,20 +3043,19 @@
       "reg_open": "T"
     },
     {
-      "id": 10399,
-      "name": "Pounding the Pavement for Pink Races",
-      "date": "10/02/2026",
-      "city": "Seymour",
+      "id": 181215,
+      "name": "Iron Hike - Fall Double Kuwohi Trail Marathon Plus - 28+ Miles | 13,685' Elevation | 24-Hour | Run, Hike or Walk",
+      "date": "10/03/2026",
+      "city": "Cornwall",
       "state": "CT",
-      "zipcode": "06483",
+      "zipcode": "06753",
       "distance_mi": null,
       "distances": [
-        "5K",
-        "1 Miles"
+        "28 Miles"
       ],
-      "url": "https://runsignup.com/Race/CT/Seymour/PoundingthePavementforPink5K",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-17246-1780163478.237-0.bQgYow.png",
-      "reg_open": "T"
+      "url": "https://runsignup.com/Race/CT/Cornwall/IronHikeDoubleKuwohiFall",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-250251-1742159596.2173-0.bN1Z7S.png",
+      "reg_open": "F"
     }
   ]
 }
