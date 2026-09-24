@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-21T15:27:13Z",
+  "generated": "2026-09-24T13:53:51Z",
   "zipcode": "06825",
   "radius_mi": 50,
   "count": 200,
@@ -456,7 +456,8 @@
       "zipcode": "06410",
       "distance_mi": 32,
       "distances": [
-        "5K"
+        "5K",
+        "1.5K"
       ],
       "url": "https://runsignup.com/Race/CT/Cheshire/CheshireCommunityYMCA5KTrailRace",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-254957-1747935292.6307-0.bOl2a8.png",
@@ -813,7 +814,7 @@
         "3.1 Miles"
       ],
       "url": "https://runsignup.com/Race/NY/NewYork/TheNewYorker10KAnd5K",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-253624-1746218847.3758-0.bOfs9F.jpg",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-253624-1790020269.1871-0.bQSyQT.png",
       "reg_open": "T"
     },
     {
@@ -1931,21 +1932,6 @@
       "reg_open": "T"
     },
     {
-      "id": 152977,
-      "name": "Holiday Hustle 5K- A festive 5K with a sweet finish",
-      "date": "10/10/2026",
-      "city": "Ridgefield Park",
-      "state": "NJ",
-      "zipcode": "07660",
-      "distance_mi": null,
-      "distances": [
-        "5K"
-      ],
-      "url": "https://runsignup.com/Race/NJ/RidgefieldPark/NJHolidayHustle5K",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-215694-1787938212.3974-0.bQKCwK.jpg",
-      "reg_open": "T"
-    },
-    {
       "id": 201395,
       "name": "Cookie Run 5K/10K/13.1 NYC",
       "date": "10/10/2026",
@@ -2225,6 +2211,24 @@
       "reg_open": "F"
     },
     {
+      "id": 214480,
+      "name": "Sachem Jeff Stone Cross Country Runs",
+      "date": "10/12/2026",
+      "city": "Farmingville",
+      "state": "NY",
+      "zipcode": "11738",
+      "distance_mi": null,
+      "distances": [
+        "150m",
+        "400m",
+        "800m",
+        "1 Miles"
+      ],
+      "url": "https://runsignup.com/Race/NY/Farmingville/SachemJeffStoneCrossCountryRuns",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-291149-1790007145.807-0.bQSvDP.png",
+      "reg_open": "T"
+    },
+    {
       "id": 182825,
       "name": "Country School XC Invitational",
       "date": "10/13/2026",
@@ -2256,7 +2260,7 @@
     },
     {
       "id": 209406,
-      "name": "Run 191",
+      "name": "191 Run",
       "date": "10/15/2026",
       "city": "New York",
       "state": "NY",
@@ -2848,6 +2852,19 @@
       "reg_open": "T"
     },
     {
+      "id": 155070,
+      "name": "Fleet Feet Poughkeepsie x Sloop Brewing Halloween Fun Run",
+      "date": "10/21/2026",
+      "city": "East Fishkill",
+      "state": "NY",
+      "zipcode": "12533",
+      "distance_mi": null,
+      "distances": [],
+      "url": "https://runsignup.com/Race/NY/EastFishkill/FleetFeetPoughkeepsiesHalloweenFunRun",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-218131-1790197597.0666-0.bQTd9D.png",
+      "reg_open": "F"
+    },
+    {
       "id": 185823,
       "name": "NVL Cross Country Championship",
       "date": "10/21/2026",
@@ -2922,6 +2939,21 @@
       ],
       "url": "https://runsignup.com/Race/NJ/Norwood/TheValley5KWalkAndRun",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-288024-1785278131.5586-0.bQAs6Z.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 152977,
+      "name": "Holiday Hustle 5K- A festive 5K with a sweet finish",
+      "date": "10/24/2026",
+      "city": "Ridgefield Park",
+      "state": "NJ",
+      "zipcode": "07660",
+      "distance_mi": null,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/NJ/RidgefieldPark/NJHolidayHustle5K",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-215694-1787938212.3974-0.bQKCwK.jpg",
       "reg_open": "T"
     },
     {
@@ -3041,38 +3073,6 @@
       ],
       "url": "https://runsignup.com/Race/NY/Greenlawn/TheHalloween5k",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-29105-1787549858.6139-0.bQI9II.jpg",
-      "reg_open": "T"
-    },
-    {
-      "id": 151979,
-      "name": "Smithtown Running of the Bull",
-      "date": "10/24/2026",
-      "city": "Smithtown",
-      "state": "NY",
-      "zipcode": "11787",
-      "distance_mi": null,
-      "distances": [
-        "5K",
-        "1K"
-      ],
-      "url": "https://runsignup.com/Race/NY/Smithtown/SmithtownRunningoftheBull",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-214555-1719501438.364-0.bMFyj-.jpg",
-      "reg_open": "T"
-    },
-    {
-      "id": 22246,
-      "name": "The John Theissen Children's Foundation Freaky 5K & Kids Trick or Treat 1/4 mile Trot 2026",
-      "date": "10/25/2026",
-      "city": "Wantagh",
-      "state": "NY",
-      "zipcode": "11793",
-      "distance_mi": null,
-      "distances": [
-        "5K",
-        "0.25 Miles"
-      ],
-      "url": "https://runsignup.com/Race/NY/Wantagh/JohnTheissenFreaky5K",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race22246-logo-0.bzDF9c.png",
       "reg_open": "T"
     }
   ]
