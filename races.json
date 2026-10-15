@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-12T18:20:10Z",
+  "generated": "2026-10-15T13:46:51Z",
   "zipcode": "06825",
   "radius_mi": 50,
   "count": 200,
@@ -293,19 +293,6 @@
       "reg_open": "T"
     },
     {
-      "id": 149269,
-      "name": "Healthy Kids Running Series Fall 2026 - Brewster, NY",
-      "date": "09/13/2026",
-      "city": "Brewster",
-      "state": "NY",
-      "zipcode": "10509",
-      "distance_mi": null,
-      "distances": [],
-      "url": "https://runsignup.com/Race/NY/Brewster/HealthyKidsRunningSeriesBrewsterNY",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race149269-scaled-logo-0.bMiuWR.png",
-      "reg_open": "F"
-    },
-    {
       "id": 168153,
       "name": "Healthy Kids Running Series Fall 2026 - Rockville Centre, NY",
       "date": "09/13/2026",
@@ -316,6 +303,19 @@
       "distances": [],
       "url": "https://runsignup.com/Race/NY/RockvilleCentre/HealthyKidsRunningSeriesRockvilleCenterNY",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race148336-scaled-logo-0.bMiuUJ.png",
+      "reg_open": "F"
+    },
+    {
+      "id": 149269,
+      "name": "Healthy Kids Running Series Fall 2026 - Brewster, NY",
+      "date": "09/13/2026",
+      "city": "Brewster",
+      "state": "NY",
+      "zipcode": "10509",
+      "distance_mi": null,
+      "distances": [],
+      "url": "https://runsignup.com/Race/NY/Brewster/HealthyKidsRunningSeriesBrewsterNY",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race149269-scaled-logo-0.bMiuWR.png",
       "reg_open": "F"
     },
     {
@@ -490,27 +490,9 @@
       "reg_open": "T"
     },
     {
-      "id": 214480,
-      "name": "Sachem Jeff Stone Cross Country Runs",
-      "date": "10/12/2026",
-      "city": "Farmingville",
-      "state": "NY",
-      "zipcode": "11738",
-      "distance_mi": null,
-      "distances": [
-        "150m",
-        "400m",
-        "800m",
-        "1 Miles"
-      ],
-      "url": "https://runsignup.com/Race/NY/Farmingville/SachemJeffStoneCrossCountryRuns",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-291149-1790007145.807-0.bQSvDP.png",
-      "reg_open": "F"
-    },
-    {
       "id": 216713,
       "name": "4th Reg 1000 mile Challenge",
-      "date": "10/12/2026",
+      "date": "10/14/2026",
       "city": "West Point",
       "state": "NY",
       "zipcode": "10996",
@@ -519,51 +501,6 @@
       "url": "https://runsignup.com/Race/NY/WestPoint/ThReg1000MileChallenge",
       "logo": "",
       "reg_open": "T"
-    },
-    {
-      "id": 182825,
-      "name": "Country School XC Invitational",
-      "date": "10/13/2026",
-      "city": "Madison",
-      "state": "CT",
-      "zipcode": "06443",
-      "distance_mi": null,
-      "distances": [
-        "3K"
-      ],
-      "url": "https://runsignup.com/Race/CT/Madison/CountrySchoolXCInvitational",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-252408-1744834366.8836-0.bOaa8-.png",
-      "reg_open": "F"
-    },
-    {
-      "id": 216491,
-      "name": "New Milford XC Quad Meet",
-      "date": "10/13/2026",
-      "city": "New Milford",
-      "state": "CT",
-      "zipcode": "06776",
-      "distance_mi": null,
-      "distances": [
-        "5K"
-      ],
-      "url": "https://runsignup.com/Race/CT/NewMilford/NewMilfordXCQuadMeet",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-293594-1791323845.6264-0.bQXw7f.jpg",
-      "reg_open": "T"
-    },
-    {
-      "id": 193708,
-      "name": "Wooster Invitational",
-      "date": "10/14/2026",
-      "city": "Danbury",
-      "state": "CT",
-      "zipcode": "06810",
-      "distance_mi": null,
-      "distances": [
-        "4K"
-      ],
-      "url": "https://runsignup.com/Race/CT/Danbury/WoosterInvitational2",
-      "logo": "",
-      "reg_open": "F"
     },
     {
       "id": 209406,
@@ -576,7 +513,7 @@
       "distances": [],
       "url": "https://runsignup.com/Race/NY/NewYork/Run191",
       "logo": "",
-      "reg_open": "T"
+      "reg_open": "F"
     },
     {
       "id": 212500,
@@ -892,100 +829,81 @@
       "reg_open": "T"
     },
     {
-      "id": 169270,
-      "name": "34th Annual Halloween 5K and Kids Fun Run",
+      "id": 125296,
+      "name": "Bristol Mum-A-Thon Road Race 2026",
       "date": "10/18/2026",
-      "city": "Brookfield",
+      "city": "Bristol",
       "state": "CT",
-      "zipcode": "06804",
+      "zipcode": "06010",
+      "distance_mi": null,
+      "distances": [
+        "1 Miles",
+        "5K",
+        "8K",
+        "8 Miles"
+      ],
+      "url": "https://runsignup.com/Race/CT/Bristol/BristolMumAThon",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-131865-1773498855.3397-0.bPTxhN.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 116681,
+      "name": "Mikey's Place 5K",
+      "date": "10/18/2026",
+      "city": "Wethersfield",
+      "state": "CT",
+      "zipcode": "06109",
+      "distance_mi": null,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/CT/Wethersfield/MikeysPlace5K",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race116681-logo-0.bHe9gE.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 166853,
+      "name": "2026 Run for The Cove 5K & Memorial Walk",
+      "date": "10/18/2026",
+      "city": "Madison",
+      "state": "CT",
+      "zipcode": "06443",
       "distance_mi": null,
       "distances": [
         "5K",
-        "0.23 Miles"
+        "2 Miles"
       ],
-      "url": "https://runsignup.com/Race/CT/Brookfield/AnnualHalloween5KAndKidsFunRun",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/img/logos/genericWebsiteLogos/ultra-300px.bMjMog.png",
+      "url": "https://runsignup.com/Race/CT/Madison/RunforTheCoveandMemorialWalk",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-232609-1781814518.067-0.bQnft2.png",
       "reg_open": "T"
     },
     {
-      "id": 208294,
-      "name": "Gregory Burnett, Sr. Memorial 5K & Fun Run",
+      "id": 215389,
+      "name": "Follow Natural Fitness Women's Breast Cancer Awareness 5K",
       "date": "10/18/2026",
-      "city": "Norwalk",
+      "city": "Bridgeport",
       "state": "CT",
-      "zipcode": "06851",
-      "distance_mi": 8,
-      "distances": [
-        "3.2 Miles",
-        "1 Miles"
-      ],
-      "url": "https://runsignup.com/Race/CT/Norwalk/GregBurnett5K",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-283575-1789961886.7911-0.bQSkAE.png",
+      "zipcode": "06604",
+      "distance_mi": 5,
+      "distances": [],
+      "url": "https://runsignup.com/Race/CT/Bridgeport/FollowNaturalFitnessWomenSBreastCancerAwareness5K",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-292258-1789739023.8197-0.bQRuap.png",
       "reg_open": "T"
     },
     {
-      "id": 197258,
-      "name": "HSS Greenwich Half Marathon",
+      "id": 12027,
+      "name": "The 36th  edition of THE Great Pumpkin Classic",
       "date": "10/18/2026",
-      "city": "Old Greenwich",
+      "city": "TRUMBULL",
       "state": "CT",
-      "zipcode": "06870",
-      "distance_mi": null,
+      "zipcode": "06611",
+      "distance_mi": 12,
       "distances": [
-        "13.1 Miles"
-      ],
-      "url": "https://runsignup.com/Race/CT/OldGreenwich/Greenwich",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-269830-1777558919.0732-0.bP82wh.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 48143,
-      "name": "The Ridgefield Road Fest 50th Anniversary: 1/2 Marathon, 7-Miler, and The Iris Fund 5K",
-      "date": "10/18/2026",
-      "city": "Ridgefield",
-      "state": "CT",
-      "zipcode": "06877",
-      "distance_mi": null,
-      "distances": [
-        "13.1 Miles",
-        "7 Miles",
-        "3.1 Miles"
-      ],
-      "url": "https://runsignup.com/Race/CT/Ridgefield/RidgefieldRoadFest",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-54846-1784215212.219-0.bQwpAS.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 64929,
-      "name": "The Terri Roemer Paramus Run",
-      "date": "10/18/2026",
-      "city": "Paramus",
-      "state": "NJ",
-      "zipcode": "07652",
-      "distance_mi": null,
-      "distances": [
-        "10K",
         "5K",
-        "1 Miles"
+        "3K"
       ],
-      "url": "https://runsignup.com/Race/NJ/Paramus/TerriRoemerParamusRun",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-71600-1771949754.2188-0.bPNC66.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 149123,
-      "name": "Achilles New Jersey Hope & Possibility 2026 - In Loving Memory of Kenny Franco Jr.",
-      "date": "10/18/2026",
-      "city": "Rochelle Park",
-      "state": "NJ",
-      "zipcode": "07652",
-      "distance_mi": null,
-      "distances": [
-        "4 Miles",
-        "13.1 Miles"
-      ],
-      "url": "https://runsignup.com/Race/NJ/RochellePark/AchillesNewJerseyHnP",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-211219-1782676368.8684-0.bQqxUq.png",
+      "url": "https://runsignup.com/Race/CT/TRUMBULL/GreatPumpkinClassic",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-18874-1743647209.7288-0.bN7FhP.png",
       "reg_open": "T"
     },
     {
@@ -1097,6 +1015,19 @@
       "reg_open": "T"
     },
     {
+      "id": 216971,
+      "name": "IARC",
+      "date": "10/18/2026",
+      "city": "East Meadow",
+      "state": "NY",
+      "zipcode": "11554",
+      "distance_mi": null,
+      "distances": [],
+      "url": "https://runsignup.com/Race/NY/EastMeadow/IARC",
+      "logo": "",
+      "reg_open": "T"
+    },
+    {
       "id": 23679,
       "name": "Malverne 5K Run for Education",
       "date": "10/18/2026",
@@ -1113,94 +1044,100 @@
       "reg_open": "T"
     },
     {
-      "id": 125296,
-      "name": "Bristol Mum-A-Thon Road Race 2026",
+      "id": 169270,
+      "name": "34th Annual Halloween 5K and Kids Fun Run",
       "date": "10/18/2026",
-      "city": "Bristol",
+      "city": "Brookfield",
       "state": "CT",
-      "zipcode": "06010",
-      "distance_mi": null,
-      "distances": [
-        "1 Miles",
-        "5K",
-        "8K",
-        "8 Miles"
-      ],
-      "url": "https://runsignup.com/Race/CT/Bristol/BristolMumAThon",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-131865-1773498855.3397-0.bPTxhN.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 116681,
-      "name": "Mikey's Place 5K",
-      "date": "10/18/2026",
-      "city": "Wethersfield",
-      "state": "CT",
-      "zipcode": "06109",
-      "distance_mi": null,
-      "distances": [
-        "5K"
-      ],
-      "url": "https://runsignup.com/Race/CT/Wethersfield/MikeysPlace5K",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race116681-logo-0.bHe9gE.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 166853,
-      "name": "2026 Run for The Cove 5K & Memorial Walk",
-      "date": "10/18/2026",
-      "city": "Madison",
-      "state": "CT",
-      "zipcode": "06443",
+      "zipcode": "06804",
       "distance_mi": null,
       "distances": [
         "5K",
-        "2 Miles"
+        "0.23 Miles"
       ],
-      "url": "https://runsignup.com/Race/CT/Madison/RunforTheCoveandMemorialWalk",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-232609-1781814518.067-0.bQnft2.png",
+      "url": "https://runsignup.com/Race/CT/Brookfield/AnnualHalloween5KAndKidsFunRun",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/img/logos/genericWebsiteLogos/ultra-300px.bMjMog.png",
       "reg_open": "T"
     },
     {
-      "id": 215389,
-      "name": "Follow Natural Fitness Women's Breast Cancer Awareness 5K",
+      "id": 208294,
+      "name": "Gregory Burnett, Sr. Memorial 5K & Fun Run",
       "date": "10/18/2026",
-      "city": "Bridgeport",
+      "city": "Norwalk",
       "state": "CT",
-      "zipcode": "06604",
-      "distance_mi": 5,
-      "distances": [],
-      "url": "https://runsignup.com/Race/CT/Bridgeport/FollowNaturalFitnessWomenSBreastCancerAwareness5K",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-292258-1789739023.8197-0.bQRuap.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 12027,
-      "name": "The 36th  edition of THE Great Pumpkin Classic",
-      "date": "10/18/2026",
-      "city": "TRUMBULL",
-      "state": "CT",
-      "zipcode": "06611",
-      "distance_mi": 12,
+      "zipcode": "06851",
+      "distance_mi": 8,
       "distances": [
-        "5K",
-        "3K"
+        "3.2 Miles",
+        "1 Miles"
       ],
-      "url": "https://runsignup.com/Race/CT/TRUMBULL/GreatPumpkinClassic",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-18874-1743647209.7288-0.bN7FhP.png",
+      "url": "https://runsignup.com/Race/CT/Norwalk/GregBurnett5K",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-283575-1789961886.7911-0.bQSkAE.png",
       "reg_open": "T"
     },
     {
-      "id": 155070,
-      "name": "Fleet Feet Poughkeepsie x Sloop Brewing Halloween Fun Run",
-      "date": "10/21/2026",
-      "city": "East Fishkill",
-      "state": "NY",
-      "zipcode": "12533",
+      "id": 197258,
+      "name": "HSS Greenwich Half Marathon",
+      "date": "10/18/2026",
+      "city": "Old Greenwich",
+      "state": "CT",
+      "zipcode": "06870",
       "distance_mi": null,
-      "distances": [],
-      "url": "https://runsignup.com/Race/NY/EastFishkill/FleetFeetPoughkeepsiesHalloweenFunRun",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-218131-1790197597.0666-0.bQTd9D.png",
+      "distances": [
+        "13.1 Miles"
+      ],
+      "url": "https://runsignup.com/Race/CT/OldGreenwich/Greenwich",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-269830-1777558919.0732-0.bP82wh.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 48143,
+      "name": "The Ridgefield Road Fest 50th Anniversary: 1/2 Marathon, 7-Miler, and The Iris Fund 5K",
+      "date": "10/18/2026",
+      "city": "Ridgefield",
+      "state": "CT",
+      "zipcode": "06877",
+      "distance_mi": null,
+      "distances": [
+        "13.1 Miles",
+        "7 Miles",
+        "3.1 Miles"
+      ],
+      "url": "https://runsignup.com/Race/CT/Ridgefield/RidgefieldRoadFest",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-54846-1784215212.219-0.bQwpAS.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 64929,
+      "name": "The Terri Roemer Paramus Run",
+      "date": "10/18/2026",
+      "city": "Paramus",
+      "state": "NJ",
+      "zipcode": "07652",
+      "distance_mi": null,
+      "distances": [
+        "10K",
+        "5K",
+        "1 Miles"
+      ],
+      "url": "https://runsignup.com/Race/NJ/Paramus/TerriRoemerParamusRun",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-71600-1771949754.2188-0.bPNC66.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 149123,
+      "name": "Achilles New Jersey Hope & Possibility 2026 - In Loving Memory of Kenny Franco Jr.",
+      "date": "10/18/2026",
+      "city": "Rochelle Park",
+      "state": "NJ",
+      "zipcode": "07652",
+      "distance_mi": null,
+      "distances": [
+        "4 Miles",
+        "13.1 Miles"
+      ],
+      "url": "https://runsignup.com/Race/NJ/RochellePark/AchillesNewJerseyHnP",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-211219-1782676368.8684-0.bQqxUq.png",
       "reg_open": "T"
     },
     {
@@ -1217,6 +1154,19 @@
       "url": "https://runsignup.com/Race/CT/Watertown/NVLCrossCountryChampionship",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-256082-1749565611.4306-0.bOsecR.jpg",
       "reg_open": "F"
+    },
+    {
+      "id": 155070,
+      "name": "Fleet Feet Poughkeepsie x Sloop Brewing Halloween Fun Run",
+      "date": "10/21/2026",
+      "city": "East Fishkill",
+      "state": "NY",
+      "zipcode": "12533",
+      "distance_mi": null,
+      "distances": [],
+      "url": "https://runsignup.com/Race/NY/EastFishkill/FleetFeetPoughkeepsiesHalloweenFunRun",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-218131-1790197597.0666-0.bQTd9D.png",
+      "reg_open": "T"
     },
     {
       "id": 144615,
@@ -1403,65 +1353,6 @@
       "reg_open": "T"
     },
     {
-      "id": 215076,
-      "name": "The Haunted Hustle for HOPE",
-      "date": "10/24/2026",
-      "city": "New York",
-      "state": "NY",
-      "zipcode": "10024",
-      "distance_mi": null,
-      "distances": [
-        "5K"
-      ],
-      "url": "https://runsignup.com/Race/NY/NewYork/TheHauntedHustleForHOPE",
-      "logo": "",
-      "reg_open": "F"
-    },
-    {
-      "id": 206882,
-      "name": "Paws for Freedom 5k Run & Walk",
-      "date": "10/24/2026",
-      "city": "East Islip",
-      "state": "NY",
-      "zipcode": "11730",
-      "distance_mi": null,
-      "distances": [],
-      "url": "https://runsignup.com/Race/NY/EastIslip/PawsOfWarFamily5kRunWalk",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-281841-1779479866.5935-0.bQelu6.jpg",
-      "reg_open": "T"
-    },
-    {
-      "id": 22302,
-      "name": "The 11th GFD Engine Company Halloween 5K - 10/24/2026!",
-      "date": "10/24/2026",
-      "city": "Greenlawn",
-      "state": "NY",
-      "zipcode": "11740",
-      "distance_mi": null,
-      "distances": [
-        "5K"
-      ],
-      "url": "https://runsignup.com/Race/NY/Greenlawn/TheHalloween5k",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-29105-1787549858.6139-0.bQI9II.jpg",
-      "reg_open": "T"
-    },
-    {
-      "id": 151979,
-      "name": "Smithtown Running of the Bull",
-      "date": "10/24/2026",
-      "city": "Smithtown",
-      "state": "NY",
-      "zipcode": "11787",
-      "distance_mi": null,
-      "distances": [
-        "5K",
-        "1K"
-      ],
-      "url": "https://runsignup.com/Race/NY/Smithtown/SmithtownRunningoftheBull",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-214555-1719501438.364-0.bMFyj-.jpg",
-      "reg_open": "T"
-    },
-    {
       "id": 170064,
       "name": "2nd Annual Brewster Grin 'N Bear It 5K and 1 Mile Fun Run",
       "date": "10/24/2026",
@@ -1511,17 +1402,76 @@
       "id": 138053,
       "name": "Rides & Strides",
       "date": "10/24/2026",
-      "city": "Valley Cottage",
+      "city": "Congers",
       "state": "NY",
-      "zipcode": "10989",
+      "zipcode": "10920",
       "distance_mi": null,
       "distances": [
         "5K",
         "62 Miles",
         "42 Miles"
       ],
-      "url": "https://runsignup.com/Race/NY/ValleyCottage/RidesandStrides",
+      "url": "https://runsignup.com/Race/NY/Congers/RidesandStrides",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race138053-logo-0.bJtxNk.png",
+      "reg_open": "F"
+    },
+    {
+      "id": 206882,
+      "name": "Paws for Freedom 5k Run & Walk",
+      "date": "10/24/2026",
+      "city": "East Islip",
+      "state": "NY",
+      "zipcode": "11730",
+      "distance_mi": null,
+      "distances": [],
+      "url": "https://runsignup.com/Race/NY/EastIslip/PawsOfWarFamily5kRunWalk",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-281841-1779479866.5935-0.bQelu6.jpg",
+      "reg_open": "T"
+    },
+    {
+      "id": 22302,
+      "name": "The 11th GFD Engine Company Halloween 5K - 10/24/2026!",
+      "date": "10/24/2026",
+      "city": "Greenlawn",
+      "state": "NY",
+      "zipcode": "11740",
+      "distance_mi": null,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/NY/Greenlawn/TheHalloween5k",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-29105-1787549858.6139-0.bQI9II.jpg",
+      "reg_open": "T"
+    },
+    {
+      "id": 151979,
+      "name": "Smithtown Running of the Bull",
+      "date": "10/24/2026",
+      "city": "Smithtown",
+      "state": "NY",
+      "zipcode": "11787",
+      "distance_mi": null,
+      "distances": [
+        "5K",
+        "1K"
+      ],
+      "url": "https://runsignup.com/Race/NY/Smithtown/SmithtownRunningoftheBull",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-214555-1719501438.364-0.bMFyj-.jpg",
+      "reg_open": "T"
+    },
+    {
+      "id": 215076,
+      "name": "The Haunted Hustle for HOPE",
+      "date": "10/24/2026",
+      "city": "New York",
+      "state": "NY",
+      "zipcode": "10024",
+      "distance_mi": null,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/NY/NewYork/TheHauntedHustleForHOPE",
+      "logo": "",
       "reg_open": "F"
     },
     {
@@ -1759,6 +1709,19 @@
       "url": "https://runsignup.com/Race/CT/Wilton/FamilyFunHalloween5k",
       "logo": "",
       "reg_open": "T"
+    },
+    {
+      "id": 216945,
+      "name": "Family Fun Halloween 5K",
+      "date": "10/25/2026",
+      "city": "Wilton",
+      "state": "CT",
+      "zipcode": "06897",
+      "distance_mi": 8,
+      "distances": [],
+      "url": "https://runsignup.com/Race/CT/Wilton/WiltonFamilyFunHalloween5K",
+      "logo": "",
+      "reg_open": "F"
     },
     {
       "id": 135826,
@@ -2081,6 +2044,21 @@
       "reg_open": "F"
     },
     {
+      "id": 216458,
+      "name": "Run the Sound 5K \u2013 Halloween Edition",
+      "date": "10/31/2026",
+      "city": "Bridgeport",
+      "state": "CT",
+      "zipcode": "06610",
+      "distance_mi": null,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/CT/Bridgeport/RunTheSound5KHalloweenEdition",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-293548-1791947209.4002-0.bQZVhj.png",
+      "reg_open": "T"
+    },
+    {
       "id": 201639,
       "name": "PB&J Fuel Run 5K/10K/13.1 NYC",
       "date": "10/31/2026",
@@ -2397,22 +2375,6 @@
       "reg_open": "T"
     },
     {
-      "id": 186953,
-      "name": "Race to Build 5K and 1-Mile Walk",
-      "date": "11/07/2026",
-      "city": "Ridgefield Park",
-      "state": "NJ",
-      "zipcode": "07660",
-      "distance_mi": null,
-      "distances": [
-        "5K",
-        "1 Miles"
-      ],
-      "url": "https://runsignup.com/Race/NJ/RidgefieldPark/RaceToBuild5K",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-257517-1788278002.4195-0.bQLVtY.png",
-      "reg_open": "T"
-    },
-    {
       "id": 191105,
       "name": "The Riverside Church Turkey Trot",
       "date": "11/07/2026",
@@ -2504,6 +2466,22 @@
       ],
       "url": "https://runsignup.com/Race/CT/Meriden/RobertJLynesMemorialRoadRace",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-215643-1731515634.6122-0.bNnntY.jpg",
+      "reg_open": "T"
+    },
+    {
+      "id": 186953,
+      "name": "Race to Build 5K and 1-Mile Walk",
+      "date": "11/07/2026",
+      "city": "Ridgefield Park",
+      "state": "NJ",
+      "zipcode": "07660",
+      "distance_mi": null,
+      "distances": [
+        "5K",
+        "1 Miles"
+      ],
+      "url": "https://runsignup.com/Race/NJ/RidgefieldPark/RaceToBuild5K",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-257517-1788278002.4195-0.bQLVtY.png",
       "reg_open": "T"
     },
     {
@@ -2737,7 +2715,7 @@
     },
     {
       "id": 215399,
-      "name": "JV Mall Veteran's Day 5k",
+      "name": "JV Mall Veterans Day 5k",
       "date": "11/11/2026",
       "city": "Yorktown Heights",
       "state": "NY",
@@ -3065,6 +3043,21 @@
       ],
       "url": "https://runsignup.com/Race/CT/Kent/Schaghticoke85Miler",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race80644-logo-0.bDDqHX.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 214357,
+      "name": "Mr100summers WNY Inaugural 5k",
+      "date": "11/15/2026",
+      "city": "West New York",
+      "state": "NJ",
+      "zipcode": "07093",
+      "distance_mi": null,
+      "distances": [
+        "3.1 Miles"
+      ],
+      "url": "https://runsignup.com/Race/NJ/WestNewYork/MrSummersWNYInaugural5k",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-290992-1789505211.3872-0.bQQA67.png",
       "reg_open": "T"
     }
   ]
