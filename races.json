@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-02T18:57:14Z",
+  "generated": "2026-11-05T16:56:39Z",
   "zipcode": "06825",
   "radius_mi": 50,
   "count": 200,
@@ -373,19 +373,6 @@
       "reg_open": "T"
     },
     {
-      "id": 173221,
-      "name": "VCTC Marathoners' Party (Monday, November 2, 2026)",
-      "date": "11/02/2026",
-      "city": "Bronx",
-      "state": "NY",
-      "zipcode": "10463",
-      "distance_mi": null,
-      "distances": [],
-      "url": "https://runsignup.com/Race/NY/Bronx/VCTCMarathonersParty",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-240464-1730001690.2117-0.bNhBSA.jpg",
-      "reg_open": "F"
-    },
-    {
       "id": 172764,
       "name": "HVAL Championship",
       "date": "11/06/2026",
@@ -475,6 +462,19 @@
       "reg_open": "T"
     },
     {
+      "id": 205933,
+      "name": "The JURCs 2026 10K/10M 5-Borough Series - Bronx",
+      "date": "11/07/2026",
+      "city": "Bronx",
+      "state": "NY",
+      "zipcode": "10471",
+      "distance_mi": null,
+      "distances": [],
+      "url": "https://runsignup.com/Race/NY/Bronx/TheJURCs10KMBoroughSeriesBronx",
+      "logo": "",
+      "reg_open": "T"
+    },
+    {
       "id": 197265,
       "name": "Pocantico Hills Races",
       "date": "11/07/2026",
@@ -489,6 +489,21 @@
       "url": "https://runsignup.com/Race/NY/Tarrytown/PocanticoHillsRaces",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-269838-1765832899.2657-0.bPqhJd.png",
       "reg_open": "T"
+    },
+    {
+      "id": 218097,
+      "name": "Hungerthon Hustle 4.8K",
+      "date": "11/07/2026",
+      "city": "Corona",
+      "state": "NY",
+      "zipcode": "11368",
+      "distance_mi": null,
+      "distances": [
+        "4.8K"
+      ],
+      "url": "https://runsignup.com/Race/NY/Corona/HungerthonHustle8K",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-295573-1793703771.9017-0.bQ6B9B.jpg",
+      "reg_open": "F"
     },
     {
       "id": 183861,
@@ -1677,7 +1692,7 @@
         "3.5 Miles"
       ],
       "url": "https://runsignup.com/Race/CT/Norwalk/LosRunnersAndFriendsTurkeyTroutout",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-266943-1792939384.781-0.bQ3Hv4.jpg",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-266943-1793751748.2537-0.bQ6NRe.png",
       "reg_open": "F"
     },
     {
@@ -2241,7 +2256,7 @@
       "distances": [],
       "url": "https://runsignup.com/Race/NY/Northport/NRCHolidayParty",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-240000-1730058338.2614-0.bNhPHI.jpg",
-      "reg_open": "F"
+      "reg_open": "T"
     },
     {
       "id": 44476,
@@ -2472,22 +2487,6 @@
       "reg_open": "T"
     },
     {
-      "id": 64513,
-      "name": "The Chris Conway Memorial Run and 1 Mile Walk",
-      "date": "12/06/2026",
-      "city": "Ridgefield Park",
-      "state": "NJ",
-      "zipcode": "07660",
-      "distance_mi": null,
-      "distances": [
-        "3.1 Miles",
-        "1 Miles"
-      ],
-      "url": "https://runsignup.com/Race/NJ/RidgefieldPark/ChrisConwayMemorialRun",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-71184-1762198444.3409-0.bPcqoS.png",
-      "reg_open": "T"
-    },
-    {
       "id": 24407,
       "name": "Tough Cookie 8K Trail Race",
       "date": "12/06/2026",
@@ -2515,6 +2514,22 @@
       ],
       "url": "https://runsignup.com/Race/NY/Poughkeepsie/FleetFeetPOKUglySweaterRun",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-89378-1792789394.8233-0.bQ28Us.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 64513,
+      "name": "The Chris Conway Memorial Run and 1 Mile Walk",
+      "date": "12/06/2026",
+      "city": "Ridgefield Park",
+      "state": "NJ",
+      "zipcode": "07660",
+      "distance_mi": null,
+      "distances": [
+        "3.1 Miles",
+        "1 Miles"
+      ],
+      "url": "https://runsignup.com/Race/NJ/RidgefieldPark/ChrisConwayMemorialRun",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-71184-1762198444.3409-0.bPcqoS.png",
       "reg_open": "T"
     },
     {
@@ -2578,6 +2593,21 @@
       "reg_open": "T"
     },
     {
+      "id": 150906,
+      "name": "9th Annual Taco Trials",
+      "date": "12/12/2026",
+      "city": "Deep River",
+      "state": "CT",
+      "zipcode": "06417",
+      "distance_mi": null,
+      "distances": [
+        "10 Miles"
+      ],
+      "url": "https://runsignup.com/Race/CT/DeepRiver/TacoTrials",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-213303-1730941570.8794-0.bNlbkc.jpg",
+      "reg_open": "F"
+    },
+    {
       "id": 150408,
       "name": "SRC Presents: A Backyard Ultra",
       "date": "12/12/2026",
@@ -2590,6 +2620,21 @@
       ],
       "url": "https://runsignup.com/Race/NY/Hauppauge/SRCBackyardUltra",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-212742-1780415925.9753-0.bQhV21.jpg",
+      "reg_open": "T"
+    },
+    {
+      "id": 120667,
+      "name": "2026 Norwalk Jingle Bell 5K",
+      "date": "12/12/2026",
+      "city": "Norwalk",
+      "state": "CT",
+      "zipcode": "06851",
+      "distance_mi": 8,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/CT/Norwalk/NorwalkJingleBell5K",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-127243-1759337533.1537-0.bO3vW9.png",
       "reg_open": "T"
     },
     {
@@ -2620,21 +2665,6 @@
       ],
       "url": "https://runsignup.com/Race/NY/Purchase/JingleBellRunWestchester2021",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-127693-1728914763.8328-0.bNdsvl.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 120667,
-      "name": "2026 Norwalk Jingle Bell 5K",
-      "date": "12/12/2026",
-      "city": "Norwalk",
-      "state": "CT",
-      "zipcode": "06851",
-      "distance_mi": 8,
-      "distances": [
-        "5K"
-      ],
-      "url": "https://runsignup.com/Race/CT/Norwalk/NorwalkJingleBell5K",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-127243-1759337533.1537-0.bO3vW9.png",
       "reg_open": "T"
     },
     {
@@ -2687,18 +2717,18 @@
       "reg_open": "T"
     },
     {
-      "id": 215505,
-      "name": "Snowy Owl Trail Race",
+      "id": 155287,
+      "name": "Feeding 500 Holiday Hustle",
       "date": "12/13/2026",
-      "city": "North Salem",
-      "state": "NY",
-      "zipcode": "10560",
-      "distance_mi": null,
+      "city": "Wilton",
+      "state": "CT",
+      "zipcode": "06897",
+      "distance_mi": 8,
       "distances": [
-        "5 Miles"
+        "5K"
       ],
-      "url": "https://runsignup.com/Race/NY/NorthSalem/SnowyOwl",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-292407-1791044750.999-0.bQWsYo.png",
+      "url": "https://runsignup.com/Race/CT/Wilton/Feeding500HolidayHustle",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/img/logos/genericWebsiteLogos/running-shoe-300px.bMjMog.png",
       "reg_open": "T"
     },
     {
@@ -2732,18 +2762,18 @@
       "reg_open": "T"
     },
     {
-      "id": 155287,
-      "name": "Feeding 500 Holiday Hustle",
+      "id": 215505,
+      "name": "Snowy Owl Trail Race",
       "date": "12/13/2026",
-      "city": "Wilton",
-      "state": "CT",
-      "zipcode": "06897",
-      "distance_mi": 8,
+      "city": "North Salem",
+      "state": "NY",
+      "zipcode": "10560",
+      "distance_mi": null,
       "distances": [
-        "5K"
+        "5 Miles"
       ],
-      "url": "https://runsignup.com/Race/CT/Wilton/Feeding500HolidayHustle",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/img/logos/genericWebsiteLogos/running-shoe-300px.bMjMog.png",
+      "url": "https://runsignup.com/Race/NY/NorthSalem/SnowyOwl",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-292407-1791044750.999-0.bQWsYo.png",
       "reg_open": "T"
     },
     {
@@ -3054,40 +3084,6 @@
         "1 Miles"
       ],
       "url": "https://runsignup.com/Race/NY/NewYork/KeepGoingRunVIRTUAL5K10K",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-284927-1787751598.2355-0.bQJUYU.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 170843,
-      "name": "Move With MADD: 5K Run & 2 Mile Walk",
-      "date": "01/10/2027",
-      "city": "Fairfield",
-      "state": "CT",
-      "zipcode": "06824",
-      "distance_mi": null,
-      "distances": [
-        "5K",
-        "2 Miles"
-      ],
-      "url": "https://runsignup.com/Race/CT/Fairfield/MADDDry5K",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-237620-1791990008.8169-0.bQZ5J4.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 209360,
-      "name": "MLK Jr. Freedom Run 5K/10K/13.1 NYC",
-      "date": "01/16/2027",
-      "city": "New York City",
-      "state": "NY",
-      "zipcode": "10001",
-      "distance_mi": 47,
-      "distances": [
-        "5K",
-        "10K",
-        "13.1 Miles",
-        "1 Miles"
-      ],
-      "url": "https://runsignup.com/Race/NY/NewYorkCity/MLKJrFreedomRun5K10KNYC",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-284927-1787751598.2355-0.bQJUYU.png",
       "reg_open": "T"
     }
