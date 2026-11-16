@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-12T17:13:23Z",
+  "generated": "2026-11-16T19:01:00Z",
   "zipcode": "06825",
   "radius_mi": 50,
   "count": 200,
@@ -372,7 +372,7 @@
       ],
       "url": "https://runsignup.com/Race/NY/CrossRiver/RavenRocksRun",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-32148-1762837492.5395-0.bPeSp0.png",
-      "reg_open": "T"
+      "reg_open": "F"
     },
     {
       "id": 191105,
@@ -406,287 +406,6 @@
       "reg_open": "F"
     },
     {
-      "id": 208218,
-      "name": "Aware Color Run-Colors of Connection",
-      "date": "11/07/2026",
-      "city": "Northport",
-      "state": "NY",
-      "zipcode": "11768",
-      "distance_mi": null,
-      "distances": [
-        "1.5 Miles"
-      ],
-      "url": "https://runsignup.com/Race/NY/Northport/AwareColorRunColorsOfConnection",
-      "logo": "",
-      "reg_open": "F"
-    },
-    {
-      "id": 96451,
-      "name": "Selfhelp 5K Run/Walk",
-      "date": "11/07/2026",
-      "city": "Anytown",
-      "state": "NY",
-      "zipcode": "10018",
-      "distance_mi": null,
-      "distances": [
-        "5K"
-      ],
-      "url": "https://runsignup.com/Race/NY/Anytown/SelfhelpVirtual5KRunWalk",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-103094-1792074093.9193-0.bQ0ofT.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 191072,
-      "name": "A Good Run 5K",
-      "date": "11/13/2026",
-      "city": "New Haven",
-      "state": "CT",
-      "zipcode": "06512",
-      "distance_mi": null,
-      "distances": [
-        "5K"
-      ],
-      "url": "https://runsignup.com/Race/CT/NewHaven/AGoodRun5K",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-262462-1759271014.2693-0.bO3fHM.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 205775,
-      "name": "Tunnel to Towers Foundation Sporting Clays Orvis Sandanona",
-      "date": "11/13/2026",
-      "city": "Millbrook",
-      "state": "NY",
-      "zipcode": "12545",
-      "distance_mi": null,
-      "distances": [],
-      "url": "https://runsignup.com/Race/NY/Millbrook/TunnelToTowersFoundationSportingClaysOrvisSandanona",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race128815-logo-0.bIwBkG.png",
-      "reg_open": "F"
-    },
-    {
-      "id": 188951,
-      "name": "RIVERHEAD ATHLETIC CLUB'S RUN THE WAVE TURKEY TROT 5K",
-      "date": "11/14/2026",
-      "city": "Riverhead",
-      "state": "NY",
-      "zipcode": "11901",
-      "distance_mi": null,
-      "distances": [
-        "3.1 Miles",
-        "1K"
-      ],
-      "url": "https://runsignup.com/Race/NY/Riverhead/RIVERHEADATHLETICCLUBSRUNTHEWAVE5K",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-259938-1754582177.2357-0.bOLmYH.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 188197,
-      "name": "The Witching Hours 3/6/12/24H",
-      "date": "11/14/2026",
-      "city": "Manorville",
-      "state": "NY",
-      "zipcode": "11949",
-      "distance_mi": null,
-      "distances": [],
-      "url": "https://runsignup.com/Race/NY/Manorville/TheWitchingHours",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-259083-1785453874.134-0.bQA90Y.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 190671,
-      "name": "Estella's Memorial 5k Run/Walk to Cure Pancreatic Cancer",
-      "date": "11/14/2026",
-      "city": "Yaphank",
-      "state": "NY",
-      "zipcode": "11980",
-      "distance_mi": null,
-      "distances": [
-        "5K"
-      ],
-      "url": "https://runsignup.com/Race/NY/Yaphank/EstellaSMemorial5kToCurePancreaticCancer",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-262007-1789142529.3167-0.bQPcyb.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 136391,
-      "name": "Town of Newburgh Post to Post Run to Support Veterans",
-      "date": "11/14/2026",
-      "city": "Newburgh",
-      "state": "NY",
-      "zipcode": "12550",
-      "distance_mi": null,
-      "distances": [
-        "5K"
-      ],
-      "url": "https://runsignup.com/Race/NY/Newburgh/PosttoPostRunforVeterans5k",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race136391-logo-0.bJjjEm.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 201432,
-      "name": "Run for Mental Health 5K/10K/13.1 NYC",
-      "date": "11/14/2026",
-      "city": "New York City",
-      "state": "NY",
-      "zipcode": "10001",
-      "distance_mi": 47,
-      "distances": [
-        "5K",
-        "10K",
-        "13.1 Miles",
-        "1 Miles"
-      ],
-      "url": "https://runsignup.com/Race/NY/NewYorkCity/RunForMentalHealth5K10KNYC1114",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-275248-1787652513.4074-0.bQJwMH.png",
-      "reg_open": "F"
-    },
-    {
-      "id": 205130,
-      "name": "Veterans Day Freedom Run 5K/10K/13.1 NYC",
-      "date": "11/14/2026",
-      "city": "New York City",
-      "state": "NY",
-      "zipcode": "10001",
-      "distance_mi": 47,
-      "distances": [
-        "5K",
-        "10K",
-        "13.1 Miles",
-        "1 Miles"
-      ],
-      "url": "https://runsignup.com/Race/NY/NewYorkCity/VeteransDayFreedomRun5K10KNYC1114",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-271248-1768499966.5873-0.bPAsR-.png",
-      "reg_open": "F"
-    },
-    {
-      "id": 208400,
-      "name": "Veterans Day Freedom Run 5K/10K/13.1 NYC Central",
-      "date": "11/14/2026",
-      "city": "New York City",
-      "state": "NY",
-      "zipcode": "10025",
-      "distance_mi": null,
-      "distances": [
-        "5K",
-        "10K",
-        "13.1 Miles",
-        "1 Miles"
-      ],
-      "url": "https://runsignup.com/Race/NY/NewYorkCity/VeteransDayFreedomRun5K10KNYCCentral11242026",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-271248-1768499966.5873-0.bPAsR-.png",
-      "reg_open": "F"
-    },
-    {
-      "id": 208402,
-      "name": "Run for Mental Health 5K/10K/13.1 NYC Central",
-      "date": "11/14/2026",
-      "city": "New York City",
-      "state": "NY",
-      "zipcode": "10025",
-      "distance_mi": null,
-      "distances": [
-        "5K",
-        "10K",
-        "13.1 Miles",
-        "1 Miles"
-      ],
-      "url": "https://runsignup.com/Race/NY/NewYorkCity/RunForMentalHealth5K10KNYCCentral1114",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-283717-1787652578.1862-0.bQJwNI.png",
-      "reg_open": "F"
-    },
-    {
-      "id": 178113,
-      "name": "Third Annual RNSF Polar Plunge",
-      "date": "11/14/2026",
-      "city": "Mamaroneck",
-      "state": "NY",
-      "zipcode": "10543",
-      "distance_mi": 27,
-      "distances": [],
-      "url": "https://runsignup.com/Race/NY/Mamaroneck/RNSFPolarPlunge",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-246530-1758892969.0411-0.bO1PoP.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 135043,
-      "name": "Hillacious Half Marathon",
-      "date": "11/14/2026",
-      "city": "Litchfield",
-      "state": "CT",
-      "zipcode": "06759",
-      "distance_mi": null,
-      "distances": [
-        "13.1 Miles",
-        "6.5 Miles",
-        "4 Miles"
-      ],
-      "url": "https://runsignup.com/Race/CT/Litchfield/HillaciousHalfMarathon",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race135043-logo-0.bJbtAD.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 202815,
-      "name": "Roxbury Fall Classic",
-      "date": "11/14/2026",
-      "city": "Roxbury",
-      "state": "CT",
-      "zipcode": "06783",
-      "distance_mi": null,
-      "distances": [
-        "13.1 Miles",
-        "26.2 Miles",
-        "50K"
-      ],
-      "url": "https://runsignup.com/Race/CT/Roxbury/RoxburyMarathonHalfMarathonand50k",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-276958-1772909884.2631-0.bPRhu8.jpg",
-      "reg_open": "T"
-    },
-    {
-      "id": 215945,
-      "name": "Jennings Jaguar 5k and Fun Run Supporting Kevin's Afterglow",
-      "date": "11/14/2026",
-      "city": "Fairfield",
-      "state": "CT",
-      "zipcode": "06825",
-      "distance_mi": 0,
-      "distances": [
-        "3.1 Miles"
-      ],
-      "url": "https://runsignup.com/Race/CT/Fairfield/JenningsJaguarAndFunRunSupportingKevinSAfterglow",
-      "logo": "",
-      "reg_open": "T"
-    },
-    {
-      "id": 81710,
-      "name": "Hot COCO 5K",
-      "date": "11/14/2026",
-      "city": "Cheshire",
-      "state": "CT",
-      "zipcode": "06410",
-      "distance_mi": 32,
-      "distances": [
-        "5K",
-        "0.5 Miles",
-        "1 Miles"
-      ],
-      "url": "https://runsignup.com/Race/CT/Cheshire/HotCOCO5K",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race81710-logo-0.bJkFD0.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 219039,
-      "name": "Sliney Fun Run",
-      "date": "11/15/2026",
-      "city": "Branford",
-      "state": "CT",
-      "zipcode": "06405",
-      "distance_mi": null,
-      "distances": [],
-      "url": "https://runsignup.com/Race/CT/Branford/SlineyFunRun",
-      "logo": "",
-      "reg_open": "T"
-    },
-    {
       "id": 40729,
       "name": "Katie Welling Memorial 2.5 Mile Run/Walk",
       "date": "11/15/2026",
@@ -699,144 +418,6 @@
       ],
       "url": "https://runsignup.com/Race/NY/Bronxville/KatieWellingMemorialRunWalk",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race40729-scaled-logo-0.byunpi.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 209259,
-      "name": "New York Flushing Meadows Corona Park 5K, 10K & Half Marathon",
-      "date": "11/15/2026",
-      "city": "Flushing",
-      "state": "NY",
-      "zipcode": "11355",
-      "distance_mi": null,
-      "distances": [
-        "3.1 Miles",
-        "6.2 Miles",
-        "13.1 Miles"
-      ],
-      "url": "https://runsignup.com/Race/NY/Flushing/NewYorkFlushingMeadowsCoronaPark5K10KHalfMarathon",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-284805-1781279821.601-0.bQlcXn.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 35810,
-      "name": "BROOKHAVEN TRAIL HALF MARATHON and 5 MILE",
-      "date": "11/15/2026",
-      "city": "Wading River",
-      "state": "NY",
-      "zipcode": "11792",
-      "distance_mi": null,
-      "distances": [
-        "13.1 Miles",
-        "5 Miles"
-      ],
-      "url": "https://runsignup.com/Race/NY/WadingRiver/BROOKHAVENTRAILHALFMARATHON",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race35810-logo-0.bCe_n1.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 80644,
-      "name": "EDRRC - 8th Annual Schaghticoke 8.5 Miler",
-      "date": "11/15/2026",
-      "city": "Kent",
-      "state": "CT",
-      "zipcode": "06757",
-      "distance_mi": null,
-      "distances": [
-        "8.5 Miles"
-      ],
-      "url": "https://runsignup.com/Race/CT/Kent/Schaghticoke85Miler",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race80644-logo-0.bDDqHX.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 214357,
-      "name": "Mr100summers WNY Inaugural 5k",
-      "date": "11/15/2026",
-      "city": "West New York",
-      "state": "NJ",
-      "zipcode": "07093",
-      "distance_mi": null,
-      "distances": [
-        "3.1 Miles"
-      ],
-      "url": "https://runsignup.com/Race/NJ/WestNewYork/MrSummersWNYInaugural5k",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-290992-1789505211.3872-0.bQQA67.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 218685,
-      "name": "2026 Hometown Turkey Trot Virtual 5K - Waterbury",
-      "date": "11/21/2026",
-      "city": "Waterbury",
-      "state": "CT",
-      "zipcode": "06702",
-      "distance_mi": 31,
-      "distances": [
-        "5K"
-      ],
-      "url": "https://runsignup.com/Race/CT/Waterbury/HometownTurkeyTrotVirtual5KWaterbury",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-295785-1793914704.923-0.bQ7pDq.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 201305,
-      "name": "Roxbury Road Race Series #35",
-      "date": "11/21/2026",
-      "city": "Roxbury",
-      "state": "CT",
-      "zipcode": "06783",
-      "distance_mi": null,
-      "distances": [
-        "4.2 Miles"
-      ],
-      "url": "https://runsignup.com/Race/CT/Roxbury/RoxburyRoadRaceSeries35",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-273107-1771182761.4523-0.bPKHQP.jpg",
-      "reg_open": "T"
-    },
-    {
-      "id": 215230,
-      "name": "Run for Max",
-      "date": "11/21/2026",
-      "city": "Danbury",
-      "state": "CT",
-      "zipcode": "06810",
-      "distance_mi": null,
-      "distances": [
-        "3.1 Miles"
-      ],
-      "url": "https://runsignup.com/Race/CT/Danbury/RunForMAx",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-292059-1789581367.0765-0.bQQTG3.png",
-      "reg_open": "F"
-    },
-    {
-      "id": 218835,
-      "name": "2026 Hometown Turkey Trot Virtual 5K - Norwalk",
-      "date": "11/21/2026",
-      "city": "Norwalk",
-      "state": "CT",
-      "zipcode": "06851",
-      "distance_mi": 8,
-      "distances": [
-        "5K"
-      ],
-      "url": "https://runsignup.com/Race/CT/Norwalk/HometownTurkeyTrotVirtual5KNorwalkCT",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-295785-1793914704.923-0.bQ7pDq.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 218618,
-      "name": "2026 Hometown Turkey Trot Virtual 5K - Stamford",
-      "date": "11/21/2026",
-      "city": "Stamford",
-      "state": "CT",
-      "zipcode": "06901",
-      "distance_mi": null,
-      "distances": [
-        "5K"
-      ],
-      "url": "https://runsignup.com/Race/CT/Stamford/HometownTurkeyTrotVirtual5KStamford",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-295785-1793914704.923-0.bQ7pDq.png",
       "reg_open": "T"
     },
     {
@@ -930,21 +511,6 @@
       "reg_open": "F"
     },
     {
-      "id": 194317,
-      "name": "St.Nicholas Run For Children in Ukraine",
-      "date": "11/21/2026",
-      "city": "New York",
-      "state": "NY",
-      "zipcode": "10024",
-      "distance_mi": null,
-      "distances": [
-        "5K"
-      ],
-      "url": "https://runsignup.com/Race/NY/NewYork/StNicholasRunForUkrainianChildren",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-266293-1794407520.791-0.bQ9hXG.png",
-      "reg_open": "T"
-    },
-    {
       "id": 190295,
       "name": "THREE VILLAGE TURKEY TROT 5K",
       "date": "11/21/2026",
@@ -1007,6 +573,96 @@
       "reg_open": "T"
     },
     {
+      "id": 218685,
+      "name": "2026 Hometown Turkey Trot Virtual 5K - Waterbury",
+      "date": "11/21/2026",
+      "city": "Waterbury",
+      "state": "CT",
+      "zipcode": "06702",
+      "distance_mi": 31,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/CT/Waterbury/HometownTurkeyTrotVirtual5KWaterbury",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-295785-1793914704.923-0.bQ7pDq.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 201305,
+      "name": "Roxbury Road Race Series #35",
+      "date": "11/21/2026",
+      "city": "Roxbury",
+      "state": "CT",
+      "zipcode": "06783",
+      "distance_mi": null,
+      "distances": [
+        "4.2 Miles"
+      ],
+      "url": "https://runsignup.com/Race/CT/Roxbury/RoxburyRoadRaceSeries35",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-273107-1771182761.4523-0.bPKHQP.jpg",
+      "reg_open": "T"
+    },
+    {
+      "id": 215230,
+      "name": "Run for Max",
+      "date": "11/21/2026",
+      "city": "Danbury",
+      "state": "CT",
+      "zipcode": "06810",
+      "distance_mi": null,
+      "distances": [
+        "3.1 Miles"
+      ],
+      "url": "https://runsignup.com/Race/CT/Danbury/RunForMAx",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-292059-1789581367.0765-0.bQQTG3.png",
+      "reg_open": "F"
+    },
+    {
+      "id": 218835,
+      "name": "2026 Hometown Turkey Trot Virtual 5K - Norwalk",
+      "date": "11/21/2026",
+      "city": "Norwalk",
+      "state": "CT",
+      "zipcode": "06851",
+      "distance_mi": 8,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/CT/Norwalk/HometownTurkeyTrotVirtual5KNorwalkCT",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-295785-1793914704.923-0.bQ7pDq.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 218618,
+      "name": "2026 Hometown Turkey Trot Virtual 5K - Stamford",
+      "date": "11/21/2026",
+      "city": "Stamford",
+      "state": "CT",
+      "zipcode": "06901",
+      "distance_mi": null,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/CT/Stamford/HometownTurkeyTrotVirtual5KStamford",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-295785-1793914704.923-0.bQ7pDq.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 194317,
+      "name": "St.Nicholas Run For Children in Ukraine",
+      "date": "11/21/2026",
+      "city": "New York",
+      "state": "NY",
+      "zipcode": "10024",
+      "distance_mi": null,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/NY/NewYork/StNicholasRunForUkrainianChildren",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-266293-1794407520.791-0.bQ9hXG.png",
+      "reg_open": "T"
+    },
+    {
       "id": 121225,
       "name": "EDRRC - Beer Mile",
       "date": "11/22/2026",
@@ -1017,6 +673,85 @@
       "distances": [],
       "url": "https://runsignup.com/Race/NY/Pawling/EDRRCBeerMile",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race121225-logo-0.bHGhWc.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 159489,
+      "name": "4th Annual Lettuce Run for the Friendly Fridge BX",
+      "date": "11/22/2026",
+      "city": "Bronx",
+      "state": "NY",
+      "zipcode": "10471",
+      "distance_mi": null,
+      "distances": [
+        "5K",
+        "1 Miles",
+        "0.5 Miles"
+      ],
+      "url": "https://runsignup.com/Race/NY/Bronx/LettuceRun5K",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-223453-1761226852.5344-0.bO-JbK.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 131315,
+      "name": "Peter K. Oley Turkey Trot",
+      "date": "11/22/2026",
+      "city": "Irvington",
+      "state": "NY",
+      "zipcode": "10533",
+      "distance_mi": null,
+      "distances": [
+        "2.5 Miles"
+      ],
+      "url": "https://runsignup.com/Race/NY/Irvington/PeterKOleyTurkeyTrot",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race131315-logo-0.bIMNQD.png",
+      "reg_open": "F"
+    },
+    {
+      "id": 211143,
+      "name": "Village of Mamaroneck Turkey Trot",
+      "date": "11/22/2026",
+      "city": "Mamaroneck",
+      "state": "NY",
+      "zipcode": "10543",
+      "distance_mi": 27,
+      "distances": [
+        "1 Miles",
+        "3.1 Miles"
+      ],
+      "url": "https://runsignup.com/Race/NY/Mamaroneck/VOMTurkeyTrot",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-287095-1787682981.9339-0.bQJEcL.jpg",
+      "reg_open": "T"
+    },
+    {
+      "id": 211148,
+      "name": "Trudy Dunbar Memorial 5K Turkey Trot & 1 Mile Gobbler Trot",
+      "date": "11/22/2026",
+      "city": "Tarrytown",
+      "state": "NY",
+      "zipcode": "10591",
+      "distance_mi": null,
+      "distances": [
+        "1 Miles",
+        "3.1 Miles"
+      ],
+      "url": "https://runsignup.com/Race/NY/Tarrytown/TrudyDunbarRun",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-287101-1784158357.8569-0.bQwbIv.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 189393,
+      "name": "Head for the Hilltop 5K + Kids Fun Run",
+      "date": "11/22/2026",
+      "city": "Yorktown Heights",
+      "state": "NY",
+      "zipcode": "10598",
+      "distance_mi": null,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/NY/YorktownHeights/HeadForTheHilltop5K",
+      "logo": "",
       "reg_open": "T"
     },
     {
@@ -1112,95 +847,59 @@
       "reg_open": "T"
     },
     {
-      "id": 159489,
-      "name": "4th Annual Lettuce Run for the Friendly Fridge BX",
-      "date": "11/22/2026",
-      "city": "Bronx",
+      "id": 103198,
+      "name": "Help!  We Need Some Turkeys.  Help! Not Just Any Turkeys",
+      "date": "11/24/2026",
+      "city": "Sayville",
       "state": "NY",
-      "zipcode": "10471",
+      "zipcode": "11782",
       "distance_mi": null,
-      "distances": [
-        "5K",
-        "1 Miles",
-        "0.5 Miles"
-      ],
-      "url": "https://runsignup.com/Race/NY/Bronx/LettuceRun5K",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-223453-1761226852.5344-0.bO-JbK.png",
+      "distances": [],
+      "url": "https://runsignup.com/Race/NY/Sayville/HelpWeNeedSomeTurkeysHelpNotJustAnyTurkeys",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race103198-logo-0.bFSYzD.png",
       "reg_open": "T"
     },
     {
-      "id": 131315,
-      "name": "Peter K. Oley Turkey Trot",
-      "date": "11/22/2026",
-      "city": "Irvington",
+      "id": 219024,
+      "name": "Earl's-Giving 5K",
+      "date": "11/25/2026",
+      "city": "New York",
       "state": "NY",
-      "zipcode": "10533",
+      "zipcode": "10029",
       "distance_mi": null,
-      "distances": [
-        "2.5 Miles"
-      ],
-      "url": "https://runsignup.com/Race/NY/Irvington/PeterKOleyTurkeyTrot",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race131315-logo-0.bIMNQD.png",
-      "reg_open": "F"
-    },
-    {
-      "id": 211143,
-      "name": "Village of Mamaroneck Turkey Trot",
-      "date": "11/22/2026",
-      "city": "Mamaroneck",
-      "state": "NY",
-      "zipcode": "10543",
-      "distance_mi": 27,
-      "distances": [
-        "1 Miles",
-        "3.1 Miles"
-      ],
-      "url": "https://runsignup.com/Race/NY/Mamaroneck/VOMTurkeyTrot",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-287095-1787682981.9339-0.bQJEcL.jpg",
-      "reg_open": "T"
-    },
-    {
-      "id": 211148,
-      "name": "Trudy Dunbar Memorial 5K Turkey Trot & 1 Mile Gobbler Trot",
-      "date": "11/22/2026",
-      "city": "Tarrytown",
-      "state": "NY",
-      "zipcode": "10591",
-      "distance_mi": null,
-      "distances": [
-        "1 Miles",
-        "3.1 Miles"
-      ],
-      "url": "https://runsignup.com/Race/NY/Tarrytown/TrudyDunbarRun",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-287101-1784158357.8569-0.bQwbIv.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 189393,
-      "name": "Head for the Hilltop 5K + Kids Fun Run",
-      "date": "11/22/2026",
-      "city": "Yorktown Heights",
-      "state": "NY",
-      "zipcode": "10598",
-      "distance_mi": null,
-      "distances": [
-        "5K"
-      ],
-      "url": "https://runsignup.com/Race/NY/YorktownHeights/HeadForTheHilltop5K",
+      "distances": [],
+      "url": "https://runsignup.com/Race/NY/NewYork/EarlsGiving5K",
       "logo": "",
       "reg_open": "T"
     },
     {
-      "id": 103198,
-      "name": "Help!  We Need Some Turkeys.  Help! Not Just Any Turkeys",
-      "date": "11/24/2026",
-      "city": "West Sayville",
-      "state": "NY",
-      "zipcode": "11796",
+      "id": 77006,
+      "name": "Be Grateful 5K",
+      "date": "11/26/2026",
+      "city": "Rochelle Park",
+      "state": "NJ",
+      "zipcode": "07662",
       "distance_mi": null,
-      "distances": [],
-      "url": "https://runsignup.com/Race/NY/WestSayville/HelpWeNeedSomeTurkeysHelpNotJustAnyTurkeys",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race103198-logo-0.bFSYzD.png",
+      "distances": [
+        "3.1 Miles"
+      ],
+      "url": "https://runsignup.com/Race/NJ/RochellePark/BeGrateful5K",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race77006-logo-0.bC_M8Y.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 190711,
+      "name": "2026 River Vale Run 4 the Love and Fitness with Friends Turkey Trot Charity 5K",
+      "date": "11/26/2026",
+      "city": "River Vale",
+      "state": "NJ",
+      "zipcode": "07675",
+      "distance_mi": null,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/NJ/RiverVale/RiverValeTurkeyTrotFamily5KRunWalkForCharity",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-262048-1780522754.449-0.bQij8c.png",
       "reg_open": "T"
     },
     {
@@ -1251,145 +950,6 @@
       ],
       "url": "https://runsignup.com/Race/NY/Lagrangeville/MidHudsonRoadRunnersClubAnnualTurkeyTrot",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-88203-1791907916.3991-0.bQZLHm.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 184774,
-      "name": "Hip-Hop Turkey Trot",
-      "date": "11/26/2026",
-      "city": "Bronx",
-      "state": "NY",
-      "zipcode": "10473",
-      "distance_mi": null,
-      "distances": [
-        "2.5 Miles"
-      ],
-      "url": "https://runsignup.com/Race/NY/Bronx/HipHopTurkeyTrot",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-254773-1787857702.8055-0.bQKiSM.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 151500,
-      "name": "The Cold SpringTurkey Trot",
-      "date": "11/26/2026",
-      "city": "Cold Spring",
-      "state": "NY",
-      "zipcode": "10516",
-      "distance_mi": null,
-      "distances": [
-        "5K"
-      ],
-      "url": "https://runsignup.com/Race/NY/ColdSpring/ColdSpringTurkeyTrot",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-213993-1792161535.4411-0.bQ0JB_.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 81256,
-      "name": "Somers Track & Field Booster Club 8th Annual Thanksgiving Turkey Trot",
-      "date": "11/26/2026",
-      "city": "Somers",
-      "state": "NY",
-      "zipcode": "10540",
-      "distance_mi": null,
-      "distances": [
-        "5K",
-        "1 Miles"
-      ],
-      "url": "https://runsignup.com/Race/NY/Somers/SomersTurkeyTrot",
-      "logo": "",
-      "reg_open": "T"
-    },
-    {
-      "id": 94224,
-      "name": "2026 Love4Lucas Turkey Trot 5K",
-      "date": "11/26/2026",
-      "city": "Pound Ridge",
-      "state": "NY",
-      "zipcode": "10576",
-      "distance_mi": null,
-      "distances": [
-        "5K"
-      ],
-      "url": "https://runsignup.com/Race/NY/PoundRidge/L4LVirtual5KRunWalk",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-100867-1792672586.7552-0.bQ2Gnk.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 50146,
-      "name": "Westchester Turkey Trot 10K & 5K presented by Northwell Orthopedics",
-      "date": "11/26/2026",
-      "city": "Valhalla",
-      "state": "NY",
-      "zipcode": "10595",
-      "distance_mi": null,
-      "distances": [
-        "5K",
-        "10K",
-        "100m"
-      ],
-      "url": "https://runsignup.com/Race/NY/Valhalla/QueensTurkeyTrot5k8k",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race50146-logo-0.bKRXui.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 138958,
-      "name": "Senator Terrence Murphy's Annual Turkey Trot 2026",
-      "date": "11/26/2026",
-      "city": "Yorktown Heights",
-      "state": "NY",
-      "zipcode": "10598",
-      "distance_mi": null,
-      "distances": [
-        "5K"
-      ],
-      "url": "https://runsignup.com/Race/NY/YorktownHeights/SenatorTerrenceMurphysAnnualTurkeyTrot2022",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race138958-logo-0.bLqOfn.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 11019,
-      "name": "5 Mile Turkey Trot for The Marisa Fund",
-      "date": "11/26/2026",
-      "city": "Congers",
-      "state": "NY",
-      "zipcode": "10920",
-      "distance_mi": null,
-      "distances": [
-        "5 Miles"
-      ],
-      "url": "https://runsignup.com/Race/NY/Congers/5mileturkeytrotforthemarisafund",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race11019-scaled-logo-0.bysXGX.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 55712,
-      "name": "Sri Chinmoy Thanksgiving Day 5K, 10K & Kids Race",
-      "date": "11/26/2026",
-      "city": "New York",
-      "state": "NY",
-      "zipcode": "11375",
-      "distance_mi": null,
-      "distances": [
-        "5K",
-        "10K"
-      ],
-      "url": "https://runsignup.com/Race/NY/NewYork/SriChinmoyThanksgivingDay5K10K",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race55712-scaled-logo-0.bMieEq.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 160101,
-      "name": "Gratitude",
-      "date": "11/26/2026",
-      "city": "Richmond Hill",
-      "state": "NY",
-      "zipcode": "11418",
-      "distance_mi": null,
-      "distances": [
-        "5K"
-      ],
-      "url": "https://runsignup.com/Race/NY/RichmondHill/Gratitude",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-224202-1764839399.4688-0.bPmu_N.png",
       "reg_open": "T"
     },
     {
@@ -1564,6 +1124,145 @@
       "reg_open": "T"
     },
     {
+      "id": 184774,
+      "name": "Hip-Hop Turkey Trot",
+      "date": "11/26/2026",
+      "city": "Bronx",
+      "state": "NY",
+      "zipcode": "10473",
+      "distance_mi": null,
+      "distances": [
+        "2.5 Miles"
+      ],
+      "url": "https://runsignup.com/Race/NY/Bronx/HipHopTurkeyTrot",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-254773-1787857702.8055-0.bQKiSM.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 151500,
+      "name": "The Cold SpringTurkey Trot",
+      "date": "11/26/2026",
+      "city": "Cold Spring",
+      "state": "NY",
+      "zipcode": "10516",
+      "distance_mi": null,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/NY/ColdSpring/ColdSpringTurkeyTrot",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-213993-1792161535.4411-0.bQ0JB_.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 81256,
+      "name": "Somers Track & Field Booster Club 8th Annual Thanksgiving Turkey Trot",
+      "date": "11/26/2026",
+      "city": "Somers",
+      "state": "NY",
+      "zipcode": "10540",
+      "distance_mi": null,
+      "distances": [
+        "5K",
+        "1 Miles"
+      ],
+      "url": "https://runsignup.com/Race/NY/Somers/SomersTurkeyTrot",
+      "logo": "",
+      "reg_open": "T"
+    },
+    {
+      "id": 94224,
+      "name": "2026 Love4Lucas Turkey Trot 5K",
+      "date": "11/26/2026",
+      "city": "Pound Ridge",
+      "state": "NY",
+      "zipcode": "10576",
+      "distance_mi": null,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/NY/PoundRidge/L4LVirtual5KRunWalk",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-100867-1792672586.7552-0.bQ2Gnk.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 50146,
+      "name": "Westchester Turkey Trot 10K & 5K presented by Northwell Orthopedics",
+      "date": "11/26/2026",
+      "city": "Valhalla",
+      "state": "NY",
+      "zipcode": "10595",
+      "distance_mi": null,
+      "distances": [
+        "5K",
+        "10K",
+        "100m"
+      ],
+      "url": "https://runsignup.com/Race/NY/Valhalla/QueensTurkeyTrot5k8k",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race50146-logo-0.bKRXui.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 138958,
+      "name": "Senator Terrence Murphy's Annual Turkey Trot 2026",
+      "date": "11/26/2026",
+      "city": "Yorktown Heights",
+      "state": "NY",
+      "zipcode": "10598",
+      "distance_mi": null,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/NY/YorktownHeights/SenatorTerrenceMurphysAnnualTurkeyTrot2022",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race138958-logo-0.bLqOfn.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 11019,
+      "name": "5 Mile Turkey Trot for The Marisa Fund",
+      "date": "11/26/2026",
+      "city": "Congers",
+      "state": "NY",
+      "zipcode": "10920",
+      "distance_mi": null,
+      "distances": [
+        "5 Miles"
+      ],
+      "url": "https://runsignup.com/Race/NY/Congers/5mileturkeytrotforthemarisafund",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race11019-scaled-logo-0.bysXGX.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 55712,
+      "name": "Sri Chinmoy Thanksgiving Day 5K, 10K & Kids Race",
+      "date": "11/26/2026",
+      "city": "New York",
+      "state": "NY",
+      "zipcode": "11375",
+      "distance_mi": null,
+      "distances": [
+        "5K",
+        "10K"
+      ],
+      "url": "https://runsignup.com/Race/NY/NewYork/SriChinmoyThanksgivingDay5K10K",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race55712-scaled-logo-0.bMieEq.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 160101,
+      "name": "Gratitude",
+      "date": "11/26/2026",
+      "city": "Richmond Hill",
+      "state": "NY",
+      "zipcode": "11418",
+      "distance_mi": null,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/NY/RichmondHill/Gratitude",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-224202-1764839399.4688-0.bPmu_N.png",
+      "reg_open": "T"
+    },
+    {
       "id": 189330,
       "name": "Falcon 5K Turkey Trot",
       "date": "11/26/2026",
@@ -1733,36 +1432,6 @@
       "reg_open": "T"
     },
     {
-      "id": 77006,
-      "name": "Be Grateful 5K",
-      "date": "11/26/2026",
-      "city": "Rochelle Park",
-      "state": "NJ",
-      "zipcode": "07662",
-      "distance_mi": null,
-      "distances": [
-        "3.1 Miles"
-      ],
-      "url": "https://runsignup.com/Race/NJ/RochellePark/BeGrateful5K",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race77006-logo-0.bC_M8Y.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 190711,
-      "name": "2026 River Vale Run 4 the Love and Fitness with Friends Turkey Trot Charity 5K",
-      "date": "11/26/2026",
-      "city": "River Vale",
-      "state": "NJ",
-      "zipcode": "07675",
-      "distance_mi": null,
-      "distances": [
-        "5K"
-      ],
-      "url": "https://runsignup.com/Race/NJ/RiverVale/RiverValeTurkeyTrotFamily5KRunWalkForCharity",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-262048-1780522754.449-0.bQij8c.png",
-      "reg_open": "T"
-    },
-    {
       "id": 153876,
       "name": "Darien Depot Overstuffed Turkey Trot 5K and 1 Mile Fun Run",
       "date": "11/27/2026",
@@ -1809,6 +1478,19 @@
       "reg_open": "T"
     },
     {
+      "id": 220800,
+      "name": "ASKiSI Sport Performance Inaugural Tarrywille XC Turkey Loop Trotdown",
+      "date": "11/28/2026",
+      "city": "Danbury",
+      "state": "CT",
+      "zipcode": "06810",
+      "distance_mi": null,
+      "distances": [],
+      "url": "https://runsignup.com/Race/CT/Danbury/ASKiSISportPerformanceInauguralTarrywilleXCTurkeyLoopTrotdown",
+      "logo": "",
+      "reg_open": "T"
+    },
+    {
       "id": 153039,
       "name": "Greenwich Alliance Turkey Trot 5K, 1 Mile & Mini-Trot",
       "date": "11/28/2026",
@@ -1822,6 +1504,38 @@
       ],
       "url": "https://runsignup.com/Race/CT/Greenwich/GreenwichAllianceTurkeyTrot",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-215764-1789572942.5889-0.bQQRDo.jpg",
+      "reg_open": "T"
+    },
+    {
+      "id": 153366,
+      "name": "The ODO Gobbler Run & Ruck",
+      "date": "11/28/2026",
+      "city": "South Glastonbury",
+      "state": "CT",
+      "zipcode": "06073",
+      "distance_mi": null,
+      "distances": [
+        "5K",
+        "5 Miles",
+        "1 Miles"
+      ],
+      "url": "https://runsignup.com/Race/CT/SouthGlastonbury/ODOGobblerRunRuck",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-216153-1783959322.2543-0.bQvq8A.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 217104,
+      "name": "Durham Fall 4K Fun Run",
+      "date": "11/28/2026",
+      "city": "Durham",
+      "state": "CT",
+      "zipcode": "06422",
+      "distance_mi": null,
+      "distances": [
+        "4K"
+      ],
+      "url": "https://runsignup.com/Race/CT/Durham/DurhamFall4KFunRun",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-294347-1792236865.0212-0.bQ011b.jpg",
       "reg_open": "T"
     },
     {
@@ -1970,35 +1684,18 @@
       "reg_open": "T"
     },
     {
-      "id": 153366,
-      "name": "The ODO Gobbler Run & Ruck",
-      "date": "11/28/2026",
-      "city": "South Glastonbury",
-      "state": "CT",
-      "zipcode": "06073",
+      "id": 191809,
+      "name": "Second Annual Kayla Grace Rooney 5K Run/Walk",
+      "date": "11/29/2026",
+      "city": "Bronx",
+      "state": "NY",
+      "zipcode": "10471",
       "distance_mi": null,
       "distances": [
-        "5K",
-        "5 Miles",
-        "1 Miles"
+        "5K"
       ],
-      "url": "https://runsignup.com/Race/CT/SouthGlastonbury/ODOGobblerRunRuck",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-216153-1783959322.2543-0.bQvq8A.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 217104,
-      "name": "Durham Fall 4K Fun Run",
-      "date": "11/28/2026",
-      "city": "Durham",
-      "state": "CT",
-      "zipcode": "06422",
-      "distance_mi": null,
-      "distances": [
-        "4K"
-      ],
-      "url": "https://runsignup.com/Race/CT/Durham/DurhamFall4KFunRun",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-294347-1792236865.0212-0.bQ011b.jpg",
+      "url": "https://runsignup.com/Race/NY/Bronx/kaylagracerooneyfamiliesfoundation",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-263306-1758050330.9264-0.bOYBGA.png",
       "reg_open": "T"
     },
     {
@@ -2014,21 +1711,6 @@
       ],
       "url": "https://runsignup.com/Race/NY/Woodbury/ROBSTRAILRUNEDITION",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race154739-logo-0.bLkBZR.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 191809,
-      "name": "Second Annual Kayla Grace Rooney 5K Run/Walk",
-      "date": "11/29/2026",
-      "city": "Bronx",
-      "state": "NY",
-      "zipcode": "10471",
-      "distance_mi": null,
-      "distances": [
-        "5K"
-      ],
-      "url": "https://runsignup.com/Race/NY/Bronx/kaylagracerooneyfamiliesfoundation",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-263306-1758050330.9264-0.bOYBGA.png",
       "reg_open": "T"
     },
     {
@@ -2105,33 +1787,19 @@
       "reg_open": "T"
     },
     {
-      "id": 217010,
-      "name": "Jolly Jog Fun Run/Walk",
+      "id": 183867,
+      "name": "The Manhattanite 10K and 5K @manhattan @riverside park",
       "date": "12/05/2026",
-      "city": "Bronxville",
+      "city": "New York",
       "state": "NY",
-      "zipcode": "10708",
+      "zipcode": "10024",
       "distance_mi": null,
       "distances": [
+        "6.2 Miles",
         "3.1 Miles"
       ],
-      "url": "https://runsignup.com/Race/NY/Bronxville/JollyJogFunRunWalk",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-293150-1790864116.7074-0.bQVMR0.jpg",
-      "reg_open": "T"
-    },
-    {
-      "id": 120748,
-      "name": "2026 Jingle Bell Run - Long Island, NY",
-      "date": "12/05/2026",
-      "city": "Hempstead",
-      "state": "NY",
-      "zipcode": "11549",
-      "distance_mi": null,
-      "distances": [
-        "5K"
-      ],
-      "url": "https://runsignup.com/Race/NY/Hempstead/ArthritisFoundationJingleBellRunLongIslandNY",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race120748-logo-0.bJlEah.png",
+      "url": "https://runsignup.com/Race/NY/NewYork/TheManhattanite10KAnd5K",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-253638-1791328434.9117-0.bQXycY.png",
       "reg_open": "T"
     },
     {
@@ -2256,19 +1924,78 @@
       "reg_open": "F"
     },
     {
-      "id": 183867,
-      "name": "The Manhattanite 10K and 5K @manhattan @riverside park",
+      "id": 217010,
+      "name": "Jolly Jog Fun Run/Walk",
       "date": "12/05/2026",
-      "city": "New York",
+      "city": "Bronxville",
       "state": "NY",
-      "zipcode": "10024",
+      "zipcode": "10708",
       "distance_mi": null,
       "distances": [
-        "6.2 Miles",
         "3.1 Miles"
       ],
-      "url": "https://runsignup.com/Race/NY/NewYork/TheManhattanite10KAnd5K",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-253638-1791328434.9117-0.bQXycY.png",
+      "url": "https://runsignup.com/Race/NY/Bronxville/JollyJogFunRunWalk",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-293150-1790864116.7074-0.bQVMR0.jpg",
+      "reg_open": "T"
+    },
+    {
+      "id": 120748,
+      "name": "2026 Jingle Bell Run - Long Island, NY",
+      "date": "12/05/2026",
+      "city": "Hempstead",
+      "state": "NY",
+      "zipcode": "11549",
+      "distance_mi": null,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/NY/Hempstead/ArthritisFoundationJingleBellRunLongIslandNY",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race120748-logo-0.bJlEah.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 183646,
+      "name": "Crusaders Crush Cancer 5k",
+      "date": "12/06/2026",
+      "city": "White Plains",
+      "state": "NY",
+      "zipcode": "10605",
+      "distance_mi": null,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/NY/WhitePlains/CrusadersCrushCancer",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-253365-1746140910.817-0.bOe_7U.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 24407,
+      "name": "Tough Cookie 8K Trail Race",
+      "date": "12/06/2026",
+      "city": "Kings Park",
+      "state": "NY",
+      "zipcode": "11754",
+      "distance_mi": null,
+      "distances": [
+        "8K"
+      ],
+      "url": "https://runsignup.com/Race/NY/KingsPark/ToughCookieTrailRace",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-31153-1794764751.099-0.bQ-E_p.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 82727,
+      "name": "Fleet Feet Poughkeepsie's 2026 Ugly Sweater Run",
+      "date": "12/06/2026",
+      "city": "Poughkeepsie",
+      "state": "NY",
+      "zipcode": "12601",
+      "distance_mi": null,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/NY/Poughkeepsie/FleetFeetPOKUglySweaterRun",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-89378-1792789394.8233-0.bQ28Us.png",
       "reg_open": "T"
     },
     {
@@ -2318,51 +2045,6 @@
       "reg_open": "T"
     },
     {
-      "id": 24407,
-      "name": "Tough Cookie 8K Trail Race",
-      "date": "12/06/2026",
-      "city": "Kings Park",
-      "state": "NY",
-      "zipcode": "11754",
-      "distance_mi": null,
-      "distances": [
-        "8K"
-      ],
-      "url": "https://runsignup.com/Race/NY/KingsPark/ToughCookieTrailRace",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race24407-logo-0.bLyrDM.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 82727,
-      "name": "Fleet Feet Poughkeepsie's 2026 Ugly Sweater Run",
-      "date": "12/06/2026",
-      "city": "Poughkeepsie",
-      "state": "NY",
-      "zipcode": "12601",
-      "distance_mi": null,
-      "distances": [
-        "5K"
-      ],
-      "url": "https://runsignup.com/Race/NY/Poughkeepsie/FleetFeetPOKUglySweaterRun",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-89378-1792789394.8233-0.bQ28Us.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 183646,
-      "name": "Crusaders Crush Cancer 5k",
-      "date": "12/06/2026",
-      "city": "White Plains",
-      "state": "NY",
-      "zipcode": "10605",
-      "distance_mi": null,
-      "distances": [
-        "5K"
-      ],
-      "url": "https://runsignup.com/Race/NY/WhitePlains/CrusadersCrushCancer",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-253365-1746140910.817-0.bOe_7U.png",
-      "reg_open": "T"
-    },
-    {
       "id": 151134,
       "name": "CLA Blue Back Mitten Run",
       "date": "12/06/2026",
@@ -2405,7 +2087,7 @@
       ],
       "url": "https://runsignup.com/Race/CT/DeepRiver/TacoTrials",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-213303-1730941570.8794-0.bNlbkc.jpg",
-      "reg_open": "F"
+      "reg_open": "T"
     },
     {
       "id": 138902,
@@ -2420,7 +2102,7 @@
       ],
       "url": "https://runsignup.com/Race/NY/Bayport/BayportBluePointSchoolDistrictCommunityandCocoa5K",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-145471-1762525013.0346-0.bPdF9v.png",
-      "reg_open": "F"
+      "reg_open": "T"
     },
     {
       "id": 150408,
@@ -2450,6 +2132,36 @@
       ],
       "url": "https://runsignup.com/Race/CT/Norwalk/NorwalkJingleBell5K",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-127243-1759337533.1537-0.bO3vW9.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 150711,
+      "name": "Running of the Bulls presented by Cash Cow NYC & RTBX",
+      "date": "12/12/2026",
+      "city": "Bronx",
+      "state": "NY",
+      "zipcode": "10471",
+      "distance_mi": null,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/NY/Bronx/RTBXRunningoftheBulls5K",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race150711-logo-0.bKVvOx.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 121117,
+      "name": "2026 Jingle Bell Run - Westchester, NY",
+      "date": "12/12/2026",
+      "city": "Purchase",
+      "state": "NY",
+      "zipcode": "10577",
+      "distance_mi": null,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/NY/Purchase/JingleBellRunWestchester2021",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-127693-1728914763.8328-0.bNdsvl.png",
       "reg_open": "T"
     },
     {
@@ -2489,48 +2201,21 @@
       "reg_open": "F"
     },
     {
-      "id": 150711,
-      "name": "Running of the Bulls presented by Cash Cow NYC & RTBX",
-      "date": "12/12/2026",
-      "city": "Bronx",
-      "state": "NY",
-      "zipcode": "10471",
-      "distance_mi": null,
-      "distances": [
-        "5K"
-      ],
-      "url": "https://runsignup.com/Race/NY/Bronx/RTBXRunningoftheBulls5K",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race150711-logo-0.bKVvOx.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 121117,
-      "name": "2026 Jingle Bell Run - Westchester, NY",
-      "date": "12/12/2026",
-      "city": "Purchase",
-      "state": "NY",
-      "zipcode": "10577",
-      "distance_mi": null,
-      "distances": [
-        "5K"
-      ],
-      "url": "https://runsignup.com/Race/NY/Purchase/JingleBellRunWestchester2021",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-127693-1728914763.8328-0.bNdsvl.png",
-      "reg_open": "T"
-    },
-    {
-      "id": 215505,
-      "name": "Snowy Owl Trail Race",
+      "id": 217485,
+      "name": "Eight Crazy Hours",
       "date": "12/13/2026",
-      "city": "North Salem",
-      "state": "NY",
-      "zipcode": "10560",
+      "city": "Rochelle Park",
+      "state": "NJ",
+      "zipcode": "07662",
       "distance_mi": null,
       "distances": [
-        "5 Miles"
+        "2 Miles",
+        "5K",
+        "10K",
+        "13.1 Miles"
       ],
-      "url": "https://runsignup.com/Race/NY/NorthSalem/SnowyOwl",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-292407-1791044750.999-0.bQWsYo.png",
+      "url": "https://runsignup.com/Race/NJ/RochellePark/EightCrazyHours",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-294782-1792766579.1387-0.bQ23jZ.jpg",
       "reg_open": "T"
     },
     {
@@ -2579,21 +2264,18 @@
       "reg_open": "T"
     },
     {
-      "id": 217485,
-      "name": "Eight Crazy Hours",
+      "id": 215505,
+      "name": "Snowy Owl Trail Race",
       "date": "12/13/2026",
-      "city": "Rochelle Park",
-      "state": "NJ",
-      "zipcode": "07662",
+      "city": "North Salem",
+      "state": "NY",
+      "zipcode": "10560",
       "distance_mi": null,
       "distances": [
-        "2 Miles",
-        "5K",
-        "10K",
-        "13.1 Miles"
+        "5 Miles"
       ],
-      "url": "https://runsignup.com/Race/NJ/RochellePark/EightCrazyHours",
-      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-294782-1792766579.1387-0.bQ23jZ.jpg",
+      "url": "https://runsignup.com/Race/NY/NorthSalem/SnowyOwl",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-292407-1791044750.999-0.bQWsYo.png",
       "reg_open": "T"
     },
     {
@@ -3077,6 +2759,21 @@
       "reg_open": "F"
     },
     {
+      "id": 149568,
+      "name": "Cupid's Chase 5K Queens",
+      "date": "02/13/2027",
+      "city": "Queens",
+      "state": "NY",
+      "zipcode": "11354",
+      "distance_mi": null,
+      "distances": [
+        "3.1 Miles"
+      ],
+      "url": "https://runsignup.com/Race/NY/Queens/CupidsChase5KQueens",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race149568-logo-0.bKTVtC.png",
+      "reg_open": "T"
+    },
+    {
       "id": 209860,
       "name": "Valentine's Day Run 5K/10K/13.1 NYC",
       "date": "02/13/2027",
@@ -3110,6 +2807,308 @@
       ],
       "url": "https://runsignup.com/Race/NY/NewYorkCity/RunForChocolate5k10kNYC0213",
       "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-286632-1792546443.375-0.bQ2bAl.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 69148,
+      "name": "IRIS Run for Refugees",
+      "date": "02/14/2027",
+      "city": "New Haven",
+      "state": "CT",
+      "zipcode": "06511",
+      "distance_mi": null,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/CT/NewHaven/IRISRunforRefugees",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-75815-1754490492.2219-0.bOK2z8.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 209827,
+      "name": "Squatchy Onesiefest",
+      "date": "02/14/2027",
+      "city": "Mahwah",
+      "state": "NJ",
+      "zipcode": "07430",
+      "distance_mi": null,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/NJ/Mahwah/SquatchyOnesiefest",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-285502-1785882770.9682-0.bQCMIs.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 69998,
+      "name": "Love on the Run",
+      "date": "02/14/2027",
+      "city": "Richmond Hill",
+      "state": "NY",
+      "zipcode": "11418",
+      "distance_mi": null,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/NY/RichmondHill/LoveOnTheRunRelay",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-76662-1764839621.8013-0.bPmvdf.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 149567,
+      "name": "Cupid's Chase 5K Manhattan",
+      "date": "02/20/2027",
+      "city": "New York",
+      "state": "NY",
+      "zipcode": "10019",
+      "distance_mi": null,
+      "distances": [
+        "3.1 Miles"
+      ],
+      "url": "https://runsignup.com/Race/NY/NewYork/CupidsChase5KManhattan",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race149567-logo-0.bKTVth.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 212667,
+      "name": "Run Together Against Breast Cancer NYC",
+      "date": "02/27/2027",
+      "city": "New York City",
+      "state": "NY",
+      "zipcode": "10001",
+      "distance_mi": 47,
+      "distances": [
+        "5K",
+        "10K",
+        "13.1 Miles",
+        "1 Miles"
+      ],
+      "url": "https://runsignup.com/Race/NY/NewYorkCity/RunTogetherAgainstBreastCancerNYC0227",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-288993-1787822045.7312-0.bQJ__D.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 214129,
+      "name": "Run For Mental Health NYC",
+      "date": "02/27/2027",
+      "city": "New York City",
+      "state": "NY",
+      "zipcode": "10001",
+      "distance_mi": 47,
+      "distances": [
+        "5K",
+        "10K",
+        "13.1 Miles",
+        "1 Miles"
+      ],
+      "url": "https://runsignup.com/Race/NY/NewYorkCity/RunForMentalHealthNYC0227",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-289796-1787663278.8511-0.bQJzoU.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 212668,
+      "name": "Run Together Against Breast Cancer NYC Central",
+      "date": "02/27/2027",
+      "city": "New York City",
+      "state": "NY",
+      "zipcode": "10025",
+      "distance_mi": null,
+      "distances": [
+        "5K",
+        "10K",
+        "13.1 Miles",
+        "1 Miles"
+      ],
+      "url": "https://runsignup.com/Race/NY/NewYorkCity/RunTogetherAgainstBreastCancerNYCCentral0227",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-288994-1787822291.6616-0.bQKadt.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 214130,
+      "name": "Run For Mental Health NYC Central",
+      "date": "02/27/2027",
+      "city": "New York City",
+      "state": "NY",
+      "zipcode": "10025",
+      "distance_mi": null,
+      "distances": [
+        "5K",
+        "10K",
+        "13.1 Miles",
+        "1 Miles"
+      ],
+      "url": "https://runsignup.com/Race/NY/NewYorkCity/RunForMentalHealthNYCCentral0227",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-289796-1787663278.8511-0.bQJzoU.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 141768,
+      "name": "42nd Annual Lake Waramaug Polar Bear Run",
+      "date": "02/28/2027",
+      "city": "Warren",
+      "state": "CT",
+      "zipcode": "06777",
+      "distance_mi": null,
+      "distances": [
+        "7.8 Miles"
+      ],
+      "url": "https://runsignup.com/Race/CT/Warren/LakeWaramaugPolarBearRun",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-148337-1729711052.2565-0.bNguVm.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 124517,
+      "name": "King of The Hill",
+      "date": "03/06/2027",
+      "city": "Kings Park",
+      "state": "NY",
+      "zipcode": "11754",
+      "distance_mi": null,
+      "distances": [],
+      "url": "https://runsignup.com/Race/NY/KingsPark/KingofTheHill",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race124517-logo-0.bJ6sfL.png",
+      "reg_open": "F"
+    },
+    {
+      "id": 69162,
+      "name": "99.1 PLR   *Shamrock and Roll 5K*",
+      "date": "03/07/2027",
+      "city": "New Haven",
+      "state": "CT",
+      "zipcode": "06511",
+      "distance_mi": null,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/CT/NewHaven/ShamRockRoll5K",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race69162-logo-0.bLSt6O.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 153246,
+      "name": "Shamrocks and Shenanigans",
+      "date": "03/07/2027",
+      "city": "Richmond Hill",
+      "state": "NY",
+      "zipcode": "11418",
+      "distance_mi": null,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/NY/RichmondHill/ShamrocksandShenanigans",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-216014-1764839888.4371-0.bPmvhq.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 192094,
+      "name": "International Women's Day Run",
+      "date": "03/07/2027",
+      "city": "Ridgefield Park",
+      "state": "NJ",
+      "zipcode": "07660",
+      "distance_mi": null,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/NJ/RidgefieldPark/InternationalWomensDayNJ",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-263625-1773079428.8752-0.bPRWUe.jpg",
+      "reg_open": "T"
+    },
+    {
+      "id": 66589,
+      "name": "Catch A Leprechaun 5K",
+      "date": "03/13/2027",
+      "city": "Essex",
+      "state": "CT",
+      "zipcode": "06426",
+      "distance_mi": null,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/CT/Essex/CatchALeprechaun5K",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race66589-logo-0.bLUgkO.png",
+      "reg_open": "F"
+    },
+    {
+      "id": 55144,
+      "name": "Fallen Comrades Half Marathon",
+      "date": "03/14/2027",
+      "city": "West Point",
+      "state": "NY",
+      "zipcode": "10996",
+      "distance_mi": null,
+      "distances": [
+        "13.1 Miles",
+        "1 Miles"
+      ],
+      "url": "https://runsignup.com/Race/NY/WestPoint/FallenComradesHalfMarathon",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-61829-1769701446.5558-0.bPE4bg.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 139885,
+      "name": "Project 13.1",
+      "date": "03/20/2027",
+      "city": "Congers",
+      "state": "NY",
+      "zipcode": "10920",
+      "distance_mi": null,
+      "distances": [
+        "13.1 Miles"
+      ],
+      "url": "https://runsignup.com/Race/NY/Congers/Project131",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-146454-1730215531.4781-0.bNip5R.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 211557,
+      "name": "Sunrise Marathon 5K/10K/13.1 NYC",
+      "date": "03/20/2027",
+      "city": "New York City",
+      "state": "NY",
+      "zipcode": "10001",
+      "distance_mi": 47,
+      "distances": [
+        "5K",
+        "10K",
+        "13.1 Miles",
+        "1 Miles"
+      ],
+      "url": "https://runsignup.com/Race/NY/NewYorkCity/SunriseMarathon5K10KNYC320",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-287603-1792478118.9716-0.bQ1WUM.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 212767,
+      "name": "St. Paddy's Day Lucky Run 5K/10K/13.1 NYC",
+      "date": "03/20/2027",
+      "city": "New York City",
+      "state": "NY",
+      "zipcode": "10001",
+      "distance_mi": 47,
+      "distances": [
+        "5K",
+        "10K",
+        "13.1 Miles",
+        "1 Miles"
+      ],
+      "url": "https://runsignup.com/Race/NY/NewYorkCity/StPaddySDayLuckyRun5K10KNYC0320",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/uploads/generic/genericImage-websiteLogo-289118-1787842121.4186-0.bQKe5j.png",
+      "reg_open": "T"
+    },
+    {
+      "id": 191016,
+      "name": "Ospreys Dominion Wine Run 5k",
+      "date": "03/20/2027",
+      "city": "Peconic",
+      "state": "NY",
+      "zipcode": "11958",
+      "distance_mi": null,
+      "distances": [
+        "5K"
+      ],
+      "url": "https://runsignup.com/Race/NY/Peconic/OspreysDominionWineRun5k",
+      "logo": "https://d368g9lw5ileu7.cloudfront.net/races/race126613-scaled-logo-0.bMitV9.png",
       "reg_open": "T"
     }
   ]
